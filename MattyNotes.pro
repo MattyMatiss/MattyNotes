@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -24,8 +25,37 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        mattynotesmainwindow.cpp
+        mattynotesmainwindow.cpp \
+    addnotedialog.cpp \
+    mattysettingsdialog.cpp \
+    constants.cpp \
+    dbmanager.cpp \
+    mattyclocks.cpp \
+    mattygroupbox.cpp \
+    mattymessagebox.cpp \
+    mattynote.cpp \
+    mattystylesheeteditor.cpp \
+    noteholder.cpp \
+    queryconstructor.cpp \
+    utilityfunctions.cpp
 
-HEADERS  += mattynotesmainwindow.h
+HEADERS  += mattynotesmainwindow.h \
+    addnotedialog.h \
+    mattysettingsdialog.h \
+    constants.h \
+    dbmanager.h \
+    mattyclocks.h \
+    mattygroupbox.h \
+    mattymessagebox.h \
+    mattynote.h \
+    mattystylesheeteditor.h \
+    noteholder.h \
+    queryconstructor.h \
+    utilityfunctions.h
 
-FORMS    += mattynotesmainwindow.ui
+FORMS    += mattynotesmainwindow.ui \
+    addnotedialog.ui \
+    mattysettingsdialog.ui
+
+RESOURCES += \
+    mattynotesmainwindow.qrc

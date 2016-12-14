@@ -1,0 +1,135 @@
+/*MAIN BACKGROUND FILL*/
+#MattyNotesClass, #MattySettingsDialog, #addNoteDialog { background-color: qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgb(0, 0, 0), stop:0.375 rgb(0, 0, 0), stop:0.423533 rgb(85, 0, 0), stop:0.46 rgb(0, 0, 0), stop:0.477581 rgb(170, 0, 0), stop:0.49 rgb(0, 3, 5), stop:0.55 rgb(0, 0, 0), stop:0.57754 rgb(66, 21, 22), stop:0.59 rgb(15, 0, 0), stop:1 rgba(0, 0, 0, 255)); }
+
+/*MAIN BACKGROUND COLOR*/
+#statusBar, #listWidget, #MattyToolBar, #MattyMessageBox, #MainToolBar { background-color: rgb(219, 0, 0); }
+
+/*NOTE BACKGROUND*/
+#MattyGroupBox, #addNoteDialog QTextEdit, #noteTypeComboBox, #eventTimeEdit, #eventDateEdit { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(60, 0, 0), stop:1 rgb(219, 0, 0)); }
+
+/*MAIN TEXT COLOR*/
+#MotivatorLabel, QPushButton:hover, MattyMessageBox, MattyGroupBox, MattyGroupBox > QLabel, addNoteDialog { color: #ffffff; }
+
+/*ADDITIONAL TEXT COLOR*/
+#WindowHeaderLabel { color: #000000; }
+
+/*MAIN BORDER COLOR*/
+#MattyMessageBox { border-color: gray; }
+
+/*WHITE BORDER COLOR*/
+#statusBar { border-color: rgb(255, 255, 255); }
+
+/*TRANSPARENT BACKGROUND*/
+QSplitter::handle, #centralWidget,  QScrollArea, QScrollArea > QWidget > QWidget, QPushButton { background-color: transparent; }
+
+/*TRANSPARENT TEXT*/
+QPushButton { color: transparent; }
+
+/*TRANSPARENT BORDER*/
+#MattyGroupBox, #addNoteDialog QTextEdit { border-color: transparent; }
+
+/*MAIN BORDER STYLE*/
+#MattyMessageBox, #addNoteDialog QTextEdit { border-style: ridge; }
+
+/*BORDER 0 PX*/
+QScrollArea, QScrollArea > QWidget > QWidget { border: 0px none transparent; }
+
+/*BORDER 3 PX*/
+#MattyGroupBox, #MattyMessageBox, #addNoteDialog QTextEdit { border-width: 3px; }
+
+/*BORDER RADIUS*/
+#MattyMessageBox, #MattyGroupBox, #addNoteDialog QTextEdit { border-radius: 15px; }
+
+/*FONT FAMILY*/
+QLabel, QPushButton, QTextEdit, MattyGroupBox, MattyMessageBox {  font-family: Times New Roman; }
+
+/*FONT SIZES*/
+/* { font-size: 13px; } */
+#MattyMessageBox, MattyGroupBox > QLabel, addNoteDialog > QTextEdit { font-size: 14px; }
+#WindowHeaderLabel, MattyGroupBox, #MotivatorLabel { font-size: 16px; }
+
+/*BOLD*/
+#MotivatorLabel, #MainToolBar #WindowHeaderLabel, QPushButton, #NoteEventTimeAndDateLabel, #NoteTypeLabel, #noteTitleText, #MattyGroupBox { font-weight: bold; }
+
+/*ITALIC*/
+#MotivatorLabel, #MainToolBar #WindowHeaderLabel, QPushButton, #addNoteDialog QTextEdit, #MattyGroupBox QLabel, #MattyGroupBox { font-style: italic; }
+
+/*UNDERLINED*/
+#MattyGroupBox { text-decoration: underline; }
+
+/*TEXT ALIGN LEFT*/
+#ApplySettingsButton, #createNoteButton { text-align: left; }
+
+/*ALL PADDINGS 25*/
+#MattyGroupBox { padding: 25px; }
+
+/*TOP MARGIN 10*/
+/*#MattyGroupBox { margin-top: 10px; }*/
+
+/*BOTTOM MARGIN 15*/
+#MattyGroupBox { margin-bottom: 15px; }
+
+/*LEFT AND RIGHT  MARGINS 15*/
+#MattyGroupBox { margin-left: 15px; margin-right: 15px; }
+
+/*SIZES*/
+#yesButton, #noButton { height: 53px; width: 53px; }
+#cancelAddingNoteButton, #CancelSettingsButton { height: 60px; width: 60px; }
+#createNoteButton, #ApplySettingsButton { height: 70px; width: 70px; }
+
+/*BACKGROUND POSITION CENTER*/
+QPushButton { background-position: center; }
+
+/*BACKGROUND POSITION TOP*/
+#MaximizeWindowButton { background-position: top !important; }
+
+/*BACKGROUND POSITION BOTTOM RIGHT*/
+#ApplySettingsButton, #createNoteButton, #MattyGroupBox { background-position: bottom right !important; }
+
+/*NO BACKGROUND REPEAT*/
+QPushButton, #MattyGroupBox { background-repeat: no-repeat; }
+
+/*SPECIFIC IMAGES*/
+QSplitter::handle { background-image: url(:/MattyNotes/VerticalLine.png); }
+
+#CloseWindowButton { background-image: url(:/MattyNotes/CloseWindow.png); }
+#CloseWindowButton:hover { background-image: url(:/MattyNotes/CloseWindowHover.png); }
+
+#MinimizeWindowButton { background-image: url(:/MattyNotes/MinimizeWindow.png); }
+#MinimizeWindowButton:hover { background-image: url(:/MattyNotes/MinimizeWindowHover.png); }
+
+#MaximizeWindowButton { background-image: url(:/MattyNotes/MaximizeWindow.png); }
+#MaximizeWindowButton:hover { background-image: url(:/MattyNotes/MaximizeWindowHover.png);background-position: top; }
+
+#RefreshNoteListButton { background-image: url(:/MattyNotes/RefreshNoteList.png); }
+#RefreshNoteListButton:hover { background-image: url(:/MattyNotes/RefreshNoteListHover.png); }
+
+#AddNoteButton { background-image: url(:/MattyNotes/AddNote.png); }
+#AddNoteButton:hover { background-image: url(:/MattyNotes/AddNoteHoverWithPen.png); }
+
+#SettingsButton { background-image: url(:/MattyNotes/Settings.png); }
+#SettingsButton:hover { background-image: url(:/MattyNotes/SettingsHover.png); }
+
+#createNoteButton { background-image: url(:/MattyNotes/ApplyAdding.png); }
+#createNoteButton:hover { background-image: url(:/MattyNotes/ApplyAddingHover.png);}
+
+#cancelAddingNoteButton { background-image: url(:/MattyNotes/CancelAdding.png); }
+#cancelAddingNoteButton:hover { background-image: url(:/MattyNotes/CancelAddingHover.png); }
+
+#editNoteButton { background-image: url(:/MattyNotes/EditNote.png); }
+#editNoteButton:hover { background-image: url(:/MattyNotes/EditNoteHover.png); }
+
+#deleteNoteButton { background-image: url(:/MattyNotes/DeleteNote.png); }
+#deleteNoteButton:hover { background-image: url(:/MattyNotes/DeleteNoteHover.png); }
+
+#yesButton { background-image: url(:/MattyNotes/CommonYes40x40.png); }
+StandardButton::Yes:hover { background-image: url(:/MattyNotes/CommonYesHover40x40.png); }
+
+StandardButton::No { background-image: url(:/MattyNotes/CommonNo40x40.png); }
+StandardButton::No:hover { background-image: url(:/MattyNotes/CommonNoHover40x40.png); }
+
+#ApplySettingsButton { background-image: url(:/MattyNotes/ApplyAdding.png); }
+#ApplySettingsButton:hover { background-image: url(:/MattyNotes/ApplyAddingHover.png); }
+
+#CancelSettingsButton { background-image: url(:/MattyNotes/CancelAdding.png); }
+#CancelSettingsButton:hover { background-image: url(:/MattyNotes/CancelAddingHover.png); }
