@@ -43,7 +43,7 @@ QT_END_NAMESPACE
 
 class MattyNotesMainWindow : public QMainWindow
 {
-    //Q_OBJECT
+    Q_OBJECT
 
 public:
     MattyNotesMainWindow(QWidget *parent = 0);

@@ -1,1 +1,49 @@
-<RCC/>
+<RCC>
+    <qresource prefix="/All">
+        <file>resources/AddNote.png</file>
+        <file>resources/AddNoteHover.png</file>
+        <file>resources/AddNoteHoverWithPen.png</file>
+        <file>resources/ApplyAdding.png</file>
+        <file>resources/ApplyAddingHover.png</file>
+        <file>resources/BorderImage.png</file>
+        <file>resources/BorderImageDark.png</file>
+        <file>resources/CancelAdding.png</file>
+        <file>resources/CancelAddingHover.png</file>
+        <file>resources/CloseWindow.png</file>
+        <file>resources/CloseWindowHover.png</file>
+        <file>resources/CommonNo.png</file>
+        <file>resources/CommonNo40x40.png</file>
+        <file>resources/CommonNoHover.png</file>
+        <file>resources/CommonNoHover40x40.png</file>
+        <file>resources/CommonYes.png</file>
+        <file>resources/CommonYes40x40.png</file>
+        <file>resources/CommonYesHover.png</file>
+        <file>resources/CommonYesHover40x40.png</file>
+        <file>resources/DeleteNote.png</file>
+        <file>resources/DeleteNoteHover.png</file>
+        <file>resources/EditNote.png</file>
+        <file>resources/EditNoteFat.png</file>
+        <file>resources/EditNoteFatHover.png</file>
+        <file>resources/EditNoteHover.png</file>
+        <file>resources/HorizontalLine.png</file>
+        <file>resources/InformationCircled.png</file>
+        <file>resources/Main_icon.ico</file>
+        <file>resources/MattyDarkStyleSheet.qss</file>
+        <file>resources/MattySnowStyleSheet.qss</file>
+        <file>resources/MattySunShineStyleSheet.qss</file>
+        <file>resources/MaximizeWindow.png</file>
+        <file>resources/MaximizeWindowHover.png</file>
+        <file>resources/MinimizeWindow.png</file>
+        <file>resources/MinimizeWindowHover.png</file>
+        <file>resources/NoteBackground450.png</file>
+        <file>resources/NoteBackground600.png</file>
+        <file>resources/QuestionSquared.png</file>
+        <file>resources/RefreshNoteList.png</file>
+        <file>resources/RefreshNoteListHover.png</file>
+        <file>resources/Settings.png</file>
+        <file>resources/SettingsHover.png</file>
+        <file>resources/Thumbs.db</file>
+        <file>resources/VerticalLine.png</file>
+        <file>resources/WarningTriangled.png</file>
+    </qresource>
+</RCC>

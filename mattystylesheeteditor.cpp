@@ -9,7 +9,7 @@ MattyStyleSheetEditor::MattyStyleSheetEditor()
 bool MattyStyleSheetEditor::setTheme(const QString & ThemeName)
 {
     bool ThemeFileOpened = false;
-    QFile styleFile(ThemeName + ".qss");
+    QFile styleFile("resources/" + ThemeName + ".qss");
     CurrentTheme = ThemeName;
 
     if (ThemeFileOpened = styleFile.open(QIODevice::ReadOnly | QIODevice::Text))

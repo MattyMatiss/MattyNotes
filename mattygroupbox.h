@@ -19,6 +19,7 @@
 class MattyGroupBox :
     public QGroupBox
 {
+    Q_OBJECT
 public:
     MattyGroupBox(const class MattyNote & ThisNote = MattyNote(), QWidget* parent = 0);
 

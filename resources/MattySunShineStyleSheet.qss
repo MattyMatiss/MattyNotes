@@ -137,7 +137,7 @@ QSplitter::handle { background-image: url(:/MattyNotes/VerticalLine.png); }
 #AddNoteButton { background-image: url(:/MattyNotes/AddNote.png); }
 #AddNoteButton:hover { background-image: url(:/MattyNotes/AddNoteHoverWithPen.png); }
 
-#SettingsButton { background-image: url(:/MattyNotes/Settings.png); }
+#SettingsButton { background-image: url(:/All/resources/Settings.png); }
 #SettingsButton:hover { background-image: url(:/MattyNotes/SettingsHover.png); }
 
 #createNoteButton { background-image: url(:/MattyNotes/ApplyAdding.png); }

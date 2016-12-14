@@ -9,7 +9,7 @@
 
 class MattyClocks : public QLCDNumber
 {
-
+Q_OBJECT
 public:
     MattyClocks(QWidget *parent = 0);
     ~MattyClocks();
