@@ -118,42 +118,42 @@ QPushButton { background-position: center; }
 QPushButton, #MattyGroupBox { background-repeat: no-repeat; }
 
 /*SPECIFIC IMAGES*/
-QSplitter::handle { background-image: url(:/MattyNotes/VerticalLine.png); }
+QSplitter::handle { background-image: url(:/All/resources/VerticalLine.png); }
 
-#horizontalLineWidget { background-image: url(:/MattyNotes/HorizontalLine.png); }
+#horizontalLineWidget { background-image: url(:/All/resources/HorizontalLine.png); }
 
-#CloseWindowButton { background-image: url(:/MattyNotes/CloseWindow.png); }
-#CloseWindowButton:hover { background-image: url(:/MattyNotes/CloseWindowHover.png); }
+#CloseWindowButton { background-image: url(:/All/resources/CloseWindow.png); }
+#CloseWindowButton:hover { background-image: url(:/All/resources/CloseWindowHover.png); }
 
-#MinimizeWindowButton { background-image: url(:/MattyNotes/MinimizeWindow.png); }
-#MinimizeWindowButton:hover { background-image: url(:/MattyNotes/MinimizeWindowHover.png); }
+#MinimizeWindowButton { background-image: url(:/All/resources/MinimizeWindow.png); }
+#MinimizeWindowButton:hover { background-image: url(:/All/resources/MinimizeWindowHover.png); }
 
-#MaximizeWindowButton { background-image: url(:/MattyNotes/MaximizeWindow.png); }
-#MaximizeWindowButton:hover { background-image: url(:/MattyNotes/MaximizeWindowHover.png);background-position: top; }
+#MaximizeWindowButton { background-image: url(:/All/resources/MaximizeWindow.png); }
+#MaximizeWindowButton:hover { background-image: url(:/All/resources/MaximizeWindowHover.png);background-position: top; }
 
-#RefreshNoteListButton { background-image: url(:/MattyNotes/RefreshNoteList.png); }
-#RefreshNoteListButton:hover { background-image: url(:/MattyNotes/RefreshNoteListHover.png); }
+#RefreshNoteListButton { background-image: url(:/All/resources/RefreshNoteList.png); }
+#RefreshNoteListButton:hover { background-image: url(:/All/resources/RefreshNoteListHover.png); }
 
-#AddNoteButton { background-image: url(:/MattyNotes/AddNote.png); }
-#AddNoteButton:hover { background-image: url(:/MattyNotes/AddNoteHoverWithPen.png); }
+#AddNoteButton { background-image: url(:/All/resources/AddNote.png); }
+#AddNoteButton:hover { background-image: url(:/All/resources/AddNoteHoverWithPen.png); }
 
 #SettingsButton { background-image: url(:/All/resources/Settings.png); }
-#SettingsButton:hover { background-image: url(:/MattyNotes/SettingsHover.png); }
+#SettingsButton:hover { background-image: url(:/All/resources/SettingsHover.png); }
 
-#createNoteButton { background-image: url(:/MattyNotes/ApplyAdding.png); }
-#createNoteButton:hover { background-image: url(:/MattyNotes/ApplyAddingHover.png);}
+#createNoteButton { background-image: url(:/All/resources/ApplyAdding.png); }
+#createNoteButton:hover { background-image: url(:/All/resources/ApplyAddingHover.png);}
 
-#cancelAddingNoteButton { background-image: url(:/MattyNotes/CancelAdding.png); }
-#cancelAddingNoteButton:hover { background-image: url(:/MattyNotes/CancelAddingHover.png); }
+#cancelAddingNoteButton { background-image: url(:/All/resources/CancelAdding.png); }
+#cancelAddingNoteButton:hover { background-image: url(:/All/resources/CancelAddingHover.png); }
 
-#editNoteButton { background-image: url(:/MattyNotes/EditNoteFat.png); }
-#editNoteButton:hover { background-image: url(:/MattyNotes/EditNoteFatHover.png); }
+#editNoteButton { background-image: url(:/All/resources/EditNoteFat.png); }
+#editNoteButton:hover { background-image: url(:/All/resources/EditNoteFatHover.png); }
 
-#deleteNoteButton { background-image: url(:/MattyNotes/DeleteNote.png); }
-#deleteNoteButton:hover { background-image: url(:/MattyNotes/DeleteNoteHover.png); }
+#deleteNoteButton { background-image: url(:/All/resources/DeleteNote.png); }
+#deleteNoteButton:hover { background-image: url(:/All/resources/DeleteNoteHover.png); }
 
-#ApplySettingsButton { background-image: url(:/MattyNotes/ApplyAdding.png); }
-#ApplySettingsButton:hover { background-image: url(:/MattyNotes/ApplyAddingHover.png); }
+#ApplySettingsButton { background-image: url(:/All/resources/ApplyAdding.png); }
+#ApplySettingsButton:hover { background-image: url(:/All/resources/ApplyAddingHover.png); }
 
-#CancelSettingsButton { background-image: url(:/MattyNotes/CancelAdding.png); }
-#CancelSettingsButton:hover { background-image: url(:/MattyNotes/CancelAddingHover.png); }
+#CancelSettingsButton { background-image: url(:/All/resources/CancelAdding.png); }
+#CancelSettingsButton:hover { background-image: url(:/All/resources/CancelAddingHover.png); }
