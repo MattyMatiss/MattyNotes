@@ -42,7 +42,6 @@
         <file>resources/RefreshNoteListHover.png</file>
         <file>resources/Settings.png</file>
         <file>resources/SettingsHover.png</file>
-        <file>resources/Thumbs.db</file>
         <file>resources/VerticalLine.png</file>
         <file>resources/WarningTriangled.png</file>
     </qresource>

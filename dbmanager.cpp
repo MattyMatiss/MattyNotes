@@ -16,8 +16,8 @@ bool DbManager::connect(const QString & path)
     MattyNotesDb = QSqlDatabase::addDatabase("QSQLITE");
     MattyNotesDb.setDatabaseName(path);
 
-    if(QFile::exists(path))
-    {
+  //  if(QFile::exists(path))
+  //  {
         if (!MattyNotesDb.open())
         {
             QMessageBox::critical(NULL, QObject::tr("Error"), MattyNotesDb.lastError().text());
@@ -27,15 +27,15 @@ bool DbManager::connect(const QString & path)
         }
         else
         {
-            PathToDb = path;
+            PathToDb = MattyNotesDb.databaseName();
         }
 
         return true;
-    }
-    else
-    {
-        return false;
-    }
+  //  }
+   // else
+   // {
+   //     return false;
+   // }
 }
 
 
@@ -175,13 +175,21 @@ QStringList DbManager::getTypes()
         GetTypes.addWhatToSelectFieldName(QStringLiteral("TypeName"));
         GetTypes.setOrderByClause("TypeId");
 
-        getTypeQuery.exec(GetTypes.constructSelectQuery());
-
-        while (getTypeQuery.next())
+        if( getTypeQuery.exec(GetTypes.constructSelectQuery()))
         {
-            NoteTypes << getTypeQuery.value(0).toString();
+            while (getTypeQuery.next())
+            {
+                NoteTypes << getTypeQuery.value(0).toString();
+            }
         }
+
+        else
+        {
+            QMessageBox::critical(NULL, QObject::tr("Error"), getTypeQuery.lastError().text()); //
+        }
+
         return NoteTypes;
+
     }
     else
     {

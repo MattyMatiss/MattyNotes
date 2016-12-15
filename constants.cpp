@@ -1,5 +1,6 @@
 #include "Constants.h"
 
+#include <QFileInfo>
 
 QString Constants::PathToDb = "";
 // work path
@@ -28,7 +29,7 @@ void Constants::setPathToDb(MattyPathToDbType PathType)
         PathToDb = "C:\\Users\\Ogrigorieva\\Visual Studio 2015\\Projects\\Personal\\MattyNotes\\MattyNotes.sqlite";
         break;
     case Relative:
-        PathToDb = "MattyNotes.sqlite";
+        PathToDb = QFileInfo(".").absolutePath() + "/" + "MattyNotes.sqlite";
         break;
     default:
         PathToDb = "MattyNotes.sqlite";
