@@ -135,13 +135,13 @@ void MattyNotesMainWindow::buildBody()
     RightSideWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     RightSideWidget->setObjectName(QStringLiteral("RightSide"));
 
-    LeftSideVerLayout = new QVBoxLayout(this);
+    LeftSideVerLayout = new QVBoxLayout();
     LeftSideVerLayout->setSpacing(6);
 
     LeftGridLayout->addLayout(LeftSideVerLayout, 0, 0);
 
     MotivatorLabel = new QLabel(LeftSideWidget);
-    MotivatorLabel->setText(QString::fromLocal8Bit("Желания имеют свойство сбываться"));
+    MotivatorLabel->setText(QString::fromUtf8("Желания имеют свойство сбываться"));
     MotivatorLabel->setObjectName(QStringLiteral("MotivatorLabel"));
     MotivatorLabel->setMinimumSize(QSize(250, 0));
     MotivatorLabel->setMaximumSize(QSize(250, 16777215));

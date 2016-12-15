@@ -28,7 +28,7 @@ void Constants::setPathToDb(MattyPathToDbType PathType)
         PathToDb = "C:\\Users\\Ogrigorieva\\Visual Studio 2015\\Projects\\Personal\\MattyNotes\\MattyNotes.sqlite";
         break;
     case Relative:
-        PathToDb = "MattyNotes.sqlite";
+        PathToDb = "resources\\MattyNotes.sqlite";
         break;
     default:
         PathToDb = "MattyNotes.sqlite";

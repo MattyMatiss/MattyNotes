@@ -45,5 +45,6 @@
         <file>resources/Thumbs.db</file>
         <file>resources/VerticalLine.png</file>
         <file>resources/WarningTriangled.png</file>
+        <file>resources/MattyNotes.sqlite</file>
     </qresource>
 </RCC>

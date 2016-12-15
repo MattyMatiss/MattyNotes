@@ -56,6 +56,16 @@ bool MattyStyleSheetEditor::setTheme(DefaultTheme ThemeName)
             styleFile.close();
         }
 
+
+        QFile outFile("log.txt");
+            outFile.open(QIODevice::WriteOnly | QIODevice::Append);
+            QString ThemeFileName = ":/All/resources/MattySunShineStyleSheet.qss";
+            QByteArray ba = ThemeFileName.toLatin1();
+             const char *c_str2 = ba.data();
+            outFile.write(c_str2);
+            outFile.close();
+
+
     return ThemeFileOpened;
 }
 
