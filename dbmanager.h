@@ -7,8 +7,12 @@
 
 #include "MattyNote.h"
 #include "QueryConstructor.h"
-#include <QSqlTableModel>
+
 #include <QMessageBox>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlRecord>
+#include <QSqlTableModel>
 #include <QSqlError>
 
 
@@ -23,7 +27,7 @@ public:
     static bool deleteNote(int NoteId);
     static QStringList showNote(int NoteId);
     static QVector<QStringList> showNotes();
-    static QVector<QStringList> showNotes(QMap<QString, QString> & Filter, OrderType DirectionIncm = Straight);
+    static QVector<QStringList> showNotes(QMap<QString, QString> & Filter);
     static QSqlTableModel* getModel(const QString& path); // needtodelete wherever it's called
     static QStringList getTypes();
     static QString getTypeName(int TypeId);
@@ -33,6 +37,7 @@ public:
     static void showIsNotOpenError();
 private:
     static QSqlDatabase MattyNotesDb;
+    static QString PathToDb;
 };
 
 #endif // DBMANAGER_H

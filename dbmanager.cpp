@@ -1,9 +1,10 @@
 #include "DbManager.h"
 #include "QueryConstructor.h"
-#include <QSqlQuery>
-#include <QSqlRecord>
+
+#include <QFile>
 
 QSqlDatabase DbManager::MattyNotesDb;
+QString DbManager::PathToDb = "";
 
 DbManager::DbManager()
 {
@@ -15,16 +16,28 @@ bool DbManager::connect(const QString & path)
     MattyNotesDb = QSqlDatabase::addDatabase("QSQLITE");
     MattyNotesDb.setDatabaseName(path);
 
-    if (!MattyNotesDb.open())
+    if(QFile::exists(path))
     {
-        QMessageBox::critical(NULL, QObject::tr("Error"), MattyNotesDb.lastError().text());
-        MattyNotesDb.close();
+        if (!MattyNotesDb.open())
+        {
+            QMessageBox::critical(NULL, QObject::tr("Error"), MattyNotesDb.lastError().text());
+            MattyNotesDb.close();
 
+            return false;
+        }
+        else
+        {
+            PathToDb = path;
+        }
+
+        return true;
+    }
+    else
+    {
         return false;
     }
-
-    return true;
 }
+
 
 bool DbManager::addNote(MattyNote & Note)
 {
@@ -243,19 +256,25 @@ QVector<QStringList> DbManager::showNotes()
         SelectAll.setTableName(QStringLiteral("Notes"));
         SelectAll.setOrderByClause("NoteId", Descending);
 
-        QSqlQuery getNotesQuery;
-        getNotesQuery.prepare(SelectAll.constructSelectQuery());
-        getNotesQuery.exec();
+        QSqlQuery getNotesQuery(MattyNotesDb);
 
-        while (getNotesQuery.next())
+        if( getNotesQuery.exec(SelectAll.constructSelectQuery())) // возвращает false
         {
-            QStringList Fields;
-            for (int i = 0;i < 9;i++)
+            while (getNotesQuery.next()) // соответственно тоже возвращает false
             {
-                Fields.push_back(getNotesQuery.value(i).toString());
+                QStringList Fields;
+                for (int i = 0;i < 9;i++)
+                {
+                    Fields.push_back(getNotesQuery.value(i).toString());
+                }
+                VectorOfNotes.push_back(Fields);
             }
-            VectorOfNotes.push_back(Fields);
         }
+        else
+        {
+            QMessageBox::critical(NULL, QObject::tr("Error"), getNotesQuery.lastError().text()); // no such table. Unable to execute statement
+        }
+
         return VectorOfNotes;
     }
     else
@@ -265,7 +284,7 @@ QVector<QStringList> DbManager::showNotes()
     }
 }
 
-QVector<QStringList> DbManager::showNotes(QMap<QString, QString> & Filter, OrderType DirectionIncm)
+QVector<QStringList> DbManager::showNotes(QMap<QString, QString> & Filter)
 {
     if (MattyNotesDb.isOpen())
     {

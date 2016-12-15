@@ -129,7 +129,7 @@ QString QueryConstructor::constructSelectQuery()
 
     if (TableName != "")
     {
-        ResultQuery.append(" SELECT ");
+        ResultQuery.append("SELECT ");
 
         if (WhatToSelectFieldNames.isEmpty())
         {
