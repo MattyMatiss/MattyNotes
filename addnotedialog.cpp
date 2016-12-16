@@ -55,7 +55,7 @@ addNoteDialog::~addNoteDialog()
 void addNoteDialog::on_cancelAddingNoteButton_clicked()
 {
     MattyMessageBox NeedToEnterTitle(MessageBoxQuestion);
-    NeedToEnterTitle.setText(QString::fromLocal8Bit("Вы хотите выйти без сохранения заметки?"));
+    NeedToEnterTitle.setText("Вы хотите выйти без сохранения заметки?");
     int answer = NeedToEnterTitle.exec();
 
     if (answer == QMessageBox::Yes)
@@ -92,7 +92,7 @@ void addNoteDialog::on_createNoteButton_clicked()
     else
     {
         MattyMessageBox NeedToEnterTitle(MessageBoxInformation);
-        NeedToEnterTitle.setText(QString::fromLocal8Bit("У заметки обязательно должен быть заголовок!"));
+        NeedToEnterTitle.setText("У заметки обязательно должен быть заголовок!");
         NeedToEnterTitle.exec();
         addNoteDialogUi.noteTitleText->setFocus();
     }

@@ -37,7 +37,7 @@ void MattyGroupBox::fillFrame(const MattyNote & ThisNote)
 
     NoteTypeLabel->setText(ThisNote.getType());
     NoteTextLabel->setText(ThisNote.getText());
-    NoteCrTimeAndDateLabel->setText(QString::fromLocal8Bit("Заметка создана: ")
+    NoteCrTimeAndDateLabel->setText("Заметка создана: "
         + ThisNote.getCrDate() + " " + ThisNote.getCrTime() );
     NoteEventTimeAndDateLabel->setText(ThisNote.getEventDate() +  " " + ThisNote.getEventTime());
 }
@@ -109,12 +109,12 @@ void MattyGroupBox::buildFrame()
 
     NoteTypeLabel = new QLabel(this);
     NoteTypeLabel->setObjectName(QStringLiteral("NoteTypeLabel"));
-    NoteTypeLabel->setText(QString::fromLocal8Bit("Тип"));
+    NoteTypeLabel->setText("Тип");
     NoteTypeLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
 
     NoteCrTimeAndDateLabel = new QLabel(this);
     NoteCrTimeAndDateLabel->setObjectName(QStringLiteral("NoteCrTimeAndDateLabel"));
-    NoteCrTimeAndDateLabel->setText(QString::fromLocal8Bit("Создано: "));
+    NoteCrTimeAndDateLabel->setText("Создано: ");
     NoteCrTimeAndDateLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
 
     horizontalSpacer_1 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
@@ -137,7 +137,7 @@ void MattyGroupBox::buildFrame()
 
     NoteEventTimeAndDateLabel = new QLabel(this);
     NoteEventTimeAndDateLabel->setObjectName(QStringLiteral("NoteEventTimeAndDateLabel"));
-    NoteEventTimeAndDateLabel->setText(QString::fromLocal8Bit("Когда"));
+    NoteEventTimeAndDateLabel->setText("Когда");
     NoteEventTimeAndDateLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
 
     horizontalLayout_1->addWidget(NoteTypeLabel);
@@ -158,7 +158,7 @@ void MattyGroupBox::buildFrame()
     NoteTextLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
 
     verticalLayout->addWidget(NoteTextLabel);
-    NoteTextLabel->setText(QString::fromLocal8Bit("Текст"));
+    NoteTextLabel->setText("Текст");
     NoteTextLabel->setWordWrap(true);
 
     verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
@@ -188,7 +188,7 @@ void MattyGroupBox::editNote()
 void MattyGroupBox::deleteNote()
 {
     MattyMessageBox WantToDeleteNote(MessageBoxQuestion);
-    WantToDeleteNote.setText(QString::fromLocal8Bit("\n\nВы точно хотите удалить заметку \n\"") + ThisGroupBoxNote.getTitle() + "\"?");
+    WantToDeleteNote.setText("\n\nВы точно хотите удалить заметку \n\"" + ThisGroupBoxNote.getTitle() + "\"?");
 
     int answer = WantToDeleteNote.exec();
     if (answer == QMessageBox::Yes)

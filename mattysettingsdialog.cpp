@@ -68,7 +68,7 @@ void MattySettingsDialog::fillInterfacePage()
 
     ChooseThemeLabel = new QLabel(InterfacePageWidget);
     ChooseThemeLabel->setObjectName(QStringLiteral("ChooseThemeLabel"));
-    ChooseThemeLabel->setText(QString::fromLocal8Bit("Выберите цветовую схему:"));
+    ChooseThemeLabel->setText("Выберите цветовую схему:");
     InterfacePageGridLayout->addWidget(ChooseThemeLabel, 0, 0, 1, 1);
 
     ThemeRadioButtonVerticalLayout = new QVBoxLayout(InterfacePageWidget);
@@ -77,15 +77,15 @@ void MattySettingsDialog::fillInterfacePage()
 
     SunShineRadioButton = new QRadioButton(InterfacePageWidget);
     SunShineRadioButton->setObjectName(QStringLiteral("SunShineRadioButton"));
-    SunShineRadioButton->setText(QString::fromLocal8Bit("Солнечная"));
+    SunShineRadioButton->setText("Солнечная");
 
     SnowRadioButton = new QRadioButton(InterfacePageWidget);
     SnowRadioButton->setObjectName(QStringLiteral("SnowRadioButton"));
-    SnowRadioButton->setText(QString::fromLocal8Bit("Снежная"));
+    SnowRadioButton->setText("Снежная");
 
     DarkRadioButton = new QRadioButton(InterfacePageWidget);
     DarkRadioButton->setObjectName(QStringLiteral("DarkRadioButton"));
-    DarkRadioButton->setText(QString::fromLocal8Bit("Тёмная"));
+    DarkRadioButton->setText("Тёмная");
 
     ThemeRadioButtonVerticalLayout->addWidget(SunShineRadioButton);
     ThemeRadioButtonVerticalLayout->addWidget(SnowRadioButton);
@@ -95,8 +95,7 @@ void MattySettingsDialog::fillInterfacePage()
     InsertCssLabel->
         setObjectName(QStringLiteral("InsertCssLabel"));
     InsertCssLabel->
-        setText(QString::fromLocal8Bit
-        ("Или создайте свою таблицу стилей (css):"));
+        setText("Или создайте свою таблицу стилей (css):");
     InterfacePageGridLayout->
         addWidget(InsertCssLabel, 2, 0, 1, 2);
 

@@ -29,7 +29,7 @@ void Constants::setPathToDb(MattyPathToDbType PathType)
         PathToDb = "C:\\Users\\Ogrigorieva\\Visual Studio 2015\\Projects\\Personal\\MattyNotes\\MattyNotes.sqlite";
         break;
     case Relative:
-        PathToDb = QFileInfo(".").absolutePath() + "/" + "MattyNotes.sqlite";
+        PathToDb = "QtCreator/MattyNotes/MattyNotes.sqlite";
         break;
     default:
         PathToDb = "MattyNotes.sqlite";

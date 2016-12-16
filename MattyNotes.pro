@@ -59,3 +59,5 @@ FORMS    += mattynotesmainwindow.ui \
 
 RESOURCES += \
     mattynotesmainwindow.qrc
+
+message($$OUT_PWD)
