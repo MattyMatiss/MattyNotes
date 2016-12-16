@@ -1,0 +1,7 @@
+<map id="DbManager::deleteNote" name="DbManager::deleteNote">
+<area shape="rect" id="node2" href="$classQueryConstructor.html#ad1b13fbc7d8c55e384c992852f755008" title="QueryConstructor::setTableName" alt="" coords="212,5,428,32"/>
+<area shape="rect" id="node3" href="$classQueryConstructor.html#ad72f9e11656f92958cd6751eaaa70e0e" title="QueryConstructor::addWhere\lFieldValue" alt="" coords="225,57,415,98"/>
+<area shape="rect" id="node4" href="$classQueryConstructor.html#a1585447293c477d7c5bebf4049cbbc07" title="QueryConstructor::construct\lDeleteQuery" alt="" coords="227,122,413,163"/>
+<area shape="rect" id="node6" href="$classDbManager.html#a2d60ab2a556cf0276bf306c7545ed03d" title="DbManager::showIsNotOpen\lError" alt="" coords="226,187,414,229"/>
+<area shape="rect" id="node5" href="$classQueryConstructor.html#a7c864e227c2e76cc40a887314d43a0fe" title="QueryConstructor::construct\lWhereEqualsClause" alt="" coords="476,122,663,163"/>
+</map>

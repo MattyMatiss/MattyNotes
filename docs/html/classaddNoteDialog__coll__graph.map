@@ -1,0 +1,5 @@
+<map id="addNoteDialog" name="addNoteDialog">
+<area shape="rect" id="node3" href="$classMattyNote.html" title="MattyNote" alt="" coords="98,81,181,108"/>
+<area shape="rect" id="node4" href="$classUi_1_1addNoteDialog.html" title="Ui::addNoteDialog" alt="" coords="205,81,332,108"/>
+<area shape="rect" id="node5" href="$classUi__addNoteDialog.html" title="Ui_addNoteDialog" alt="" coords="206,5,331,32"/>
+</map>

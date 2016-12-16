@@ -1,0 +1,7 @@
+<map id="MattySettingsDialog::MattySettingsDialog" name="MattySettingsDialog::MattySettingsDialog">
+<area shape="rect" id="node2" href="$classUi__MattySettingsDialog.html#ad8d03029358c22b0342ea137f6d4edb9" title="Ui_MattySettingsDialog\l::setupUi" alt="" coords="200,5,359,47"/>
+<area shape="rect" id="node4" href="$classMattySettingsDialog.html#a92444461b31265858791d279e483069d" title="MattySettingsDialog\l::buildPages" alt="" coords="210,71,349,112"/>
+<area shape="rect" id="node6" href="$classMattySettingsDialog.html#a4e0c6d5ea1b0a3a40a0f856386c21bce" title="MattySettingsDialog\l::setConnects" alt="" coords="210,136,349,177"/>
+<area shape="rect" id="node3" href="$classUi__MattySettingsDialog.html#a63175c8e3ebbb59a8b60d126848a8825" title="Ui_MattySettingsDialog\l::retranslateUi" alt="" coords="407,5,565,47"/>
+<area shape="rect" id="node5" href="$classMattySettingsDialog.html#a4c8eaeb364e8fa94fe89fdbe2eb822b5" title="MattySettingsDialog\l::fillInterfacePage" alt="" coords="417,71,555,112"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="MattyNotesMainWindow::WindowActivatedEvent" name="MattyNotesMainWindow::WindowActivatedEvent">
+<area shape="rect" id="node2" href="$classMattyNotesMainWindow.html#a12025cd56092bb34c6451a92197b69a1" title="MattyNotesMainWindow\l::refreshMainWindow" alt="" coords="217,40,380,81"/>
+<area shape="rect" id="node3" href="$classMattyStyleSheetEditor.html#a203c6d82e1fa8bbbf61d30de4191fc01" title="MattyStyleSheetEditor\l::refreshTheme" alt="" coords="436,9,589,51"/>
+<area shape="rect" id="node5" href="$classNoteHolder.html#abb4a2d19ddace4d652cfda5becd03302" title="NoteHolder::publishNotes" alt="" coords="428,78,597,105"/>
+<area shape="rect" id="node4" href="$classMattyStyleSheetEditor.html#aec3ccdf356aab4c3156562465e779498" title="MattyStyleSheetEditor\l::setTheme" alt="" coords="660,5,813,47"/>
+<area shape="rect" id="node6" href="$classNoteHolder.html#a4559ef4141f902ae5712052084c6187e" title="NoteHolder::erasePublished\lNotes" alt="" coords="645,71,828,112"/>
+<area shape="rect" id="node7" href="$classNoteHolder.html#a53853f7b183e262eb165bdb3af8f3e45" title="NoteHolder::getAllNotes" alt="" coords="656,137,817,163"/>
+<area shape="rect" id="node8" href="$classDbManager.html#a67826fcd32d3921d1d1ae32ff3e9ce5d" title="DbManager::showNotes" alt="" coords="876,137,1036,163"/>
+<area shape="rect" id="node9" href="$classQueryConstructor.html#ad1b13fbc7d8c55e384c992852f755008" title="QueryConstructor::setTableName" alt="" coords="1084,45,1300,71"/>
+<area shape="rect" id="node10" href="$classQueryConstructor.html#a096ed5c85c40851db92a7f45405df4cd" title="QueryConstructor::setOrder\lByClause" alt="" coords="1101,96,1283,137"/>
+<area shape="rect" id="node11" href="$classQueryConstructor.html#ae832ca3bc59df18cb8ef08fc1d9fd75f" title="QueryConstructor::construct\lSelectQuery" alt="" coords="1099,161,1285,203"/>
+<area shape="rect" id="node13" href="$classDbManager.html#a2d60ab2a556cf0276bf306c7545ed03d" title="DbManager::showIsNotOpen\lError" alt="" coords="1098,227,1286,268"/>
+<area shape="rect" id="node12" href="$classQueryConstructor.html#a7c864e227c2e76cc40a887314d43a0fe" title="QueryConstructor::construct\lWhereEqualsClause" alt="" coords="1348,161,1535,203"/>
+</map>

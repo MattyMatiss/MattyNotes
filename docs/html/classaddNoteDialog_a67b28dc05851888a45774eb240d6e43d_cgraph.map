@@ -1,0 +1,24 @@
+<map id="addNoteDialog::on_createNoteButton_clicked" name="addNoteDialog::on_createNoteButton_clicked">
+<area shape="rect" id="node2" href="$classMattyNote.html#af7909f64608b020b501019cf29796eb0" title="MattyNote::setTitle" alt="" coords="243,208,376,235"/>
+<area shape="rect" id="node3" href="$classMattyNote.html#ac9171fd4faaf0c286c9315a0b4ef4560" title="MattyNote::setType" alt="" coords="241,259,378,285"/>
+<area shape="rect" id="node6" href="$classMattyNote.html#afa0c4ee32401e4a09e8d04fd0b01da0b" title="MattyNote::setText" alt="" coords="242,411,377,437"/>
+<area shape="rect" id="node7" href="$classMattyNote.html#aaeba8670420ab9ad0fb8be660845e0ba" title="MattyNote::setEventTime" alt="" coords="224,461,395,488"/>
+<area shape="rect" id="node8" href="$classMattyNote.html#a70676b1ab215b873c9451a82cc417684" title="MattyNote::setEventDate" alt="" coords="225,512,394,539"/>
+<area shape="rect" id="node9" href="$classDbManager.html#a4f063b57678616ccef3515088a04ac51" title="DbManager::addNote" alt="" coords="237,309,381,336"/>
+<area shape="rect" id="node19" href="$classDbManager.html#af27c0367d70db496305ec5cab6324fe9" title="DbManager::editNote" alt="" coords="237,360,381,387"/>
+<area shape="rect" id="node4" href="$classDbManager.html#a92ebefd0d5fae643db1fc51cc7ea0c31" title="DbManager::getTypeId" alt="" coords="473,5,628,32"/>
+<area shape="rect" id="node5" href="$classDbManager.html#a2d60ab2a556cf0276bf306c7545ed03d" title="DbManager::showIsNotOpen\lError" alt="" coords="707,49,895,90"/>
+<area shape="rect" id="node10" href="$classMattyNote.html#a2205505ded709f404d995884a8d34c4a" title="MattyNote::getTitle" alt="" coords="484,411,617,437"/>
+<area shape="rect" id="node11" href="$classMattyNote.html#a882bd562d91b1d63ef6c982294b961d7" title="MattyNote::getType" alt="" coords="482,461,619,488"/>
+<area shape="rect" id="node12" href="$classMattyNote.html#abced4f72489e13f7a06c70e473858cdc" title="MattyNote::getText" alt="" coords="483,512,618,539"/>
+<area shape="rect" id="node13" href="$classMattyNote.html#a879acc827b2dcc59e9ab43205a252542" title="MattyNote::getEventTime" alt="" coords="465,107,636,133"/>
+<area shape="rect" id="node14" href="$classMattyNote.html#a7294508de8cdfcb923fae6b3b44ff406" title="MattyNote::getEventDate" alt="" coords="466,157,635,184"/>
+<area shape="rect" id="node15" href="$classMattyNote.html#a37fbcf1e6b2edbda791240593a04b919" title="MattyNote::getCrTime" alt="" coords="475,208,626,235"/>
+<area shape="rect" id="node16" href="$classMattyNote.html#aed32bd27ebe176f3cedbc676a03f15ea" title="MattyNote::getCrDate" alt="" coords="477,259,625,285"/>
+<area shape="rect" id="node17" href="$classMattyNote.html#ad12d2758099fe96bf596ef6a7ab4abc2" title="MattyNote::getTypeId" alt="" coords="477,309,625,336"/>
+<area shape="rect" id="node18" href="$classQueryConstructor.html#ad1b13fbc7d8c55e384c992852f755008" title="QueryConstructor::setTableName" alt="" coords="443,360,659,387"/>
+<area shape="rect" id="node20" href="$classQueryConstructor.html#ad72f9e11656f92958cd6751eaaa70e0e" title="QueryConstructor::addWhere\lFieldValue" alt="" coords="455,679,646,721"/>
+<area shape="rect" id="node21" href="$classQueryConstructor.html#a969ca6d0c1d258f8a6e6f587f545c2d2" title="QueryConstructor::setWhat\lToSetFieldValue" alt="" coords="461,745,641,786"/>
+<area shape="rect" id="node22" href="$classQueryConstructor.html#ab17ea91cdd25440b863775526018da22" title="QueryConstructor::construct\lUpdateQuery" alt="" coords="457,614,644,655"/>
+<area shape="rect" id="node23" href="$classQueryConstructor.html#a7c864e227c2e76cc40a887314d43a0fe" title="QueryConstructor::construct\lWhereEqualsClause" alt="" coords="707,614,894,655"/>
+</map>

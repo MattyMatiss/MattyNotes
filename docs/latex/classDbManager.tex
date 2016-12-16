@@ -1,0 +1,409 @@
+\hypertarget{classDbManager}{}\section{Db\+Manager Class Reference}
+\label{classDbManager}\index{Db\+Manager@{Db\+Manager}}
+
+
+{\ttfamily \#include $<$dbmanager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDbManager_a0d16cf5bba931362e6c581eb1b5ba66a}{Db\+Manager} ()
+\item 
+\hyperlink{classDbManager_ac5cdf8e5e932d1681ab807d8f256374c}{$\sim$\+Db\+Manager} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classDbManager_abc90b3bf97dda268b4160a0662305898}{connect} (const Q\+String \&path)
+\item 
+static bool \hyperlink{classDbManager_a4f063b57678616ccef3515088a04ac51}{add\+Note} (\hyperlink{classMattyNote}{Matty\+Note} \&Note)
+\item 
+static bool \hyperlink{classDbManager_af27c0367d70db496305ec5cab6324fe9}{edit\+Note} (\hyperlink{classMattyNote}{Matty\+Note} \&Note, int Note\+Id)
+\item 
+static bool \hyperlink{classDbManager_a164849758fd05445c7af2cc04fc3569f}{delete\+Note} (int Note\+Id)
+\item 
+static Q\+String\+List \hyperlink{classDbManager_a51a53e4f7776ca83da7fafe7036adf17}{show\+Note} (int Note\+Id)
+\item 
+static Q\+Vector$<$ Q\+String\+List $>$ \hyperlink{classDbManager_a67826fcd32d3921d1d1ae32ff3e9ce5d}{show\+Notes} ()
+\item 
+static Q\+Vector$<$ Q\+String\+List $>$ \hyperlink{classDbManager_a6e04515110041436021b5ee0f068eda2}{show\+Notes} (Q\+Map$<$ Q\+String, Q\+String $>$ \&Filter)
+\item 
+static Q\+Sql\+Table\+Model $\ast$ \hyperlink{classDbManager_ac4e759380194e624382e267432de5357}{get\+Model} (const Q\+String \&path)
+\item 
+static Q\+String\+List \hyperlink{classDbManager_ade7585873652935bb12cb1ad546ceba2}{get\+Types} ()
+\item 
+static Q\+String \hyperlink{classDbManager_a6cb58e12049873e8b1b4b6ecd74dbfb6}{get\+Type\+Name} (int Type\+Id)
+\item 
+static int \hyperlink{classDbManager_a92ebefd0d5fae643db1fc51cc7ea0c31}{get\+Type\+Id} (const Q\+String \&Type\+Name)
+\item 
+static int \hyperlink{classDbManager_ae3998b50545d88a27d4361053f39b050}{get\+Note\+Count} ()
+\item 
+static void \hyperlink{classDbManager_a2d60ab2a556cf0276bf306c7545ed03d}{show\+Is\+Not\+Open\+Error} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Q\+Sql\+Database \hyperlink{classDbManager_a3f6052f559a7a72eef66848ebc9f3eaa}{Matty\+Notes\+Db}
+\item 
+static Q\+String \hyperlink{classDbManager_aa3f62582e546ee853cebd75386e26736}{Path\+To\+Db} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file dbmanager.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDbManager_a0d16cf5bba931362e6c581eb1b5ba66a}{}\label{classDbManager_a0d16cf5bba931362e6c581eb1b5ba66a} 
+\index{Db\+Manager@{Db\+Manager}!Db\+Manager@{Db\+Manager}}
+\index{Db\+Manager@{Db\+Manager}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{Db\+Manager()}{DbManager()}}
+{\footnotesize\ttfamily Db\+Manager\+::\+Db\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file dbmanager.\+cpp.
+
+\hypertarget{classDbManager_ac5cdf8e5e932d1681ab807d8f256374c}{}\label{classDbManager_ac5cdf8e5e932d1681ab807d8f256374c} 
+\index{Db\+Manager@{Db\+Manager}!````~Db\+Manager@{$\sim$\+Db\+Manager}}
+\index{````~Db\+Manager@{$\sim$\+Db\+Manager}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+Db\+Manager()}{~DbManager()}}
+{\footnotesize\ttfamily Db\+Manager\+::$\sim$\+Db\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 340 of file dbmanager.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDbManager_a4f063b57678616ccef3515088a04ac51}{}\label{classDbManager_a4f063b57678616ccef3515088a04ac51} 
+\index{Db\+Manager@{Db\+Manager}!add\+Note@{add\+Note}}
+\index{add\+Note@{add\+Note}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{add\+Note()}{addNote()}}
+{\footnotesize\ttfamily bool Db\+Manager\+::add\+Note (\begin{DoxyParamCaption}\item[{\hyperlink{classMattyNote}{Matty\+Note} \&}]{Note }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 42 of file dbmanager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_a4f063b57678616ccef3515088a04ac51_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_a4f063b57678616ccef3515088a04ac51_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classDbManager_abc90b3bf97dda268b4160a0662305898}{}\label{classDbManager_abc90b3bf97dda268b4160a0662305898} 
+\index{Db\+Manager@{Db\+Manager}!connect@{connect}}
+\index{connect@{connect}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily bool Db\+Manager\+::connect (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 14 of file dbmanager.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_abc90b3bf97dda268b4160a0662305898_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classDbManager_a164849758fd05445c7af2cc04fc3569f}{}\label{classDbManager_a164849758fd05445c7af2cc04fc3569f} 
+\index{Db\+Manager@{Db\+Manager}!delete\+Note@{delete\+Note}}
+\index{delete\+Note@{delete\+Note}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{delete\+Note()}{deleteNote()}}
+{\footnotesize\ttfamily bool Db\+Manager\+::delete\+Note (\begin{DoxyParamCaption}\item[{int}]{Note\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 102 of file dbmanager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_a164849758fd05445c7af2cc04fc3569f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_a164849758fd05445c7af2cc04fc3569f_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classDbManager_af27c0367d70db496305ec5cab6324fe9}{}\label{classDbManager_af27c0367d70db496305ec5cab6324fe9} 
+\index{Db\+Manager@{Db\+Manager}!edit\+Note@{edit\+Note}}
+\index{edit\+Note@{edit\+Note}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{edit\+Note()}{editNote()}}
+{\footnotesize\ttfamily bool Db\+Manager\+::edit\+Note (\begin{DoxyParamCaption}\item[{\hyperlink{classMattyNote}{Matty\+Note} \&}]{Note,  }\item[{int}]{Note\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 71 of file dbmanager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_af27c0367d70db496305ec5cab6324fe9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_af27c0367d70db496305ec5cab6324fe9_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classDbManager_ac4e759380194e624382e267432de5357}{}\label{classDbManager_ac4e759380194e624382e267432de5357} 
+\index{Db\+Manager@{Db\+Manager}!get\+Model@{get\+Model}}
+\index{get\+Model@{get\+Model}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{get\+Model()}{getModel()}}
+{\footnotesize\ttfamily Q\+Sql\+Table\+Model $\ast$ Db\+Manager\+::get\+Model (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 148 of file dbmanager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_ac4e759380194e624382e267432de5357_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classDbManager_ae3998b50545d88a27d4361053f39b050}{}\label{classDbManager_ae3998b50545d88a27d4361053f39b050} 
+\index{Db\+Manager@{Db\+Manager}!get\+Note\+Count@{get\+Note\+Count}}
+\index{get\+Note\+Count@{get\+Note\+Count}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{get\+Note\+Count()}{getNoteCount()}}
+{\footnotesize\ttfamily int Db\+Manager\+::get\+Note\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 239 of file dbmanager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_ae3998b50545d88a27d4361053f39b050_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classDbManager_a92ebefd0d5fae643db1fc51cc7ea0c31}{}\label{classDbManager_a92ebefd0d5fae643db1fc51cc7ea0c31} 
+\index{Db\+Manager@{Db\+Manager}!get\+Type\+Id@{get\+Type\+Id}}
+\index{get\+Type\+Id@{get\+Type\+Id}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{get\+Type\+Id()}{getTypeId()}}
+{\footnotesize\ttfamily int Db\+Manager\+::get\+Type\+Id (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{Type\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 220 of file dbmanager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_a92ebefd0d5fae643db1fc51cc7ea0c31_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_a92ebefd0d5fae643db1fc51cc7ea0c31_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classDbManager_a6cb58e12049873e8b1b4b6ecd74dbfb6}{}\label{classDbManager_a6cb58e12049873e8b1b4b6ecd74dbfb6} 
+\index{Db\+Manager@{Db\+Manager}!get\+Type\+Name@{get\+Type\+Name}}
+\index{get\+Type\+Name@{get\+Type\+Name}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{get\+Type\+Name()}{getTypeName()}}
+{\footnotesize\ttfamily Q\+String Db\+Manager\+::get\+Type\+Name (\begin{DoxyParamCaption}\item[{int}]{Type\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 201 of file dbmanager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_a6cb58e12049873e8b1b4b6ecd74dbfb6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_a6cb58e12049873e8b1b4b6ecd74dbfb6_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classDbManager_ade7585873652935bb12cb1ad546ceba2}{}\label{classDbManager_ade7585873652935bb12cb1ad546ceba2} 
+\index{Db\+Manager@{Db\+Manager}!get\+Types@{get\+Types}}
+\index{get\+Types@{get\+Types}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{get\+Types()}{getTypes()}}
+{\footnotesize\ttfamily Q\+String\+List Db\+Manager\+::get\+Types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 166 of file dbmanager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_ade7585873652935bb12cb1ad546ceba2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_ade7585873652935bb12cb1ad546ceba2_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classDbManager_a2d60ab2a556cf0276bf306c7545ed03d}{}\label{classDbManager_a2d60ab2a556cf0276bf306c7545ed03d} 
+\index{Db\+Manager@{Db\+Manager}!show\+Is\+Not\+Open\+Error@{show\+Is\+Not\+Open\+Error}}
+\index{show\+Is\+Not\+Open\+Error@{show\+Is\+Not\+Open\+Error}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{show\+Is\+Not\+Open\+Error()}{showIsNotOpenError()}}
+{\footnotesize\ttfamily void Db\+Manager\+::show\+Is\+Not\+Open\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 330 of file dbmanager.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_a2d60ab2a556cf0276bf306c7545ed03d_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classDbManager_a51a53e4f7776ca83da7fafe7036adf17}{}\label{classDbManager_a51a53e4f7776ca83da7fafe7036adf17} 
+\index{Db\+Manager@{Db\+Manager}!show\+Note@{show\+Note}}
+\index{show\+Note@{show\+Note}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{show\+Note()}{showNote()}}
+{\footnotesize\ttfamily Q\+String\+List Db\+Manager\+::show\+Note (\begin{DoxyParamCaption}\item[{int}]{Note\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 120 of file dbmanager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_a51a53e4f7776ca83da7fafe7036adf17_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_a51a53e4f7776ca83da7fafe7036adf17_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classDbManager_a67826fcd32d3921d1d1ae32ff3e9ce5d}{}\label{classDbManager_a67826fcd32d3921d1d1ae32ff3e9ce5d} 
+\index{Db\+Manager@{Db\+Manager}!show\+Notes@{show\+Notes}}
+\index{show\+Notes@{show\+Notes}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{show\+Notes()}{showNotes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Q\+Vector$<$ Q\+String\+List $>$ Db\+Manager\+::show\+Notes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 257 of file dbmanager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_a67826fcd32d3921d1d1ae32ff3e9ce5d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_a67826fcd32d3921d1d1ae32ff3e9ce5d_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classDbManager_a6e04515110041436021b5ee0f068eda2}{}\label{classDbManager_a6e04515110041436021b5ee0f068eda2} 
+\index{Db\+Manager@{Db\+Manager}!show\+Notes@{show\+Notes}}
+\index{show\+Notes@{show\+Notes}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{show\+Notes()}{showNotes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Q\+Vector$<$ Q\+String\+List $>$ Db\+Manager\+::show\+Notes (\begin{DoxyParamCaption}\item[{Q\+Map$<$ Q\+String, Q\+String $>$ \&}]{Filter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 295 of file dbmanager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDbManager_a6e04515110041436021b5ee0f068eda2_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDbManager_a3f6052f559a7a72eef66848ebc9f3eaa}{}\label{classDbManager_a3f6052f559a7a72eef66848ebc9f3eaa} 
+\index{Db\+Manager@{Db\+Manager}!Matty\+Notes\+Db@{Matty\+Notes\+Db}}
+\index{Matty\+Notes\+Db@{Matty\+Notes\+Db}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{Matty\+Notes\+Db}{MattyNotesDb}}
+{\footnotesize\ttfamily Q\+Sql\+Database Db\+Manager\+::\+Matty\+Notes\+Db\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 39 of file dbmanager.\+h.
+
+\hypertarget{classDbManager_aa3f62582e546ee853cebd75386e26736}{}\label{classDbManager_aa3f62582e546ee853cebd75386e26736} 
+\index{Db\+Manager@{Db\+Manager}!Path\+To\+Db@{Path\+To\+Db}}
+\index{Path\+To\+Db@{Path\+To\+Db}!Db\+Manager@{Db\+Manager}}
+\subsubsection{\texorpdfstring{Path\+To\+Db}{PathToDb}}
+{\footnotesize\ttfamily Q\+String Db\+Manager\+::\+Path\+To\+Db = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 40 of file dbmanager.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Ogrigorieva/\+Qt\+Creator/\+Matty\+Notes/\hyperlink{dbmanager_8h}{dbmanager.\+h}\item 
+C\+:/\+Users/\+Ogrigorieva/\+Qt\+Creator/\+Matty\+Notes/\hyperlink{dbmanager_8cpp}{dbmanager.\+cpp}\end{DoxyCompactItemize}
