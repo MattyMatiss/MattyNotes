@@ -51,7 +51,10 @@ HEADERS  += mattynotesmainwindow.h \
     mattystylesheeteditor.h \
     noteholder.h \
     queryconstructor.h \
-    utilityfunctions.h
+    utilityfunctions.h \
+    ../Build/ui_addnotedialog.h \
+    ../Build/ui_mattynotesmainwindow.h \
+    ../Build/ui_mattysettingsdialog.h
 
 FORMS    += mattynotesmainwindow.ui \
     addnotedialog.ui \
