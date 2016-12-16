@@ -33,9 +33,9 @@ void MattySettingsDialog::buildPages()
 {
     for (int i = MattySettingsDialogUi.stackedWidget->count(); i >= 0; i--)
     {
-        QWidget* widget = MattySettingsDialogUi.stackedWidget->widget(i);
-        MattySettingsDialogUi.stackedWidget->removeWidget(widget);
-        widget->deleteLater();
+        QWidget* oldwidget = MattySettingsDialogUi.stackedWidget->widget(i);
+        MattySettingsDialogUi.stackedWidget->removeWidget(oldwidget);
+        oldwidget->deleteLater();
     }
 
     MattySettingsDialogUi.stackedWidget->setMinimumWidth(250);

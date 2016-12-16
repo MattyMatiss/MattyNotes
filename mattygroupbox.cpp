@@ -80,12 +80,12 @@ void MattyGroupBox::buildFrame()
 
     gridLayout = new QGridLayout(this);
 
-    verticalLayout = new QVBoxLayout(this);
+    verticalLayout = new QVBoxLayout();
     verticalLayout->setSpacing(6);
     verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
 
-    horizontalLayout_1 = new QHBoxLayout(this);
-    horizontalLayout_2 = new QHBoxLayout(this);
+    horizontalLayout_1 = new QHBoxLayout();
+    horizontalLayout_2 = new QHBoxLayout();
 
     horizontalLayout_1->setSpacing(6);
     horizontalLayout_1->setObjectName(QStringLiteral("HorizontalLayout_1"));
