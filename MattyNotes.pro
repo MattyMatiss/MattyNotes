@@ -56,9 +56,6 @@ HEADERS  += mattynotesmainwindow.h \
     ../Build/ui_mattynotesmainwindow.h \
     ../Build/ui_mattysettingsdialog.h
 
-FORMS    += mattynotesmainwindow.ui \
-    addnotedialog.ui \
-    mattysettingsdialog.ui
 
 RESOURCES += \
     mattynotesmainwindow.qrc

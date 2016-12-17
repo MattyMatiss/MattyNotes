@@ -5,8 +5,14 @@
 #pragma once
 #endif // _MSC_VER
 
+#include <QtCore/QVariant>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QHeaderView>
+
 #include <QWidget>
-#include "ui_addnotedialog.h"
 #include "MattyNote.h"
 #include <QGridLayout>
 #include <QHBoxLayout>

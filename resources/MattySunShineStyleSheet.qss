@@ -53,7 +53,7 @@ QMenu, QComboBox, QAbstractItemView, QAbstractItemView, QDateEdit, QDateTime, QD
 #statusBar, QTextEdit, QPlainTextEdit { border-color: #d8d770; }
 
 /*MAIN BORDER IMAGE*/
-#MattyMessageBox, MattySettingsDialog, #addNoteDialog { border-image: url(:/MattyNotes/BorderImage.png) 10 repeat; border-color: transparent; }
+#MattyMessageBox, MattySettingsDialog, #addNoteDialog { border-image: url(:/All/resources/BorderImage.png) 10 repeat; border-color: transparent; }
 
 /*BORDER RADIUS 3*/
 /*QScrollBar { border-radius: 3px; }*/
