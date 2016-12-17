@@ -8,7 +8,7 @@
 #MattyGroupBox, #MattyMessageBox, QTextEdit, QPlainTextEdit, QComboBox, QDateTime, QDateTimeEdit, QSpinBox, #qt_calendar_navigationbar, QScrollBar:handle { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 250, 97, 1), stop:1 rgba(255, 221, 97, 1)); }
 
 /*MAIN TEXT COLOR*/
-#MotivatorLabel, #MainToolBar #WindowHeaderLabel, QPushButton:hover, MattyMessageBox, MattyGroupBox, addNoteDialog, QMenu, QCalendarWidget, QAbstractItemView {  color: #4d3f3d; }
+QLabel, QPushButton:hover, MattyMessageBox, MattyGroupBox, addNoteDialog, QMenu, QCalendarWidget, QAbstractItemView, QAbstractButton, QMenu::item {  color: #302b20; }
 
 /*SELECTION COLOR*/
 QTextEdit, QAbstractItemView, QMenu::item:selected, QDateEdit, QDateTime, QDateTimeEdit, QSpinBox, QComboBox, QLabel { selection-color: #000000; }
@@ -62,18 +62,19 @@ QMenu, QComboBox, QAbstractItemView, QAbstractItemView, QDateEdit, QDateTime, QD
 #MattyGroupBox, QTextEdit, QPlainTextEdit, #NoteOptionsWidget { border-radius: 15px; }
 
 /*FONT FAMILY*/
-QLabel, QPushButton, QTextEdit, QPlainTextEdit, MattyGroupBox, MattyMessageBox {  font-family: Comic Sans MS; }
+QLabel, QAbstractButton, QTextEdit, QPlainTextEdit, MattyGroupBox, MattyMessageBox, QAbstractItemView, QMenu, QSpinBox, QComboBox, QDateEdit, QDateTimeEdit, QTimeEdit {  font-family: Comic Sans MS; }
 
 /*FONT SIZES*/
-#MotivatorLabel { font-size: 13px; }
-#MattyMessageBox, #MattyGroupBox { font-size: 14px; }
-#WindowHeaderLabel { font-size: 16px; }
+QLabel, QTextBox, QTextEdit, QPlainTextEdit, QAbstractButton, QAbstractItemView, QMenu, QSpinBox, QComboBox, QDateEdit, QDateTimeEdit, QTimeEdit { font-size: 13px; }
+#MotivatorLabel { font-size: 14px !important; }
+#MattyGroupBox { font-size: 15px !important; }
+#WindowHeaderLabel { font-size: 16px !important; }
 
 /*BOLD*/
 #MotivatorLabel, #MainToolBar #WindowHeaderLabel, QPushButton, #NoteEventTimeAndDateLabel, #NoteTypeLabel, #noteTitleText, #MattyGroupBox { font-weight: bold; }
 
 /*ITALIC*/
-#MotivatorLabel, #MainToolBar #WindowHeaderLabel, QPushButton, #addNoteDialog QTextEdit, #MattyGroupBox QLabel, #MattyGroupBox { font-style: italic; }
+#MotivatorLabel, #MainToolBar #WindowHeaderLabel, #addNoteDialog QTextEdit, #MattyGroupBox { font-style: italic; }
 
 /*UNDERLINED*/
 #MattyGroupBox { text-decoration: underline; }

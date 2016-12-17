@@ -58,3 +58,5 @@ RESOURCES += \
     mattynotesmainwindow.qrc
 
 message($$OUT_PWD)
+
+DISTFILES +=

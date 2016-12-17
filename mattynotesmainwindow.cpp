@@ -13,8 +13,6 @@
 MattyNotesMainWindow::MattyNotesMainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
-    ui.setupUi(this);
-
     this->setWindowFlags(Qt::FramelessWindowHint);
     this->setContextMenuPolicy(Qt::NoContextMenu);
 
@@ -138,12 +136,20 @@ void MattyNotesMainWindow::connectToDb(const QString & PathToDb)
 
 void MattyNotesMainWindow::buildBody()
 {
-    MainGridLayout = new QGridLayout(ui.centralWidget);
+    this->setObjectName(QStringLiteral("MattyNotesMainWindowClass"));
+    this->resize(768, 553);
+    centralWidget = new QWidget(this);
+    centralWidget->setObjectName(QStringLiteral("centralWidget"));
+    this->setCentralWidget(centralWidget);
+
+    QMetaObject::connectSlotsByName(this);
+
+    MainGridLayout = new QGridLayout(centralWidget);
     MainGridLayout->setSpacing(6);
     //gridLayout_4->setContentsMargins(11, 11, 11, 11);
     MainGridLayout->setObjectName(QStringLiteral("gridLayout_4"));
 
-    MainSplitter = new QSplitter(ui.centralWidget);
+    MainSplitter = new QSplitter(centralWidget);
     MainSplitter->setObjectName(QStringLiteral("splitter"));
     MainSplitter->setOrientation(Qt::Horizontal);
 

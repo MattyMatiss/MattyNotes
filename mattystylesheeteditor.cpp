@@ -9,8 +9,8 @@ MattyStyleSheetEditor::MattyStyleSheetEditor()
 bool MattyStyleSheetEditor::setTheme(const QString & ThemeName)
 {
     bool ThemeFileOpened = false;
-    QString ThemeFileName = "resources/" + ThemeName + ".qss";
-    QFile styleFile(":/All/resources/MattySunShineStyleSheet.qss");
+    QString ThemeFileName = ThemeName + ".qss";
+    QFile styleFile("MattySunShineStyleSheet.qss");
 
     CurrentTheme = ThemeName;
 
