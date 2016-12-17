@@ -14,7 +14,37 @@
 #include <QSqlRecord>
 #include <QSqlTableModel>
 #include <QSqlError>
+#include <QString>
 
+struct RowNote
+{
+    RowNote()
+    {}
+
+    RowNote(int NoteIdIncm, QString NoteTitleIncm, QString NoteTypeIncm,
+            QString NoteTextIncm, QString EventTimeIncm, QString EventDateIncm,
+            QString CrTimeIncm, QString CtDateIncm, int TypeIdIncm)
+        : NoteId(NoteIdIncm),
+          NoteTitle(NoteTitleIncm),
+          NoteType(NoteTypeIncm),
+          NoteText(NoteTextIncm),
+          EventTime(EventTimeIncm),
+          EventDate(EventDateIncm),
+          CrTime(CrTimeIncm),
+          CrDate(CtDateIncm),
+          TipeId(TypeIdIncm)
+    {}
+
+    int NoteId;
+    QString NoteTitle;
+    QString NoteType;
+    QString NoteText;
+    QString EventTime;
+    QString EventDate;
+    QString CrTime;
+    QString CrDate;
+    int TipeId; // не работает в базе + потом при M:N вообще не нужен будет
+};
 
 class DbManager
 {
