@@ -16,8 +16,8 @@ bool DbManager::connect(const QString & path)
     MattyNotesDb = QSqlDatabase::addDatabase("QSQLITE");
     MattyNotesDb.setDatabaseName(path);
 
-  //  if(QFile::exists(path))
-  //  {
+    if(QFile::exists(path))
+    {
         if (!MattyNotesDb.open())
         {
             QMessageBox::critical(NULL, QObject::tr("Error"), MattyNotesDb.lastError().text());
@@ -31,11 +31,11 @@ bool DbManager::connect(const QString & path)
         }
 
         return true;
-  //  }
-   // else
-   // {
-   //     return false;
-   // }
+    }
+    else
+    {
+        return false;
+    }
 }
 
 

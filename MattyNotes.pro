@@ -52,9 +52,6 @@ HEADERS  += mattynotesmainwindow.h \
     noteholder.h \
     queryconstructor.h \
     utilityfunctions.h \
-    ../Build/ui_addnotedialog.h \
-    ../Build/ui_mattynotesmainwindow.h \
-    ../Build/ui_mattysettingsdialog.h
 
 
 RESOURCES += \

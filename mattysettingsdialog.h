@@ -25,8 +25,6 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHeaderView>
 
-//#include "ui_mattysettingsdialog.h"
-
 QT_BEGIN_NAMESPACE
 
 class Ui_MattySettingsDialog
@@ -58,13 +56,16 @@ public:
     void setupUi(QWidget *MattySettingsDialog)
     {
         if (MattySettingsDialog->objectName().isEmpty())
-            MattySettingsDialog->setObjectName(QStringLiteral("MattySettingsDialog"));
+            MattySettingsDialog->setObjectName
+                    (QStringLiteral("MattySettingsDialog"));
         MattySettingsDialog->resize(676, 548);
         gridLayout = new QGridLayout(MattySettingsDialog);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        verticalSpacer = new QSpacerItem(0, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        horizontalLayout_2->setObjectName
+                (QStringLiteral("horizontalLayout_2"));
+        verticalSpacer = new QSpacerItem
+                (0, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         horizontalLayout_2->addItem(verticalSpacer);
 
@@ -82,7 +83,8 @@ public:
         page->setObjectName(QStringLiteral("page"));
         gridLayout_2 = new QGridLayout(page);
         gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
-        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        horizontalSpacer_2 = new QSpacerItem
+                (40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout_2->addItem(horizontalSpacer_2, 4, 0, 1, 1);
 
@@ -138,45 +140,33 @@ public:
         gridLayout->addLayout(horizontalLayout_2, 0, 0, 1, 1);
 
         horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setObjectName
+                (QStringLiteral("horizontalLayout"));
         CancelSettingsButton = new QPushButton(MattySettingsDialog);
-        CancelSettingsButton->setObjectName(QStringLiteral("CancelSettingsButton"));
+        CancelSettingsButton->setObjectName
+                (QStringLiteral("CancelSettingsButton"));
 
         horizontalLayout->addWidget(CancelSettingsButton);
 
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        horizontalSpacer = new QSpacerItem
+                (40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout->addItem(horizontalSpacer);
 
         ApplySettingsButton = new QPushButton(MattySettingsDialog);
-        ApplySettingsButton->setObjectName(QStringLiteral("ApplySettingsButton"));
+        ApplySettingsButton->setObjectName
+                (QStringLiteral("ApplySettingsButton"));
 
         horizontalLayout->addWidget(ApplySettingsButton);
 
 
         gridLayout->addLayout(horizontalLayout, 1, 0, 1, 1);
 
-
-        retranslateUi(MattySettingsDialog);
-
         stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MattySettingsDialog);
     } // setupUi
-
-    void retranslateUi(QWidget *MattySettingsDialog)
-    {
-        MattySettingsDialog->setWindowTitle(QApplication::translate("MattySettingsDialog", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270", 0));
-        label->setText(QApplication::translate("MattySettingsDialog", "\320\222\321\213\320\261\320\265\321\200\320\270\321\202\320\265 \321\206\320\262\320\265\321\202\320\276\320\262\321\203\321\216 \321\201\321\205\320\265\320\274\321\203:", 0));
-        pushButton->setText(QApplication::translate("MattySettingsDialog", "\320\237\321\200\320\270\320\274\320\265\320\275\320\270\321\202\321\214", 0));
-        radioButton->setText(QApplication::translate("MattySettingsDialog", "\320\241\320\276\320\273\320\275\320\265\321\207\320\275\320\260\321\217", 0));
-        radioButton_2->setText(QApplication::translate("MattySettingsDialog", "\320\227\320\270\320\274\320\275\321\217\321\217", 0));
-        radioButton_3->setText(QApplication::translate("MattySettingsDialog", "\320\242\321\221\320\274\320\275\320\260\321\217", 0));
-        label_2->setText(QApplication::translate("MattySettingsDialog", "\320\230\320\273\320\270 \320\277\321\200\320\270\320\274\320\265\320\275\320\270\321\202\320\265 \321\201\320\276\320\261\321\201\321\202\320\262\320\265\320\275\320\275\321\213\320\271 \321\201\321\202\320\270\320\273\321\214, \320\262\321\201\321\202\320\260\320\262\320\270\320\262 css-\320\272\320\276\320\264:", 0));
-        CancelSettingsButton->setText(QString());
-        ApplySettingsButton->setText(QString());
-    } // retranslateUi
 
 };
 

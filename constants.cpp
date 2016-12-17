@@ -18,6 +18,11 @@ const int Constants::DateQStringLength = 10;
 const int Constants::PositionOfFirstDateSeparator = 2;
 const int Constants::PositionOfSecondDateSeparator = 5;
 
+void Constants::setPathToDb()
+{
+
+}
+
 void Constants::setPathToDb(MattyPathToDbType PathType)
 {
     switch (PathType)
@@ -26,10 +31,20 @@ void Constants::setPathToDb(MattyPathToDbType PathType)
         PathToDb = "C:\\Users\\Matty\\Documents\\Visual Studio 2015\\Projects\\Personal\\MattyNotes\\MattyNotes\\MattyNotes.sqlite";
         break;
     case WorkAbsolute:
-        PathToDb = "C:\\Users\\Ogrigorieva\\Visual Studio 2015\\Projects\\Personal\\MattyNotes\\MattyNotes.sqlite";
+        PathToDb = "C:/Users/Ogrigorieva/"
+                   "QtCreator/Build/debug/MattyNotes.sqlite";
         break;
-    case Relative:
+    case RelativeDEXE:
         PathToDb = "MattyNotes.sqlite";
+        break;
+    case RelativeREXE:
+        PathToDb = "MattyNotes.sqlite";
+        break;
+    case RelativeD:
+        PathToDb = "debug/MattyNotes.sqlite";
+        break;
+    case RelativeR:
+        PathToDb = "release/MattyNotes.sqlite";
         break;
     default:
         PathToDb = "MattyNotes.sqlite";

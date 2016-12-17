@@ -34,17 +34,19 @@ void MattySettingsDialog::buildPages()
     for (int i = MattySettingsDialogUi.stackedWidget->count(); i >= 0; i--)
     {
         QWidget* oldwidget = MattySettingsDialogUi.stackedWidget->widget(i);
-        MattySettingsDialogUi.stackedWidget->removeWidget(oldwidget);
-        oldwidget->deleteLater();
+        delete oldwidget;
     }
 
     MattySettingsDialogUi.stackedWidget->setMinimumWidth(250);
-    MattySettingsDialogUi.splitter->setStretchFactor(0, 1);
-    MattySettingsDialogUi.splitter->setStretchFactor(1, 5);
+    MattySettingsDialogUi.splitter->setStretchFactor(0, 2);
+    MattySettingsDialogUi.splitter->setStretchFactor(1, 4);
 
-    General = new QListWidgetItem(tr("General"), MattySettingsDialogUi.listWidget); // needtodelete ? parent?
-    Interface = new QListWidgetItem(tr("Interface"), MattySettingsDialogUi.listWidget);
-    Security = new QListWidgetItem(tr("Security"), MattySettingsDialogUi.listWidget);
+    General = new QListWidgetItem
+            (tr("General"), MattySettingsDialogUi.listWidget); //needtodelete?
+    Interface = new QListWidgetItem
+            (tr("Interface"), MattySettingsDialogUi.listWidget);
+    Security = new QListWidgetItem
+            (tr("Security"), MattySettingsDialogUi.listWidget);
 
     GeneralPageWidget = new QWidget(MattySettingsDialogUi.stackedWidget);
     InterfacePageWidget = new QWidget(MattySettingsDialogUi.stackedWidget);
@@ -64,16 +66,19 @@ void MattySettingsDialog::buildPages()
 void MattySettingsDialog::fillInterfacePage()
 {
     InterfacePageGridLayout = new QGridLayout(InterfacePageWidget);
-    InterfacePageGridLayout->setObjectName(QStringLiteral("InterfacePageGridLayout"));
+    InterfacePageGridLayout->setObjectName
+            (QStringLiteral("InterfacePageGridLayout"));
 
     ChooseThemeLabel = new QLabel(InterfacePageWidget);
     ChooseThemeLabel->setObjectName(QStringLiteral("ChooseThemeLabel"));
     ChooseThemeLabel->setText("Выберите цветовую схему:");
     InterfacePageGridLayout->addWidget(ChooseThemeLabel, 0, 0, 1, 1);
 
-    ThemeRadioButtonVerticalLayout = new QVBoxLayout(InterfacePageWidget);
-    ThemeRadioButtonVerticalLayout->setObjectName(QStringLiteral("ThemeRadioButtonVerticalLayout"));
-    InterfacePageGridLayout->addLayout(ThemeRadioButtonVerticalLayout, 1, 0, 1, 1);
+    ThemeRadioButtonVerticalLayout = new QVBoxLayout();
+    ThemeRadioButtonVerticalLayout->setObjectName
+            (QStringLiteral("ThemeRadioButtonVerticalLayout"));
+    InterfacePageGridLayout->addLayout
+            (ThemeRadioButtonVerticalLayout, 1, 0, 1, 1);
 
     SunShineRadioButton = new QRadioButton(InterfacePageWidget);
     SunShineRadioButton->setObjectName(QStringLiteral("SunShineRadioButton"));
@@ -108,7 +113,8 @@ void MattySettingsDialog::fillInterfacePage()
     InterfacePageGridLayout->
         addWidget(CssCodePlainTextEdit, 3, 0, 1, 2);
 
-    HorizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+    HorizontalSpacer = new QSpacerItem
+            (40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
     InterfacePageGridLayout->
         addItem(HorizontalSpacer, 4, 0, 1, 1);
 
@@ -129,7 +135,8 @@ void MattySettingsDialog::mousePressEvent(QMouseEvent *event)
 
 void MattySettingsDialog::mouseMoveEvent(QMouseEvent *event)
 {
-    move(event->globalX() - m_nMouseClick_X_Coordinate, event->globalY() - m_nMouseClick_Y_Coordinate);
+    move(event->globalX() - m_nMouseClick_X_Coordinate,
+         event->globalY() - m_nMouseClick_Y_Coordinate);
 }
 
 MattySettingsDialog::~MattySettingsDialog()

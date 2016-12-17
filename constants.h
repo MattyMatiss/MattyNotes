@@ -7,12 +7,13 @@
 
 #include <QString>
 
-enum MattyPathToDbType { HomeAbsolute, WorkAbsolute, Relative };
+enum MattyPathToDbType { HomeAbsolute, WorkAbsolute, RelativeDEXE,
+                       RelativeREXE, RelativeD, RelativeR };
 
 class Constants
 {
 public:
-
+    static void setPathToDb();
     static void setPathToDb(MattyPathToDbType PathType);
     static void setPathToDb(const QString & Path);
     static QString getPathTODb();

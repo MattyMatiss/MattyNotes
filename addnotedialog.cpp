@@ -8,7 +8,8 @@
 #include "QueryConstructor.h"
 #include "mattymessagebox.h"
 
-addNoteDialog::addNoteDialog(Action DialogTypeIncm, int EditingNoteIdIncm)
+addNoteDialog::addNoteDialog(Action DialogTypeIncm, int EditingNoteIdIncm,
+                             QWidget *parent) : QDialog(parent)
 {
     addNoteDialogUi.setupUi(this);
     this->setWindowFlags(Qt::FramelessWindowHint);

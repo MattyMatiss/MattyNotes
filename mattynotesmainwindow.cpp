@@ -8,6 +8,7 @@
 #include "MattyClocks.h"
 #include "mattysettingsdialog.h"
 #include "MattyStyleSheetEditor.h"
+#include "mattymessagebox.h"
 
 MattyNotesMainWindow::MattyNotesMainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -103,11 +104,36 @@ void MattyNotesMainWindow::mouseMoveEvent(QMouseEvent *event)
 void MattyNotesMainWindow::connectToDb(const QString & PathToDb)
 {
     if (PathToDb == "")
-        Constants::setPathToDb(Relative);
-    else
-        Constants::setPathToDb(PathToDb);
+    {
+        Constants::setPathToDb(RelativeREXE);
 
-    DbManager::connect(Constants::getPathTODb());
+        if(!DbManager::connect(Constants::getPathTODb()))
+        {
+            Constants::setPathToDb(RelativeDEXE);
+
+            if(!DbManager::connect(Constants::getPathTODb()))
+            {
+                Constants::setPathToDb(RelativeR);
+
+                if(!DbManager::connect(Constants::getPathTODb()))
+                {
+                    Constants::setPathToDb(RelativeD);
+
+                    if(!DbManager::connect(Constants::getPathTODb()))
+                    {
+                       MattyMessageBox DbNotFound(MessageBoxWarning);
+                       DbNotFound.setText("База данных не найдена");
+                    }
+                }
+            }
+        }
+    }
+
+    else
+    {
+        Constants::setPathToDb(PathToDb);
+        DbManager::connect(Constants::getPathTODb());
+    }
 }
 
 void MattyNotesMainWindow::buildBody()

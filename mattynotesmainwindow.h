@@ -23,15 +23,8 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         MattyNotesMainWindowClass->setCentralWidget(centralWidget);
 
-        retranslateUi(MattyNotesMainWindowClass);
-
         QMetaObject::connectSlotsByName(MattyNotesMainWindowClass);
     } // setupUi
-
-    void retranslateUi(QMainWindow *MattyNotesMainWindowClass)
-    {
-        MattyNotesMainWindowClass->setWindowTitle(QApplication::translate("MattyNotesMainWindowClass", "MattyNotes", 0));
-    } // retranslateUi
 
 };
 
