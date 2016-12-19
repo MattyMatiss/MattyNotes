@@ -1,8 +1,8 @@
-#include "NoteHolder.h"
-#include "MattyGroupBox.h"
-#include "MattyNote.h"
-#include "DbManager.h"
-#include "Constants.h"
+#include "noteholder.h"
+#include "mattygroupbox.h"
+#include "mattynote.h"
+#include "dbmanager.h"
+#include "constants.h"
 
 int NoteHolder::TotalNoteCount = 0;
 QVector<class MattyNote> NoteHolder::ListOfAllNotes = QVector<class MattyNote>();

@@ -5,8 +5,8 @@
 #pragma once
 #endif // _MSC_VER
 
-#include "MattyNote.h"
-#include "QueryConstructor.h"
+#include "mattynote.h"
+#include "queryconstructor.h"
 
 #include <QMessageBox>
 #include <QSqlDatabase>

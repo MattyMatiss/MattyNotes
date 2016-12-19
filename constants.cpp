@@ -1,4 +1,4 @@
-#include "Constants.h"
+#include "constants.h"
 
 #include <QFileInfo>
 

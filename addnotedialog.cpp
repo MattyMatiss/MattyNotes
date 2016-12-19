@@ -1,11 +1,11 @@
 #include "addnotedialog.h"
-#include "DbManager.h"
-#include "MattyNote.h"
-#include "UtilityFunctions.h"
+#include "dbmanager.h"
+#include "mattynote.h"
+#include "utilityfunctions.h"
 #include "mattynotesmainwindow.h"
-#include "NoteHolder.h"
-#include "Constants.h"
-#include "QueryConstructor.h"
+#include "noteholder.h"
+#include "constants.h"
+#include "queryconstructor.h"
 #include "mattymessagebox.h"
 
 addNoteDialog::addNoteDialog(Action DialogTypeIncm, int EditingNoteIdIncm,

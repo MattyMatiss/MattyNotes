@@ -13,7 +13,6 @@
 #include <QtWidgets/QHeaderView>
 
 #include <QWidget>
-#include "MattyNote.h"
 #include <QGridLayout>
 #include <QHBoxLayout>
 #include <QTextEdit>
@@ -21,6 +20,8 @@
 #include <QTimeEdit>
 #include <QDateEdit>
 #include <QPushButton>
+
+#include "mattynote.h"
 
 enum Action { Add, Edit };
 

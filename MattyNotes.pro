@@ -39,11 +39,12 @@ SOURCES += main.cpp\
     queryconstructor.cpp \
     utilityfunctions.cpp
 
-HEADERS  += mattynotesmainwindow.h \
+HEADERS  += \
+    dbmanager.h \
+    mattynotesmainwindow.h \
     addnotedialog.h \
     mattysettingsdialog.h \
     constants.h \
-    dbmanager.h \
     mattyclocks.h \
     mattygroupbox.h \
     mattymessagebox.h \
@@ -52,7 +53,6 @@ HEADERS  += mattynotesmainwindow.h \
     noteholder.h \
     queryconstructor.h \
     utilityfunctions.h \
-
 
 RESOURCES += \
     mattynotesmainwindow.qrc

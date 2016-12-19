@@ -1,5 +1,5 @@
-#include "DbManager.h"
-#include "QueryConstructor.h"
+#include "dbmanager.h"
+#include "queryconstructor.h"
 
 #include <QFile>
 

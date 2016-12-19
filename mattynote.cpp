@@ -1,6 +1,6 @@
-#include "MattyNote.h"
-#include "Constants.h"
-#include "DbManager.h"
+#include "mattynote.h"
+#include "constants.h"
+#include "dbmanager.h"
 
 MattyNote::MattyNote()
 {

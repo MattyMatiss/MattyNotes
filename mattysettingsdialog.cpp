@@ -1,4 +1,4 @@
-#include "MattySettingsDialog.h"
+#include "mattysettingsdialog.h"
 
 MattySettingsDialog::MattySettingsDialog(QWidget * parent) : QDialog(parent)
 {

@@ -1,4 +1,4 @@
-#include "MattyStyleSheetEditor.h"
+#include "mattystylesheeteditor.h"
 
 QString MattyStyleSheetEditor::CurrentTheme = "MattySunShineStyleSheet";
 

@@ -1,9 +1,9 @@
-#include "MattyGroupBox.h"
-#include "MattyNote.h"
-#include "DbManager.h"
+#include "mattygroupbox.h"
+#include "mattynote.h"
+#include "dbmanager.h"
 #include "addnotedialog.h"
 #include "mattymessagebox.h"
-#include "NoteHolder.h"
+#include "noteholder.h"
 #include "mattynotesmainwindow.h"
 #include <QMessageBox>
 #include <QGraphicsDropShadowEffect>
