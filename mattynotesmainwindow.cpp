@@ -103,25 +103,20 @@ void MattyNotesMainWindow::connectToDb(const QString & PathToDb)
 {
     if (PathToDb == "")
     {
-        Constants::setPathToDb(RelativeREXE);
+        Constants::setPathToDb(WorkAbsolute);
 
         if(!DbManager::connect(Constants::getPathTODb()))
         {
-            Constants::setPathToDb(RelativeDEXE);
+            Constants::setPathToDb(HomeAbsolute);
 
             if(!DbManager::connect(Constants::getPathTODb()))
             {
-                Constants::setPathToDb(RelativeR);
+                Constants::setPathToDb(Relative);
 
                 if(!DbManager::connect(Constants::getPathTODb()))
                 {
-                    Constants::setPathToDb(RelativeD);
-
-                    if(!DbManager::connect(Constants::getPathTODb()))
-                    {
-                       MattyMessageBox DbNotFound(MessageBoxWarning);
-                       DbNotFound.setText("База данных не найдена");
-                    }
+                    MattyMessageBox DbNotFound(MessageBoxWarning);
+                    DbNotFound.setText("База данных не найдена");
                 }
             }
         }
