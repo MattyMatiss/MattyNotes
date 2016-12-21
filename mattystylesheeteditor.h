@@ -19,7 +19,9 @@ public:
 
     static bool setTheme(const QString & ThemeName);
     static bool setTheme(DefaultTheme ThemeName);
-    static bool refreshTheme();
+    static bool reloadCssFromQss();
+    static bool composeStylesAndMoveFromDbToQss();
+    static bool createQssFile(const QString& UserCssIncm);
 
     ~MattyStyleSheetEditor();
 

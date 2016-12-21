@@ -11,6 +11,20 @@ DbManager::DbManager()
 
 }
 
+bool DbManager::connected()
+{
+    if (MattyNotesDb.open())
+    {
+        return true;
+    }
+    else
+    {
+        showIsNotOpenedError();
+        MattyNotesDb.close();
+        return false;
+    }
+}
+
 bool DbManager::connect(const QString & path)
 {
     MattyNotesDb = QSqlDatabase::addDatabase("QSQLITE");
@@ -20,7 +34,7 @@ bool DbManager::connect(const QString & path)
     {
         if (!MattyNotesDb.open())
         {
-            QMessageBox::critical(NULL, QObject::tr("Error"), MattyNotesDb.lastError().text());
+            showIsNotOpenedError();
             MattyNotesDb.close();
 
             return false;
@@ -41,7 +55,7 @@ bool DbManager::connect(const QString & path)
 
 bool DbManager::addNote(MattyNote & Note)
 {
-    if (MattyNotesDb.isOpen())
+    if (connected())
     {
         QMap<QString, QString> NoteTemp;
         NoteTemp["NoteTitle"] = "\'" + Note.getTitle() + "\'";
@@ -63,14 +77,13 @@ bool DbManager::addNote(MattyNote & Note)
     }
     else
     {
-        showIsNotOpenError();
         return false;
     }
 }
 
 bool DbManager::editNote(MattyNote & Note, int NoteId)
 {
-    if (MattyNotesDb.isOpen())
+    if (connected())
     {
         QueryConstructor Edit;
         Edit.setTableName(QStringLiteral("Notes"));
@@ -94,14 +107,13 @@ bool DbManager::editNote(MattyNote & Note, int NoteId)
     }
     else
     {
-        showIsNotOpenError();
         return false;
     }
 }
 
 bool DbManager::deleteNote(int NoteId)
 {
-    if (MattyNotesDb.isOpen())
+    if (connected())
     {
         QueryConstructor Delete;
         Delete.setTableName(QStringLiteral("Notes"));
@@ -112,14 +124,15 @@ bool DbManager::deleteNote(int NoteId)
     }
     else
     {
-        showIsNotOpenError();
         return false;
     }
 }
 
-QStringList DbManager::showNote(int NoteId)
+MattyNoteRow DbManager::showNote(int NoteId)
 {
-    if (MattyNotesDb.isOpen())
+    MattyNoteRow Row;
+
+    if (connected())
     {
         QueryConstructor Show;
         Show.setTableName(QStringLiteral("Notes"));
@@ -129,25 +142,23 @@ QStringList DbManager::showNote(int NoteId)
         showNoteQuery.exec(Show.constructSelectQuery());
         showNoteQuery.next();
 
-        QStringList Fields;
-
-        for (int i = 0;i < 9;i++)
-        {
-            Fields.push_back(showNoteQuery.value(i).toString());
-        }
-
-        return Fields;
+        Row.NoteId=showNoteQuery.value("NoteId").toInt();
+        Row.NoteTitle=showNoteQuery.value("NoteTitle").toString();
+        Row.NoteType=showNoteQuery.value("NoteType").toString();
+        Row.NoteText=showNoteQuery.value("NoteText").toString();
+        Row.EventTime=showNoteQuery.value("EventTime").toString();
+        Row.EventDate=showNoteQuery.value("EventDate").toString();
+        Row.CrTime=showNoteQuery.value("CrTime").toString();
+        Row.CrDate=showNoteQuery.value("CrDate").toString();
+        Row.TypeId=showNoteQuery.value("TypeId").toInt();
     }
-    else
-    {
-        showIsNotOpenError();
-        return QStringList();
-    }
+
+    return Row;
 }
 
 QSqlTableModel* DbManager::getModel(const QString & TableName) // needtodelete wherever it's called
 {
-    if (MattyNotesDb.isOpen())
+    if (connected())
     {
         QSqlTableModel* MattyNotesModel = new QSqlTableModel();
         MattyNotesModel->setEditStrategy(QSqlTableModel::OnManualSubmit);
@@ -158,14 +169,13 @@ QSqlTableModel* DbManager::getModel(const QString & TableName) // needtodelete w
 
     else
     {
-        showIsNotOpenError();
         return new QSqlTableModel();
     }
 }
 
 QStringList DbManager::getTypes()
 {
-    if (MattyNotesDb.isOpen())
+    if (connected())
     {
         QStringList NoteTypes;
         QSqlQuery getTypeQuery;
@@ -193,14 +203,13 @@ QStringList DbManager::getTypes()
     }
     else
     {
-        showIsNotOpenError();
         return QStringList();
     }
 }
 
 QString DbManager::getTypeName(int TypeId)
 {
-    if (MattyNotesDb.isOpen())
+    if (connected())
     {
         QString TypeName;
         QSqlQuery getTypeQuery;
@@ -212,14 +221,13 @@ QString DbManager::getTypeName(int TypeId)
     }
     else
     {
-        showIsNotOpenError();
         return QString();
     }
 }
 
 int DbManager::getTypeId(const QString & TypeName)
 {
-    if (MattyNotesDb.isOpen())
+    if (connected())
     {
         int TypeId = 0;
         QSqlQuery getTypeQuery;
@@ -231,14 +239,13 @@ int DbManager::getTypeId(const QString & TypeName)
     }
     else
     {
-        showIsNotOpenError();
         return 0;
     }
 }
 
 int DbManager::getNoteCount()
 {
-    if (MattyNotesDb.isOpen())
+    if (connected())
     {
         int NoteCount = 0;
         QSqlQuery getNoteCount;
@@ -249,14 +256,13 @@ int DbManager::getNoteCount()
     }
     else
     {
-        showIsNotOpenError();
         return 0;
     }
 }
 
-QVector<QStringList> DbManager::showNotes()
+/*QVector<QStringList> DbManager::showNotes()
 {
-    if (MattyNotesDb.isOpen())
+    if (connected())
     {
         QVector<QStringList> VectorOfNotes;
 
@@ -266,9 +272,9 @@ QVector<QStringList> DbManager::showNotes()
 
         QSqlQuery getNotesQuery(MattyNotesDb);
 
-        if( getNotesQuery.exec(SelectAll.constructSelectQuery())) // возвращает false
+        if( getNotesQuery.exec(SelectAll.constructSelectQuery()))
         {
-            while (getNotesQuery.next()) // соответственно тоже возвращает false
+            while (getNotesQuery.next())
             {
                 QStringList Fields;
                 for (int i = 0;i < 9;i++)
@@ -280,21 +286,64 @@ QVector<QStringList> DbManager::showNotes()
         }
         else
         {
-            QMessageBox::critical(NULL, QObject::tr("Error"), getNotesQuery.lastError().text()); // no such table. Unable to execute statement
+            QMessageBox::critical(NULL, QObject::tr("Error"), getNotesQuery.lastError().text());
         }
 
         return VectorOfNotes;
     }
     else
     {
-        showIsNotOpenError();
         return QVector<QStringList>();
+    }
+}*/
+
+QVector<MattyNoteRow> DbManager::showNotes()
+{
+    if (connected())
+    {
+        QVector<MattyNoteRow> VectorOfNoteRows;
+
+        QueryConstructor SelectAllNotes;
+        SelectAllNotes.setTableName(QStringLiteral("Notes"));
+        SelectAllNotes.setOrderByClause("NoteId", Descending);
+
+        QSqlQuery getAllNotesQuery(MattyNotesDb);
+
+        if( getAllNotesQuery.exec(SelectAllNotes.constructSelectQuery()))
+        {
+            while (getAllNotesQuery.next())
+            {
+                MattyNoteRow Row;
+
+                Row.NoteId=getAllNotesQuery.value("NoteId").toInt();
+                Row.NoteTitle=getAllNotesQuery.value("NoteTitle").toString();
+                Row.NoteType=getAllNotesQuery.value("NoteType").toString();
+                Row.NoteText=getAllNotesQuery.value("NoteText").toString();
+                Row.EventTime=getAllNotesQuery.value("EventTime").toString();
+                Row.EventDate=getAllNotesQuery.value("EventDate").toString();
+                Row.CrTime=getAllNotesQuery.value("CrTime").toString();
+                Row.CrDate=getAllNotesQuery.value("CrDate").toString();
+                Row.TypeId=getAllNotesQuery.value("TypeId").toInt();
+
+                VectorOfNoteRows.push_back(Row);
+            }
+        }
+        else
+        {
+            QMessageBox::critical(NULL, QObject::tr("Error"), getAllNotesQuery.lastError().text());
+        }
+
+        return VectorOfNoteRows;
+    }
+    else
+    {
+        return QVector<MattyNoteRow>();
     }
 }
 
-QVector<QStringList> DbManager::showNotes(QMap<QString, QString> & Filter)
+QVector<MattyNoteRow> DbManager::showNotes(QMap<QString, QString> & Filter)
 {
-    if (MattyNotesDb.isOpen())
+    if (connected())
     {
         QueryConstructor GetNotes;
         GetNotes.setTableName(QStringLiteral("Notes"));
@@ -307,35 +356,50 @@ QVector<QStringList> DbManager::showNotes(QMap<QString, QString> & Filter)
             QMessageBox::critical(NULL, QObject::tr("Error"), MattyNotesDb.lastError().text());
         }
 
-        QVector<QStringList> VectorOfNotes;
+        QVector<MattyNoteRow> VectorOfNotes;
 
         while (getNotesQuery.next())
         {
-            QStringList Fields;
-            for (int i = 0;i < 9;i++)
-            {
-                Fields.push_back(getNotesQuery.value(i).toString());
-            }
-            VectorOfNotes.push_back(Fields);
+            MattyNoteRow Row;
+
+            Row.NoteId=getNotesQuery.value("NoteId").toInt();
+            Row.NoteTitle=getNotesQuery.value("NoteTitle").toString();
+            Row.NoteType=getNotesQuery.value("NoteType").toString();
+            Row.NoteText=getNotesQuery.value("NoteText").toString();
+            Row.EventTime=getNotesQuery.value("EventTime").toString();
+            Row.EventDate=getNotesQuery.value("EventDate").toString();
+            Row.CrTime=getNotesQuery.value("CrTime").toString();
+            Row.CrDate=getNotesQuery.value("CrDate").toString();
+            Row.TypeId=getNotesQuery.value("TypeId").toInt();
+
+
+            VectorOfNotes.push_back(Row);
         }
         return VectorOfNotes;
     }
     else
     {
-        showIsNotOpenError();
-        return QVector<QStringList>();
+        return QVector<MattyNoteRow>();
     }
 }
 
-void DbManager::showIsNotOpenError()
+void DbManager::showIsNotOpenedError()
 {
     QString DbName = MattyNotesDb.databaseName();
 
     if (DbName == "")
-        QMessageBox::critical(NULL, QObject::tr("Error"), "Internal code error. Database name is not set.");
+        QMessageBox::critical(NULL, QObject::tr("Error"), "Internal program error. Database name is not set./n Please, contact developers.");
     else
-        QMessageBox::critical(NULL, QObject::tr("Error"), "Database " + DbName + " could not be opened. Please, check whether the file is still there");
+        QMessageBox::critical(NULL, QObject::tr("Error"), "Database " + DbName + " could not be opened. Please, check whether the file is still there/n" +
+                              MattyNotesDb.lastError().text());
 }
+
+/*QVector<MattyCssRow> DbManager::getCss(CssTables TableName)
+{
+    QueryConstructor getCssQuery;
+    getCssQuery.setTableName(TableName);
+    // тут разбор прилетов всего содержимого таблицы. ПО ИМЕНАМ ПОЛЕЙ, А НЕ НОМЕРАМ
+}*/
 
 DbManager::~DbManager()
 {

@@ -61,7 +61,7 @@ void MattyNotesMainWindow::minimizeWindow()
 
 void MattyNotesMainWindow::refreshMainWindow()
 {
-    MattyStyleSheetEditor::refreshTheme();
+    MattyStyleSheetEditor::reloadCssFromQss();
     NoteHolder::publishNotes(GroupBoxScrollAreaWidgetContents);
 }
 
