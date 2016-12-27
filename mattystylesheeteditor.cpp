@@ -1,4 +1,6 @@
-#include "MattyStyleSheetEditor.h"
+#include "mattystylesheeteditor.h"
+#include "dbmanager.h"
+
 
 QString MattyStyleSheetEditor::CurrentTheme = "MattySunShineStyleSheet";
 
@@ -9,8 +11,8 @@ MattyStyleSheetEditor::MattyStyleSheetEditor()
 bool MattyStyleSheetEditor::setTheme(const QString & ThemeName)
 {
     bool ThemeFileOpened = false;
-    QString ThemeFileName = "resources/" + ThemeName + ".qss";
-    QFile styleFile(":/All/resources/MattySunShineStyleSheet.qss");
+    QString ThemeFileName = ThemeName + ".qss";
+    QFile styleFile(ThemeFileName);
 
     CurrentTheme = ThemeName;
 
@@ -62,9 +64,29 @@ bool MattyStyleSheetEditor::setTheme(DefaultTheme ThemeName)
     return ThemeFileOpened;
 }
 
-bool MattyStyleSheetEditor::refreshTheme()
+bool MattyStyleSheetEditor::reloadCssFromQss()
 {
     return setTheme(CurrentTheme);
+}
+
+bool MattyStyleSheetEditor::composeStylesAndMoveFromDbToQss()
+{
+    if(DbManager::connected())
+    {
+
+        return true;
+    }
+
+    else
+    {
+        return false;
+    }
+}
+
+bool MattyStyleSheetEditor::createQssFile(const QString& UserCssIncm)
+{
+
+    return false;
 }
 
 MattyStyleSheetEditor::~MattyStyleSheetEditor()

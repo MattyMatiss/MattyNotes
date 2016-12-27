@@ -12,7 +12,7 @@ enum MattyPathToDbType { HomeAbsolute, WorkAbsolute, Relative };
 class Constants
 {
 public:
-
+    static void setPathToDb();
     static void setPathToDb(MattyPathToDbType PathType);
     static void setPathToDb(const QString & Path);
     static QString getPathTODb();

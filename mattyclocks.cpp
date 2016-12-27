@@ -1,4 +1,4 @@
-#include "MattyClocks.h"
+#include "mattyclocks.h"
 
 #include <QTimer>
 #include <QTime>

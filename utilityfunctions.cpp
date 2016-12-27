@@ -1,5 +1,5 @@
-#include "UtilityFunctions.h"
-#include "Constants.h"
+#include "utilityfunctions.h"
+#include "constants.h"
 
 UtilityFunctions::UtilityFunctions()
 {

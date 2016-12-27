@@ -5,8 +5,6 @@
 #pragma once
 #endif // _MSC_VER
 
-#include "MattyNote.h"
-
 #include <QGroupBox>
 #include <QLabel>
 #include <QSpacerItem>
@@ -15,6 +13,8 @@
 #include <QVBoxLayout>
 #include <QGridLayout>
 #include <QWidget>
+
+#include "mattynote.h"
 
 class MattyGroupBox :
     public QGroupBox

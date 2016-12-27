@@ -1,19 +1,18 @@
 #include "mattynotesmainwindow.h"
-#include "DbManager.h"
-#include "MattyNote.h"
+#include "dbmanager.h"
+#include "mattynote.h"
 #include "addnotedialog.h"
-#include "MattyGroupBox.h"
-#include "NoteHolder.h"
-#include "Constants.h"
-#include "MattyClocks.h"
+#include "mattygroupbox.h"
+#include "noteholder.h"
+#include "constants.h"
+#include "mattyclocks.h"
 #include "mattysettingsdialog.h"
-#include "MattyStyleSheetEditor.h"
+#include "mattystylesheeteditor.h"
+#include "mattymessagebox.h"
 
 MattyNotesMainWindow::MattyNotesMainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
-    ui.setupUi(this);
-
     this->setWindowFlags(Qt::FramelessWindowHint);
     this->setContextMenuPolicy(Qt::NoContextMenu);
 
@@ -62,7 +61,7 @@ void MattyNotesMainWindow::minimizeWindow()
 
 void MattyNotesMainWindow::refreshMainWindow()
 {
-    MattyStyleSheetEditor::refreshTheme();
+    MattyStyleSheetEditor::reloadCssFromQss();
     NoteHolder::publishNotes(GroupBoxScrollAreaWidgetContents);
 }
 
@@ -103,21 +102,49 @@ void MattyNotesMainWindow::mouseMoveEvent(QMouseEvent *event)
 void MattyNotesMainWindow::connectToDb(const QString & PathToDb)
 {
     if (PathToDb == "")
-        Constants::setPathToDb(Relative);
-    else
-        Constants::setPathToDb(PathToDb);
+    {
+        Constants::setPathToDb(WorkAbsolute);
 
-    DbManager::connect(Constants::getPathTODb());
+        if(!DbManager::connect(Constants::getPathTODb()))
+        {
+            Constants::setPathToDb(HomeAbsolute);
+
+            if(!DbManager::connect(Constants::getPathTODb()))
+            {
+                Constants::setPathToDb(Relative);
+
+                if(!DbManager::connect(Constants::getPathTODb()))
+                {
+                    MattyMessageBox DbNotFound(MessageBoxWarning);
+                    DbNotFound.setText("База данных не найдена");
+                }
+            }
+        }
+    }
+
+    else
+    {
+        Constants::setPathToDb(PathToDb);
+        DbManager::connect(Constants::getPathTODb());
+    }
 }
 
 void MattyNotesMainWindow::buildBody()
 {
-    MainGridLayout = new QGridLayout(ui.centralWidget);
+    this->setObjectName(QStringLiteral("MattyNotesMainWindowClass"));
+    this->resize(768, 553);
+    centralWidget = new QWidget(this);
+    centralWidget->setObjectName(QStringLiteral("centralWidget"));
+    this->setCentralWidget(centralWidget);
+
+    QMetaObject::connectSlotsByName(this);
+
+    MainGridLayout = new QGridLayout(centralWidget);
     MainGridLayout->setSpacing(6);
     //gridLayout_4->setContentsMargins(11, 11, 11, 11);
     MainGridLayout->setObjectName(QStringLiteral("gridLayout_4"));
 
-    MainSplitter = new QSplitter(ui.centralWidget);
+    MainSplitter = new QSplitter(centralWidget);
     MainSplitter->setObjectName(QStringLiteral("splitter"));
     MainSplitter->setOrientation(Qt::Horizontal);
 

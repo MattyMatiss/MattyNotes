@@ -1,4 +1,4 @@
-#include "Constants.h"
+#include "constants.h"
 
 #include <QFileInfo>
 
@@ -18,18 +18,23 @@ const int Constants::DateQStringLength = 10;
 const int Constants::PositionOfFirstDateSeparator = 2;
 const int Constants::PositionOfSecondDateSeparator = 5;
 
+void Constants::setPathToDb()
+{
+
+}
+
 void Constants::setPathToDb(MattyPathToDbType PathType)
 {
     switch (PathType)
     {
     case HomeAbsolute:
-        PathToDb = "C:\\Users\\Matty\\Documents\\Visual Studio 2015\\Projects\\Personal\\MattyNotes\\MattyNotes\\MattyNotes.sqlite";
+        PathToDb = "/home/matty/Документы/Qt/qt-proj/MattyNotes/MattyNotes.sqlite";
         break;
     case WorkAbsolute:
-        PathToDb = "C:\\Users\\Ogrigorieva\\Visual Studio 2015\\Projects\\Personal\\MattyNotes\\MattyNotes.sqlite";
+        PathToDb = "C:/Users/Ogrigorieva/QtCreator/qt-proj/MattyNotes/MattyNotes.sqlite";
         break;
     case Relative:
-        PathToDb = "QtCreator/MattyNotes/MattyNotes.sqlite";
+        PathToDb = "MattyNotes.sqlite";
         break;
     default:
         PathToDb = "MattyNotes.sqlite";

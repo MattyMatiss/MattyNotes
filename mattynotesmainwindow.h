@@ -7,40 +7,6 @@
 
 #include <QtWidgets>
 
-QT_BEGIN_NAMESPACE
-
-class Ui_MattyNotesMainWindowClass
-{
-public:
-    QWidget *centralWidget;
-
-    void setupUi(QMainWindow *MattyNotesMainWindowClass)
-    {
-        if (MattyNotesMainWindowClass->objectName().isEmpty())
-            MattyNotesMainWindowClass->setObjectName(QStringLiteral("MattyNotesMainWindowClass"));
-        MattyNotesMainWindowClass->resize(768, 553);
-        centralWidget = new QWidget(MattyNotesMainWindowClass);
-        centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        MattyNotesMainWindowClass->setCentralWidget(centralWidget);
-
-        retranslateUi(MattyNotesMainWindowClass);
-
-        QMetaObject::connectSlotsByName(MattyNotesMainWindowClass);
-    } // setupUi
-
-    void retranslateUi(QMainWindow *MattyNotesMainWindowClass)
-    {
-        MattyNotesMainWindowClass->setWindowTitle(QApplication::translate("MattyNotesMainWindowClass", "MattyNotes", 0));
-    } // retranslateUi
-
-};
-
-namespace Ui {
-    class MattyNotesMainWindowClass: public Ui_MattyNotesMainWindowClass {};
-} // namespace Ui
-
-QT_END_NAMESPACE
-
 class MattyNotesMainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -50,10 +16,7 @@ public:
 
     ~MattyNotesMainWindow();
 
-
-
 private:
-    Ui::MattyNotesMainWindowClass ui;
 
     // menuBar:
     QMenuBar *menuBar; // IsNotUsed
@@ -79,6 +42,7 @@ private:
     QPushButton *AddNoteButton;
 
     // centralWidget:
+    QWidget *centralWidget;
     QGridLayout *MainGridLayout;
     // Splitter:
     QSplitter *MainSplitter;

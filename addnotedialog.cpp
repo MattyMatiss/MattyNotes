@@ -1,24 +1,26 @@
 #include "addnotedialog.h"
-#include "DbManager.h"
-#include "MattyNote.h"
-#include "UtilityFunctions.h"
+#include "dbmanager.h"
+#include "mattynote.h"
+#include "utilityfunctions.h"
 #include "mattynotesmainwindow.h"
-#include "NoteHolder.h"
-#include "Constants.h"
-#include "QueryConstructor.h"
+#include "noteholder.h"
+#include "constants.h"
+#include "queryconstructor.h"
 #include "mattymessagebox.h"
 
-addNoteDialog::addNoteDialog(Action DialogTypeIncm, int EditingNoteIdIncm)
+addNoteDialog::addNoteDialog(Action DialogTypeIncm, int EditingNoteIdIncm,
+                             QWidget *parent) : QDialog(parent)
 {
-    addNoteDialogUi.setupUi(this);
     this->setWindowFlags(Qt::FramelessWindowHint);
     //this->setAttribute(Qt::WA_DeleteOnClose); пытается удалить что-то, что уже было удалено
 
-    addNoteDialogUi.noteTypeComboBox->clear();
-    addNoteDialogUi.noteTypeComboBox->addItems(DbManager::getTypes());
+    buildBody();
 
-    addNoteDialogUi.eventTimeEdit->setTime(QTime::currentTime());
-    addNoteDialogUi.eventDateEdit->setDate(QDate::currentDate());
+    noteTypeComboBox->clear();
+    noteTypeComboBox->addItems(DbManager::getTypes());
+
+    eventTimeEdit->setTime(QTime::currentTime());
+    eventDateEdit->setDate(QDate::currentDate());
 
     EditingNoteId = EditingNoteIdIncm;
 
@@ -30,11 +32,11 @@ addNoteDialog::addNoteDialog(Action DialogTypeIncm, int EditingNoteIdIncm)
 
         ThisDialogNote.constructNote(DbManager::showNote(EditingNoteId));
 
-        addNoteDialogUi.noteTitleText->setText(ThisDialogNote.getTitle());
-        addNoteDialogUi.noteTypeComboBox->setCurrentText(ThisDialogNote.getType());
-        addNoteDialogUi.noteTextText->setText(ThisDialogNote.getText());
-        addNoteDialogUi.eventTimeEdit->setTime(QTime::fromString(ThisDialogNote.getEventTime()));
-        addNoteDialogUi.eventDateEdit->setDate(QDate::fromString(ThisDialogNote.getEventDate()));
+        noteTitleText->setText(ThisDialogNote.getTitle());
+        noteTypeComboBox->setCurrentText(ThisDialogNote.getType());
+        noteTextText->setText(ThisDialogNote.getText());
+        eventTimeEdit->setTime(QTime::fromString(ThisDialogNote.getEventTime()));
+       eventDateEdit->setDate(QDate::fromString(ThisDialogNote.getEventDate()));
     }
     else
     {
@@ -48,8 +50,85 @@ addNoteDialog::addNoteDialog(Action DialogTypeIncm, int EditingNoteIdIncm)
     QObject::connect(SaveNote, SIGNAL(triggered()), this, SLOT(on_createNoteButton_clicked()));
 }
 
-addNoteDialog::~addNoteDialog()
+void addNoteDialog::buildBody()
 {
+    this->setObjectName(QStringLiteral("addNoteDialog"));
+this->resize(539, 525);
+gridLayout = new QGridLayout(this);
+gridLayout->setSpacing(6);
+gridLayout->setContentsMargins(11, 11, 11, 11);
+gridLayout->setObjectName(QStringLiteral("gridLayout"));
+noteTitleText = new QTextEdit(this);
+noteTitleText->setObjectName(QStringLiteral("noteTitleText"));
+noteTitleText->setMaximumSize(QSize(16777215, 31));
+
+gridLayout->addWidget(noteTitleText, 0, 0, 1, 1);
+
+horizontalLayout = new QHBoxLayout();
+horizontalLayout->setSpacing(6);
+horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+horizontalSpacer_5 = new QSpacerItem
+        (40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+horizontalLayout->addItem(horizontalSpacer_5);
+
+noteTypeComboBox = new QComboBox(this);
+noteTypeComboBox->setObjectName(QStringLiteral("noteTypeComboBox"));
+noteTypeComboBox->setMinimumSize(QSize(150, 0));
+
+horizontalLayout->addWidget(noteTypeComboBox);
+
+eventTimeEdit = new QTimeEdit(this);
+eventTimeEdit->setObjectName(QStringLiteral("eventTimeEdit"));
+eventTimeEdit->setCalendarPopup(false);
+
+horizontalLayout->addWidget(eventTimeEdit);
+
+eventDateEdit = new QDateEdit(this);
+eventDateEdit->setObjectName(QStringLiteral("eventDateEdit"));
+eventDateEdit->setCalendarPopup(true);
+eventDateEdit->setDate(QDate(2016, 11, 1));
+
+horizontalLayout->addWidget(eventDateEdit);
+
+horizontalSpacer_2 = new QSpacerItem
+        (40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+horizontalLayout->addItem(horizontalSpacer_2);
+
+
+gridLayout->addLayout(horizontalLayout, 1, 0, 1, 1);
+
+noteTextText = new QTextEdit(this);
+noteTextText->setObjectName(QStringLiteral("noteTextText"));
+noteTextText->setMaximumSize(QSize(16777215, 16777215));
+
+gridLayout->addWidget(noteTextText, 2, 0, 1, 1);
+
+horizontalLayout_5 = new QHBoxLayout();
+horizontalLayout_5->setSpacing(6);
+horizontalLayout_5->setObjectName
+        (QStringLiteral("horizontalLayout_5"));
+cancelAddingNoteButton = new QPushButton(this);
+cancelAddingNoteButton->setObjectName
+        (QStringLiteral("cancelAddingNoteButton"));
+
+horizontalLayout_5->addWidget(cancelAddingNoteButton);
+
+horizontalSpacer_6 = new QSpacerItem
+        (40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+horizontalLayout_5->addItem(horizontalSpacer_6);
+
+createNoteButton = new QPushButton(this);
+createNoteButton->setObjectName(QStringLiteral("createNoteButton"));
+
+horizontalLayout_5->addWidget(createNoteButton);
+
+
+gridLayout->addLayout(horizontalLayout_5, 3, 0, 1, 1);
+
+QMetaObject::connectSlotsByName(this);
 }
 
 void addNoteDialog::on_cancelAddingNoteButton_clicked()
@@ -67,13 +146,13 @@ void addNoteDialog::on_cancelAddingNoteButton_clicked()
 
 void addNoteDialog::on_createNoteButton_clicked()
 {
-    if (addNoteDialogUi.noteTitleText->toPlainText() != "")
+    if (noteTitleText->toPlainText() != "")
     {
-        ThisDialogNote.setTitle(addNoteDialogUi.noteTitleText->toPlainText());
-        ThisDialogNote.setType(addNoteDialogUi.noteTypeComboBox->currentText());
-        ThisDialogNote.setText(addNoteDialogUi.noteTextText->toPlainText());
-        ThisDialogNote.setEventTime(addNoteDialogUi.eventTimeEdit->text());
-        ThisDialogNote.setEventDate(addNoteDialogUi.eventDateEdit->text());
+        ThisDialogNote.setTitle(noteTitleText->toPlainText());
+        ThisDialogNote.setType(noteTypeComboBox->currentText());
+        ThisDialogNote.setText(noteTextText->toPlainText());
+        ThisDialogNote.setEventTime(eventTimeEdit->text());
+        ThisDialogNote.setEventDate(eventDateEdit->text());
 
         if (DialogType == Add)
         {
@@ -94,7 +173,7 @@ void addNoteDialog::on_createNoteButton_clicked()
         MattyMessageBox NeedToEnterTitle(MessageBoxInformation);
         NeedToEnterTitle.setText("У заметки обязательно должен быть заголовок!");
         NeedToEnterTitle.exec();
-        addNoteDialogUi.noteTitleText->setFocus();
+        noteTitleText->setFocus();
     }
 }
 
@@ -107,4 +186,8 @@ void addNoteDialog::mousePressEvent(QMouseEvent *event)
 void addNoteDialog::mouseMoveEvent(QMouseEvent *event)
 {
     move(event->globalX() - m_nMouseClick_X_Coordinate, event->globalY() - m_nMouseClick_Y_Coordinate);
+}
+
+addNoteDialog::~addNoteDialog()
+{
 }

@@ -12,11 +12,11 @@ class MattyNote
 {
 public:
     MattyNote();
-    MattyNote(QStringList RowFromDb);
+    MattyNote(struct MattyNoteRow RowFromDb);
 
     ~MattyNote();
 
-    void constructNote(QStringList RowFromDb);
+    void constructNote(struct MattyNoteRow RowFromDb);
 
     void setTitle(const QString & Title);
     void setType(const QString & TypeName);

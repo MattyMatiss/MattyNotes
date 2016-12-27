@@ -1,21 +1,3 @@
-/*MAIN BACKGROUND FILL*/
-#MattyNotesMainWindowClass, #MattySettingsDialog, #addNoteDialog { background-color: qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 255), stop:0.375 rgba(255, 255, 0, 255), stop:0.423533 rgba(251, 255, 0, 255), stop:0.45 rgba(247, 255, 0, 255), stop:0.477581 rgba(255, 244, 71, 255), stop:0.518717 rgba(255, 218, 71, 255), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 255), stop:0.625 rgba(255, 255, 0, 255), stop:1 rgba(255, 255, 0, 255)); }
-
-/*MAIN BACKGROUND COLOR*/
-#MainToolBar, #MattyToolBar, #statusBar, #listWidget, #NoteOptionsWidget, QAbstractItemView, QMenu, QScrollBar { background-color: rgb(255, 255, 127); }
-
-/*NOTE BACKGROUND*/
-#MattyGroupBox, #MattyMessageBox, QTextEdit, QPlainTextEdit, QComboBox, QDateTime, QDateTimeEdit, QSpinBox, #qt_calendar_navigationbar, QScrollBar:handle { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 250, 97, 1), stop:1 rgba(255, 221, 97, 1)); }
-
-/*MAIN TEXT COLOR*/
-QLabel, QPushButton:hover, MattyMessageBox, MattyGroupBox, addNoteDialog, QMenu, QCalendarWidget, QAbstractItemView, QAbstractButton, QMenu::item {  color: #302b20; }
-
-/*SELECTION COLOR*/
-QTextEdit, QAbstractItemView, QMenu::item:selected, QDateEdit, QDateTime, QDateTimeEdit, QSpinBox, QComboBox, QLabel { selection-color: #000000; }
-
-/*SELECTION BACKGROUND COLOR*/
-QTextEdit, QAbstractItemView, QMenu::item:selected, QDateEdit, QDateTime, QDateTimeEdit, QSpinBox, QComboBox, QLabel { selection-background-color: #fffced; }
-
 /*SELECTION BORDER*/
 QComboBox QAbstractItemView { outline: 0px; }
 
@@ -46,12 +28,6 @@ QMenu, QComboBox, QAbstractItemView, QAbstractItemView, QDateEdit, QDateTime, QD
 /*BORDER 4 PX*/
 #MattyMessageBox, MattySettingsDialog, #addNoteDialog { border-width: 4px; }
 
-/*DARK BORDER COLOR*/
-#NoteOptionsWidget, QMenu, QComboBox, QAbstractItemView, QDateEdit, QDateTime, QDateTimeEdit, QSpinBox  { border-color: #9b9a63; }
-
-/*LIGHT BORDER COLOR*/
-#statusBar, QTextEdit, QPlainTextEdit { border-color: #d8d770; }
-
 /*MAIN BORDER IMAGE*/
 #MattyMessageBox, MattySettingsDialog, #addNoteDialog { border-image: url(:/All/resources/BorderImage.png) 10 repeat; border-color: transparent; }
 
@@ -60,15 +36,6 @@ QMenu, QComboBox, QAbstractItemView, QAbstractItemView, QDateEdit, QDateTime, QD
 
 /*BORDER RADIUS 15*/
 #MattyGroupBox, QTextEdit, QPlainTextEdit, #NoteOptionsWidget { border-radius: 15px; }
-
-/*FONT FAMILY*/
-QLabel, QAbstractButton, QTextEdit, QPlainTextEdit, MattyGroupBox, MattyMessageBox, QAbstractItemView, QMenu, QSpinBox, QComboBox, QDateEdit, QDateTimeEdit, QTimeEdit {  font-family: Comic Sans MS; }
-
-/*FONT SIZES*/
-QLabel, QTextBox, QTextEdit, QPlainTextEdit, QAbstractButton, QAbstractItemView, QMenu, QSpinBox, QComboBox, QDateEdit, QDateTimeEdit, QTimeEdit { font-size: 13px; }
-#MotivatorLabel { font-size: 14px !important; }
-#MattyGroupBox { font-size: 15px !important; }
-#WindowHeaderLabel { font-size: 16px !important; }
 
 /*BOLD*/
 #MotivatorLabel, #MainToolBar #WindowHeaderLabel, QPushButton, #NoteEventTimeAndDateLabel, #NoteTypeLabel, #noteTitleText, #MattyGroupBox { font-weight: bold; }

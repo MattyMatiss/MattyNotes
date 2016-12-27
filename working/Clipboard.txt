@@ -1,3 +1,6 @@
+HomeAbsolute, WorkAbsolute, RelativeDEXE,
+                       RelativeREXE, RelativeD, RelativeR
+
 да кнопка
 "QPushButton { background-color: transparent;"
  "background-image: url(:/MattyNotes/ApplyAdding.png);"

@@ -1,8 +1,8 @@
-#include "NoteHolder.h"
-#include "MattyGroupBox.h"
-#include "MattyNote.h"
-#include "DbManager.h"
-#include "Constants.h"
+#include "noteholder.h"
+#include "mattygroupbox.h"
+#include "mattynote.h"
+#include "dbmanager.h"
+#include "constants.h"
 
 int NoteHolder::TotalNoteCount = 0;
 QVector<class MattyNote> NoteHolder::ListOfAllNotes = QVector<class MattyNote>();
@@ -48,7 +48,7 @@ void NoteHolder::getAllNotes()
     if (!ListOfAllNotes.isEmpty())
         ListOfAllNotes.clear();
 
-    QVector<QStringList> ListOfRows = DbManager::showNotes();
+    QVector<struct MattyNoteRow> ListOfRows = DbManager::showNotes();
 
     for (int i = 0; i < ListOfRows.length();i++)
     {
@@ -64,7 +64,7 @@ void NoteHolder::getSelectedNotes() // пока не отичается от get
 
     QMap<QString, QString> Filter; // это потом заменить на метод, обрабатывающий запросы пользователя на сортировку
 
-    QVector<QStringList> ListOfRows = DbManager::showNotes(Filter);
+    QVector<MattyNoteRow> ListOfRows = DbManager::showNotes(Filter);
 
     if (!ListOfAllNotes.isEmpty())
         ListOfAllNotes.clear();

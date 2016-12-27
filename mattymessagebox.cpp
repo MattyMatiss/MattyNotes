@@ -17,7 +17,7 @@ MattyMessageBox::MattyMessageBox(Type Type, QWidget *parent)
         this->setStandardButtons(QMessageBox::Ok);
         this->button(QMessageBox::Ok)->setObjectName(QStringLiteral("okButton"));
 
-        MattyIcon.load(":/MattyNotes/InformationCircled.png");
+        MattyIcon.load(":All/resources/InformationCircled.png");
 
         break;
 
@@ -26,7 +26,7 @@ MattyMessageBox::MattyMessageBox(Type Type, QWidget *parent)
         this->setStandardButtons(QMessageBox::Ok);
         this->button(QMessageBox::Ok)->setObjectName(QStringLiteral("okButton"));
 
-        MattyIcon.load(":/MattyNotes/WarningTriangled.png");
+        MattyIcon.load(":All/resources/WarningTriangled.png");
 
         break;
 
@@ -36,7 +36,7 @@ MattyMessageBox::MattyMessageBox(Type Type, QWidget *parent)
         this->button(QMessageBox::Yes)->setObjectName(QStringLiteral("yesButton"));
         this->button(QMessageBox::No)->setObjectName(QStringLiteral("noButton"));
 
-        MattyIcon.load(":/MattyNotes/QuestionSquared.png");
+        MattyIcon.load(":All/resources/QuestionSquared.png");
 
         break;
     }

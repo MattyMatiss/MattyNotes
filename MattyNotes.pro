@@ -39,11 +39,12 @@ SOURCES += main.cpp\
     queryconstructor.cpp \
     utilityfunctions.cpp
 
-HEADERS  += mattynotesmainwindow.h \
+HEADERS  += \
+    dbmanager.h \
+    mattynotesmainwindow.h \
     addnotedialog.h \
     mattysettingsdialog.h \
     constants.h \
-    dbmanager.h \
     mattyclocks.h \
     mattygroupbox.h \
     mattymessagebox.h \
@@ -51,13 +52,11 @@ HEADERS  += mattynotesmainwindow.h \
     mattystylesheeteditor.h \
     noteholder.h \
     queryconstructor.h \
-    utilityfunctions.h
-
-FORMS    += mattynotesmainwindow.ui \
-    addnotedialog.ui \
-    mattysettingsdialog.ui
+    utilityfunctions.h \
 
 RESOURCES += \
     mattynotesmainwindow.qrc
 
 message($$OUT_PWD)
+
+CONFIG -= debug_and_release debug_and_release_target

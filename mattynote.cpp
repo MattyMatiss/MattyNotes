@@ -1,6 +1,6 @@
-#include "MattyNote.h"
-#include "Constants.h"
-#include "DbManager.h"
+#include "mattynote.h"
+#include "constants.h"
+#include "dbmanager.h"
 
 MattyNote::MattyNote()
 {
@@ -9,34 +9,34 @@ MattyNote::MattyNote()
     NoteCrDate = CrTimeAndDate.date().toString("d MMM yyyy, ddd");
 }
 
-MattyNote::MattyNote(QStringList RowFromDb)
+MattyNote::MattyNote(MattyNoteRow RowFromDb)
 {
-    NoteId = RowFromDb[0].toInt();
-    NoteTitle = RowFromDb[1];
-    NoteType = RowFromDb[2];
-    NoteText = RowFromDb[3];
-    setEventTime(RowFromDb[4]);
-    setEventDate(RowFromDb[5]);
-    NoteCrTime = RowFromDb[6];
-    NoteCrDate = RowFromDb[7];
-    NoteTypeId = RowFromDb[8].toInt();
+    NoteId = RowFromDb.NoteId;
+    NoteTitle = RowFromDb.NoteTitle;
+    NoteType = RowFromDb.NoteType;
+    NoteText = RowFromDb.NoteText;
+    setEventTime(RowFromDb.EventTime);
+    setEventDate(RowFromDb.EventDate);
+    NoteCrTime = RowFromDb.CrTime;
+    NoteCrDate = RowFromDb.CrDate;
+    NoteTypeId = RowFromDb.TypeId;
 }
 
 MattyNote::~MattyNote()
 {
 }
 
-void MattyNote::constructNote(QStringList RowFromDb)
+void MattyNote::constructNote(MattyNoteRow RowFromDb)
 {
-    NoteId = RowFromDb[0].toInt();
-    NoteTitle = RowFromDb[1];
-    NoteType = RowFromDb[2];
-    NoteText = RowFromDb[3];
-    setEventTime(RowFromDb[4]);
-    setEventDate(RowFromDb[5]);
-    NoteCrTime = RowFromDb[6];
-    NoteCrDate = RowFromDb[7];
-    NoteTypeId = RowFromDb[8].toInt();
+    NoteId = RowFromDb.NoteId;
+    NoteTitle = RowFromDb.NoteTitle;
+    NoteType = RowFromDb.NoteType;
+    NoteText = RowFromDb.NoteText;
+    setEventTime(RowFromDb.EventTime);
+    setEventDate(RowFromDb.EventDate);
+    NoteCrTime = RowFromDb.CrTime;
+    NoteCrDate = RowFromDb.CrDate;
+    NoteTypeId = RowFromDb.TypeId;
 }
 
 void MattyNote::setTitle(const QString & Title)
