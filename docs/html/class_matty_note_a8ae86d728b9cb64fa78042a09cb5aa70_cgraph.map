@@ -1,0 +1,5 @@
+<map id="MattyNote::setType" name="MattyNote::setType">
+<area shape="rect" id="node2" href="$class_db_manager.html#a6cb58e12049873e8b1b4b6ecd74dbfb6" title="DbManager::getTypeName" alt="" coords="192,13,371,39"/>
+<area shape="rect" id="node3" href="$class_db_manager.html#a42939729261d4c90644fd6a5fd0d70d3" title="DbManager::connected" alt="" coords="419,13,576,39"/>
+<area shape="rect" id="node4" href="$class_db_manager.html#adacc32b7691062fef95171aeab5e8903" title="DbManager::showIsNotOpened\lError" alt="" coords="624,5,829,47"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="DbManager::showNotes" name="DbManager::showNotes">
+<area shape="rect" id="node2" href="$class_note_holder.html#a53853f7b183e262eb165bdb3af8f3e45" title="NoteHolder::getAllNotes" alt="" coords="234,46,398,73"/>
+<area shape="rect" id="node9" href="$class_note_holder.html#ab4709f2b857351ba118201a159c5cd6c" title="NoteHolder::getSelectedNotes" alt="" coords="216,97,416,123"/>
+<area shape="rect" id="node3" href="$class_note_holder.html#abb4a2d19ddace4d652cfda5becd03302" title="NoteHolder::publishNotes" alt="" coords="464,46,636,73"/>
+<area shape="rect" id="node4" href="$class_matty_notes_main_window.html#af77c5a79f0a941dbb980776df6a8b1eb" title="MattyNotesMainWindow\l::addNote" alt="" coords="684,5,849,47"/>
+<area shape="rect" id="node7" href="$class_matty_notes_main_window.html#a12025cd56092bb34c6451a92197b69a1" title="MattyNotesMainWindow\l::refreshMainWindow" alt="" coords="684,71,849,112"/>
+<area shape="rect" id="node5" href="$class_matty_notes_main_window.html#a1736856c4d60ba43f973d5bd627f0ec0" title="MattyNotesMainWindow\l::setConnects" alt="" coords="898,8,1063,49"/>
+<area shape="rect" id="node6" href="$class_matty_notes_main_window.html#aa788ae37a712be6e1ea281c349342908" title="MattyNotesMainWindow\l::MattyNotesMainWindow" alt="" coords="1112,37,1285,79"/>
+<area shape="rect" id="node8" href="$class_matty_notes_main_window.html#acb9472c3ba8430272c29864b5d046ea3" title="MattyNotesMainWindow\l::WindowActivatedEvent" alt="" coords="897,125,1064,167"/>
+</map>

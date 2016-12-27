@@ -1,0 +1,6 @@
+<map id="MattyNote::getNoteId" name="MattyNote::getNoteId">
+<area shape="rect" id="node2" href="$class_matty_group_box.html#a446df41d130f1d6a411f35d80d62b055" title="MattyGroupBox::editNote" alt="" coords="217,5,387,32"/>
+<area shape="rect" id="node4" href="$class_matty_group_box.html#ac7b7f1db6ea96e4c4b0f58fb87f86900" title="MattyGroupBox::deleteNote" alt="" coords="210,56,394,83"/>
+<area shape="rect" id="node5" href="$class_matty_group_box.html#af5eee7ea107159615e3d23dd43cc9ff4" title="MattyGroupBox::mouseDouble\lClickEvent" alt="" coords="201,107,403,149"/>
+<area shape="rect" id="node3" href="$class_matty_group_box.html#a3445932bd0e2d39d640cc9457580c39e" title="MattyGroupBox::MattyGroupBox" alt="" coords="451,31,663,57"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="MattyNotesMainWindow::connectToDb" name="MattyNotesMainWindow::connectToDb">
+<area shape="rect" id="node2" href="$class_constants.html#a8e8a615d22819b445a9ca6250aaddd08" title="Constants::setPathToDb" alt="" coords="221,5,387,32"/>
+<area shape="rect" id="node3" href="$class_db_manager.html#abc90b3bf97dda268b4160a0662305898" title="DbManager::connect" alt="" coords="233,56,375,83"/>
+<area shape="rect" id="node5" href="$class_constants.html#ac74d671466a62e47fa4e431dbc569ba1" title="Constants::getPathTODb" alt="" coords="219,107,389,133"/>
+<area shape="rect" id="node4" href="$class_db_manager.html#adacc32b7691062fef95171aeab5e8903" title="DbManager::showIsNotOpened\lError" alt="" coords="437,49,643,90"/>
+</map>

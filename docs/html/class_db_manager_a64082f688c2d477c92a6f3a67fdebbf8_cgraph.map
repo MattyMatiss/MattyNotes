@@ -1,0 +1,6 @@
+<map id="DbManager::showNotes" name="DbManager::showNotes">
+<area shape="rect" id="node2" href="$class_db_manager.html#a42939729261d4c90644fd6a5fd0d70d3" title="DbManager::connected" alt="" coords="247,13,404,39"/>
+<area shape="rect" id="node4" href="$class_query_constructor.html#ad1b13fbc7d8c55e384c992852f755008" title="QueryConstructor::setTableName" alt="" coords="216,63,435,90"/>
+<area shape="rect" id="node5" href="$class_query_constructor.html#a304819b8f851385fa6925cc273ccc94d" title="QueryConstructor::setWhere\lFieldValue" alt="" coords="231,115,420,156"/>
+<area shape="rect" id="node3" href="$class_db_manager.html#adacc32b7691062fef95171aeab5e8903" title="DbManager::showIsNotOpened\lError" alt="" coords="483,5,688,47"/>
+</map>

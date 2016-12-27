@@ -1,0 +1,15 @@
+<map id="MattyNotesMainWindow::WindowActivatedEvent" name="MattyNotesMainWindow::WindowActivatedEvent">
+<area shape="rect" id="node2" href="$class_matty_notes_main_window.html#a12025cd56092bb34c6451a92197b69a1" title="MattyNotesMainWindow\l::refreshMainWindow" alt="" coords="220,40,385,81"/>
+<area shape="rect" id="node3" href="$class_matty_style_sheet_editor.html#abe6c7273e15a62c5f170bec00f539823" title="MattyStyleSheetEditor\l::reloadCssFromQss" alt="" coords="443,9,596,51"/>
+<area shape="rect" id="node5" href="$class_note_holder.html#abb4a2d19ddace4d652cfda5becd03302" title="NoteHolder::publishNotes" alt="" coords="433,78,605,105"/>
+<area shape="rect" id="node4" href="$class_matty_style_sheet_editor.html#aec3ccdf356aab4c3156562465e779498" title="MattyStyleSheetEditor\l::setTheme" alt="" coords="669,5,823,47"/>
+<area shape="rect" id="node6" href="$class_note_holder.html#a4559ef4141f902ae5712052084c6187e" title="NoteHolder::erasePublished\lNotes" alt="" coords="653,71,839,112"/>
+<area shape="rect" id="node7" href="$class_note_holder.html#a53853f7b183e262eb165bdb3af8f3e45" title="NoteHolder::getAllNotes" alt="" coords="664,137,828,163"/>
+<area shape="rect" id="node8" href="$class_db_manager.html#a6ac14828f37470d4feed38c9641b9922" title="DbManager::showNotes" alt="" coords="887,137,1049,163"/>
+<area shape="rect" id="node9" href="$class_db_manager.html#a42939729261d4c90644fd6a5fd0d70d3" title="DbManager::connected" alt="" coords="1128,57,1285,83"/>
+<area shape="rect" id="node11" href="$class_query_constructor.html#ad1b13fbc7d8c55e384c992852f755008" title="QueryConstructor::setTableName" alt="" coords="1097,107,1316,134"/>
+<area shape="rect" id="node12" href="$class_query_constructor.html#a096ed5c85c40851db92a7f45405df4cd" title="QueryConstructor::setOrder\lByClause" alt="" coords="1115,159,1298,200"/>
+<area shape="rect" id="node13" href="$class_query_constructor.html#ae832ca3bc59df18cb8ef08fc1d9fd75f" title="QueryConstructor::construct\lSelectQuery" alt="" coords="1113,224,1300,265"/>
+<area shape="rect" id="node10" href="$class_db_manager.html#adacc32b7691062fef95171aeab5e8903" title="DbManager::showIsNotOpened\lError" alt="" coords="1364,49,1569,91"/>
+<area shape="rect" id="node14" href="$class_query_constructor.html#a7c864e227c2e76cc40a887314d43a0fe" title="QueryConstructor::construct\lWhereEqualsClause" alt="" coords="1373,224,1560,265"/>
+</map>

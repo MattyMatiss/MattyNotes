@@ -1,0 +1,28 @@
+var class_matty_group_box =
+[
+    [ "MattyGroupBox", "class_matty_group_box.html#a3445932bd0e2d39d640cc9457580c39e", null ],
+    [ "~MattyGroupBox", "class_matty_group_box.html#acf5f5023cf210a83e9846a35b149dd70", null ],
+    [ "buildFrame", "class_matty_group_box.html#ae9862aae672bd2cf4a99da541beef696", null ],
+    [ "changeExpandHideMode", "class_matty_group_box.html#acb2b6f0d418195c1a9838f4c3565378f", null ],
+    [ "deleteNote", "class_matty_group_box.html#ac7b7f1db6ea96e4c4b0f58fb87f86900", null ],
+    [ "editNote", "class_matty_group_box.html#a446df41d130f1d6a411f35d80d62b055", null ],
+    [ "expandNote", "class_matty_group_box.html#a9797e81eba743d81cf8f45758921d8e7", null ],
+    [ "fillFrame", "class_matty_group_box.html#a982e84ed3ae5f61b542269e9b5e8ebba", null ],
+    [ "hideNote", "class_matty_group_box.html#ad96bd7663326b7b3e15c67455ccea32a", null ],
+    [ "mouseDoubleClickEvent", "class_matty_group_box.html#af5eee7ea107159615e3d23dd43cc9ff4", null ],
+    [ "deleteNoteButton", "class_matty_group_box.html#ab51a570cfe8b06f8ae06a7163fb09d4f", null ],
+    [ "editNoteButton", "class_matty_group_box.html#a3237eef2287c1b2fcff14d226ef9116d", null ],
+    [ "gridLayout", "class_matty_group_box.html#a02436c3690d2007eb0cba523bcb668ea", null ],
+    [ "horizontalLayout_1", "class_matty_group_box.html#a5d52dd2e01ba1a5d155e056ea438f142", null ],
+    [ "horizontalLayout_2", "class_matty_group_box.html#a053f7794bcd10214414d41e9c09663e0", null ],
+    [ "horizontalLineWidget", "class_matty_group_box.html#a34f61735914e5235c4bf58841e647f06", null ],
+    [ "horizontalSpacer_1", "class_matty_group_box.html#a6b2678b09a3c56c18f357775e83b76c0", null ],
+    [ "horizontalSpacer_2", "class_matty_group_box.html#a633d989baf5de2db6d0c01702ba6b410", null ],
+    [ "NoteCrTimeAndDateLabel", "class_matty_group_box.html#a1a71503d5ede703b934e4f02d932a038", null ],
+    [ "NoteEventTimeAndDateLabel", "class_matty_group_box.html#a97b192413385021b01b34db7493f8b49", null ],
+    [ "NoteTextLabel", "class_matty_group_box.html#a2243d04d95c060e516fa3a43f09f19ef", null ],
+    [ "NoteTypeLabel", "class_matty_group_box.html#a7bd564ef71ea2331a316d2fc6792ef09", null ],
+    [ "ThisGroupBoxNote", "class_matty_group_box.html#a00ca2ef39a0b5aca9e83373777bed395", null ],
+    [ "verticalLayout", "class_matty_group_box.html#a2fc280283ef68a61828fe26007c949f1", null ],
+    [ "verticalSpacer", "class_matty_group_box.html#ae622d8330b00272995af1d41ce037b4c", null ]
+];

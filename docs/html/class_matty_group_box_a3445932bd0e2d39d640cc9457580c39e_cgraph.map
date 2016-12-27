@@ -1,0 +1,27 @@
+<map id="MattyGroupBox::MattyGroupBox" name="MattyGroupBox::MattyGroupBox">
+<area shape="rect" id="node2" href="$class_matty_group_box.html#ae9862aae672bd2cf4a99da541beef696" title="MattyGroupBox::buildFrame" alt="" coords="265,208,451,235"/>
+<area shape="rect" id="node3" href="$class_matty_group_box.html#a982e84ed3ae5f61b542269e9b5e8ebba" title="MattyGroupBox::fillFrame" alt="" coords="523,233,694,260"/>
+<area shape="rect" id="node11" href="$class_matty_group_box.html#ac7b7f1db6ea96e4c4b0f58fb87f86900" title="MattyGroupBox::deleteNote" alt="" coords="266,259,450,285"/>
+<area shape="rect" id="node21" href="$class_matty_group_box.html#a446df41d130f1d6a411f35d80d62b055" title="MattyGroupBox::editNote" alt="" coords="273,427,443,453"/>
+<area shape="rect" id="node4" href="$class_matty_note.html#ac4dfe8978f721a55e34809a42c229cae" title="MattyNote::getTitle" alt="" coords="809,5,943,32"/>
+<area shape="rect" id="node5" href="$class_matty_note.html#a16e61ae2edfbbea88445db2e36742650" title="MattyNote::getType" alt="" coords="807,107,945,133"/>
+<area shape="rect" id="node6" href="$class_matty_note.html#a27f706483d1ea9810edd6000325084cd" title="MattyNote::getText" alt="" coords="809,208,943,235"/>
+<area shape="rect" id="node7" href="$class_matty_note.html#a96b94f00d655bd3f6752165e5654f1cf" title="MattyNote::getCrDate" alt="" coords="801,259,951,285"/>
+<area shape="rect" id="node8" href="$class_matty_note.html#ac765ee87552c7cb8065ed30fd6775826" title="MattyNote::getCrTime" alt="" coords="800,309,952,336"/>
+<area shape="rect" id="node9" href="$class_matty_note.html#abc8ba0634009935b7961b03383975f8c" title="MattyNote::getEventDate" alt="" coords="791,56,961,83"/>
+<area shape="rect" id="node10" href="$class_matty_note.html#a62d645e90fcc6e7770998de4cece7d54" title="MattyNote::getEventTime" alt="" coords="790,157,962,184"/>
+<area shape="rect" id="node12" href="$class_db_manager.html#a164849758fd05445c7af2cc04fc3569f" title="DbManager::deleteNote" alt="" coords="529,376,689,403"/>
+<area shape="rect" id="node19" href="$class_matty_note.html#a2b1efb653f4cf18ba2ed1dcbe0836fa9" title="MattyNote::getNoteId" alt="" coords="535,427,683,453"/>
+<area shape="rect" id="node20" href="$class_matty_group_box.html#acf5f5023cf210a83e9846a35b149dd70" title="MattyGroupBox::~MattyGroupBox" alt="" coords="499,183,719,209"/>
+<area shape="rect" id="node13" href="$class_db_manager.html#a42939729261d4c90644fd6a5fd0d70d3" title="DbManager::connected" alt="" coords="797,609,955,636"/>
+<area shape="rect" id="node15" href="$class_query_constructor.html#ad1b13fbc7d8c55e384c992852f755008" title="QueryConstructor::setTableName" alt="" coords="767,427,985,453"/>
+<area shape="rect" id="node16" href="$class_query_constructor.html#ad72f9e11656f92958cd6751eaaa70e0e" title="QueryConstructor::addWhere\lFieldValue" alt="" coords="780,478,972,519"/>
+<area shape="rect" id="node17" href="$class_query_constructor.html#a1585447293c477d7c5bebf4049cbbc07" title="QueryConstructor::construct\lDeleteQuery" alt="" coords="783,361,969,402"/>
+<area shape="rect" id="node14" href="$class_db_manager.html#adacc32b7691062fef95171aeab5e8903" title="DbManager::showIsNotOpened\lError" alt="" coords="1033,602,1239,643"/>
+<area shape="rect" id="node18" href="$class_query_constructor.html#a7c864e227c2e76cc40a887314d43a0fe" title="QueryConstructor::construct\lWhereEqualsClause" alt="" coords="1043,449,1229,490"/>
+<area shape="rect" id="node22" href="$class_matty_note.html#a16fe7f1ba5e6b4426bdc2183ec0eaa93" title="MattyNote::constructNote" alt="" coords="522,660,695,687"/>
+<area shape="rect" id="node25" href="$class_db_manager.html#a762b5de4ac78f4ae4393d11e51a58c67" title="DbManager::showNote" alt="" coords="531,485,687,512"/>
+<area shape="rect" id="node23" href="$class_matty_note.html#aaeba8670420ab9ad0fb8be660845e0ba" title="MattyNote::setEventTime" alt="" coords="790,660,962,687"/>
+<area shape="rect" id="node24" href="$class_matty_note.html#a70676b1ab215b873c9451a82cc417684" title="MattyNote::setEventDate" alt="" coords="791,711,961,737"/>
+<area shape="rect" id="node26" href="$class_query_constructor.html#ae832ca3bc59df18cb8ef08fc1d9fd75f" title="QueryConstructor::construct\lSelectQuery" alt="" coords="783,543,969,585"/>
+</map>

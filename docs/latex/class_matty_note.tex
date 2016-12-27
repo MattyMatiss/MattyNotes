@@ -1,0 +1,509 @@
+\hypertarget{class_matty_note}{}\section{Matty\+Note Class Reference}
+\label{class_matty_note}\index{Matty\+Note@{Matty\+Note}}
+
+
+{\ttfamily \#include $<$mattynote.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_matty_note_a8c09bf366e6973bc1c4f4d5daa792899}{Matty\+Note} ()
+\item 
+\hyperlink{class_matty_note_afc1ae99b01e8a2be3bcbb79c970f8b92}{Matty\+Note} (struct \hyperlink{struct_matty_note_row}{Matty\+Note\+Row} Row\+From\+Db)
+\item 
+\hyperlink{class_matty_note_a2831641523b4a0d5c36100689f95c912}{$\sim$\+Matty\+Note} ()
+\item 
+void \hyperlink{class_matty_note_a16fe7f1ba5e6b4426bdc2183ec0eaa93}{construct\+Note} (struct \hyperlink{struct_matty_note_row}{Matty\+Note\+Row} Row\+From\+Db)
+\item 
+void \hyperlink{class_matty_note_af7909f64608b020b501019cf29796eb0}{set\+Title} (const Q\+String \&Title)
+\item 
+void \hyperlink{class_matty_note_ac9171fd4faaf0c286c9315a0b4ef4560}{set\+Type} (const Q\+String \&Type\+Name)
+\item 
+void \hyperlink{class_matty_note_a8ae86d728b9cb64fa78042a09cb5aa70}{set\+Type} (int Type\+Id)
+\item 
+void \hyperlink{class_matty_note_afa0c4ee32401e4a09e8d04fd0b01da0b}{set\+Text} (const Q\+String \&Text)
+\item 
+void \hyperlink{class_matty_note_aaeba8670420ab9ad0fb8be660845e0ba}{set\+Event\+Time} (const Q\+String \&Event\+Time)
+\item 
+void \hyperlink{class_matty_note_a70676b1ab215b873c9451a82cc417684}{set\+Event\+Date} (const Q\+String \&Event\+Date)
+\item 
+Q\+String \hyperlink{class_matty_note_ac4dfe8978f721a55e34809a42c229cae}{get\+Title} () const 
+\item 
+Q\+String \hyperlink{class_matty_note_a16e61ae2edfbbea88445db2e36742650}{get\+Type} () const 
+\item 
+Q\+String \hyperlink{class_matty_note_a27f706483d1ea9810edd6000325084cd}{get\+Text} () const 
+\item 
+Q\+String \hyperlink{class_matty_note_a62d645e90fcc6e7770998de4cece7d54}{get\+Event\+Time} () const 
+\item 
+Q\+String \hyperlink{class_matty_note_abc8ba0634009935b7961b03383975f8c}{get\+Event\+Date} () const 
+\item 
+Q\+String \hyperlink{class_matty_note_ac765ee87552c7cb8065ed30fd6775826}{get\+Cr\+Time} () const 
+\item 
+Q\+String \hyperlink{class_matty_note_a96b94f00d655bd3f6752165e5654f1cf}{get\+Cr\+Date} () const 
+\item 
+int \hyperlink{class_matty_note_a240b06385087407952b346661656e54d}{get\+Type\+Id} () const 
+\item 
+int \hyperlink{class_matty_note_a2b1efb653f4cf18ba2ed1dcbe0836fa9}{get\+Note\+Id} () const 
+\item 
+Q\+Date\+Time \hyperlink{class_matty_note_acbf9c79b1ed69751f8cd30afdd4b247e}{get\+Event\+Time\+And\+Date} () const 
+\item 
+Q\+Date\+Time \hyperlink{class_matty_note_a7e9fb3cdae76a5058ce6cc0df38c3daa}{get\+Cr\+Time\+And\+Date} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_matty_note_a15a3c21ef00e8c629aeb58025121b0a9}{Note\+Id}
+\item 
+int \hyperlink{class_matty_note_ad116cdf301951c8c93ee2a81a0df8647}{Note\+Type\+Id}
+\item 
+Q\+String \hyperlink{class_matty_note_a185f1f13eeb93acb237b9db7b4c94229}{Note\+Title}
+\item 
+Q\+String \hyperlink{class_matty_note_a0b45b382884fac5b651ab1ce155a2c13}{Note\+Type}
+\item 
+Q\+String \hyperlink{class_matty_note_ab54fa825ed3ce8081befdb0c391d682b}{Note\+Text}
+\item 
+Q\+String \hyperlink{class_matty_note_a3e69ae7fb7c8c616594a9647c14a192e}{Note\+Event\+Time}
+\item 
+Q\+String \hyperlink{class_matty_note_a9644cd6552e27c1875d83edce2469db3}{Note\+Event\+Date}
+\item 
+Q\+String \hyperlink{class_matty_note_a1182beac3edac3a7a7e4cdce72fc02ce}{Note\+Ev\+Day\+Of\+Week}
+\item 
+Q\+String \hyperlink{class_matty_note_a03208145949dfb98a99cfd9d95373418}{Note\+Cr\+Time}
+\item 
+Q\+String \hyperlink{class_matty_note_a3b94a4b062d2c2335f410f252210ed20}{Note\+Cr\+Date}
+\item 
+Q\+String \hyperlink{class_matty_note_a3776d088e67ef0181116b1cc2db3fd94}{Note\+Cr\+Day\+Of\+Week}
+\item 
+Q\+Date\+Time \hyperlink{class_matty_note_a7fa3236dd5812ad1a139bad8d50d28b2}{Event\+Time\+And\+Date}
+\item 
+Q\+Date\+Time \hyperlink{class_matty_note_a2997065dc8e32e25c98e2190b4a439b6}{Cr\+Time\+And\+Date}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Matty\+Note@{Matty\+Note}!Matty\+Note@{Matty\+Note}}
+\index{Matty\+Note@{Matty\+Note}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Matty\+Note()}{MattyNote()}}]{\setlength{\rightskip}{0pt plus 5cm}Matty\+Note\+::\+Matty\+Note (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matty_note_a8c09bf366e6973bc1c4f4d5daa792899}{}\label{class_matty_note_a8c09bf366e6973bc1c4f4d5daa792899}
+\index{Matty\+Note@{Matty\+Note}!Matty\+Note@{Matty\+Note}}
+\index{Matty\+Note@{Matty\+Note}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Matty\+Note(struct Matty\+Note\+Row Row\+From\+Db)}{MattyNote(struct MattyNoteRow RowFromDb)}}]{\setlength{\rightskip}{0pt plus 5cm}Matty\+Note\+::\+Matty\+Note (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Matty\+Note\+Row}}]{Row\+From\+Db}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matty_note_afc1ae99b01e8a2be3bcbb79c970f8b92}{}\label{class_matty_note_afc1ae99b01e8a2be3bcbb79c970f8b92}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_afc1ae99b01e8a2be3bcbb79c970f8b92_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!````~Matty\+Note@{$\sim$\+Matty\+Note}}
+\index{````~Matty\+Note@{$\sim$\+Matty\+Note}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{$\sim$\+Matty\+Note()}{~MattyNote()}}]{\setlength{\rightskip}{0pt plus 5cm}Matty\+Note\+::$\sim$\+Matty\+Note (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matty_note_a2831641523b4a0d5c36100689f95c912}{}\label{class_matty_note_a2831641523b4a0d5c36100689f95c912}
+
+
+\subsection{Member Function Documentation}
+\index{Matty\+Note@{Matty\+Note}!construct\+Note@{construct\+Note}}
+\index{construct\+Note@{construct\+Note}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{construct\+Note(struct Matty\+Note\+Row Row\+From\+Db)}{constructNote(struct MattyNoteRow RowFromDb)}}]{\setlength{\rightskip}{0pt plus 5cm}void Matty\+Note\+::construct\+Note (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Matty\+Note\+Row}}]{Row\+From\+Db}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matty_note_a16fe7f1ba5e6b4426bdc2183ec0eaa93}{}\label{class_matty_note_a16fe7f1ba5e6b4426bdc2183ec0eaa93}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_a16fe7f1ba5e6b4426bdc2183ec0eaa93_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_a16fe7f1ba5e6b4426bdc2183ec0eaa93_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!get\+Cr\+Date@{get\+Cr\+Date}}
+\index{get\+Cr\+Date@{get\+Cr\+Date}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{get\+Cr\+Date() const }{getCrDate() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::get\+Cr\+Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matty_note_a96b94f00d655bd3f6752165e5654f1cf}{}\label{class_matty_note_a96b94f00d655bd3f6752165e5654f1cf}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_a96b94f00d655bd3f6752165e5654f1cf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!get\+Cr\+Time@{get\+Cr\+Time}}
+\index{get\+Cr\+Time@{get\+Cr\+Time}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{get\+Cr\+Time() const }{getCrTime() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::get\+Cr\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matty_note_ac765ee87552c7cb8065ed30fd6775826}{}\label{class_matty_note_ac765ee87552c7cb8065ed30fd6775826}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_ac765ee87552c7cb8065ed30fd6775826_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!get\+Cr\+Time\+And\+Date@{get\+Cr\+Time\+And\+Date}}
+\index{get\+Cr\+Time\+And\+Date@{get\+Cr\+Time\+And\+Date}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{get\+Cr\+Time\+And\+Date() const }{getCrTimeAndDate() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Date\+Time Matty\+Note\+::get\+Cr\+Time\+And\+Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matty_note_a7e9fb3cdae76a5058ce6cc0df38c3daa}{}\label{class_matty_note_a7e9fb3cdae76a5058ce6cc0df38c3daa}
+\index{Matty\+Note@{Matty\+Note}!get\+Event\+Date@{get\+Event\+Date}}
+\index{get\+Event\+Date@{get\+Event\+Date}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{get\+Event\+Date() const }{getEventDate() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::get\+Event\+Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matty_note_abc8ba0634009935b7961b03383975f8c}{}\label{class_matty_note_abc8ba0634009935b7961b03383975f8c}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_abc8ba0634009935b7961b03383975f8c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!get\+Event\+Time@{get\+Event\+Time}}
+\index{get\+Event\+Time@{get\+Event\+Time}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{get\+Event\+Time() const }{getEventTime() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::get\+Event\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matty_note_a62d645e90fcc6e7770998de4cece7d54}{}\label{class_matty_note_a62d645e90fcc6e7770998de4cece7d54}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_a62d645e90fcc6e7770998de4cece7d54_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!get\+Event\+Time\+And\+Date@{get\+Event\+Time\+And\+Date}}
+\index{get\+Event\+Time\+And\+Date@{get\+Event\+Time\+And\+Date}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{get\+Event\+Time\+And\+Date() const }{getEventTimeAndDate() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Date\+Time Matty\+Note\+::get\+Event\+Time\+And\+Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matty_note_acbf9c79b1ed69751f8cd30afdd4b247e}{}\label{class_matty_note_acbf9c79b1ed69751f8cd30afdd4b247e}
+\index{Matty\+Note@{Matty\+Note}!get\+Note\+Id@{get\+Note\+Id}}
+\index{get\+Note\+Id@{get\+Note\+Id}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{get\+Note\+Id() const }{getNoteId() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Matty\+Note\+::get\+Note\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matty_note_a2b1efb653f4cf18ba2ed1dcbe0836fa9}{}\label{class_matty_note_a2b1efb653f4cf18ba2ed1dcbe0836fa9}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_a2b1efb653f4cf18ba2ed1dcbe0836fa9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!get\+Text@{get\+Text}}
+\index{get\+Text@{get\+Text}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{get\+Text() const }{getText() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::get\+Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matty_note_a27f706483d1ea9810edd6000325084cd}{}\label{class_matty_note_a27f706483d1ea9810edd6000325084cd}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_a27f706483d1ea9810edd6000325084cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!get\+Title@{get\+Title}}
+\index{get\+Title@{get\+Title}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{get\+Title() const }{getTitle() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::get\+Title (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matty_note_ac4dfe8978f721a55e34809a42c229cae}{}\label{class_matty_note_ac4dfe8978f721a55e34809a42c229cae}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_ac4dfe8978f721a55e34809a42c229cae_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{get\+Type() const }{getType() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matty_note_a16e61ae2edfbbea88445db2e36742650}{}\label{class_matty_note_a16e61ae2edfbbea88445db2e36742650}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_a16e61ae2edfbbea88445db2e36742650_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!get\+Type\+Id@{get\+Type\+Id}}
+\index{get\+Type\+Id@{get\+Type\+Id}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{get\+Type\+Id() const }{getTypeId() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Matty\+Note\+::get\+Type\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matty_note_a240b06385087407952b346661656e54d}{}\label{class_matty_note_a240b06385087407952b346661656e54d}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_a240b06385087407952b346661656e54d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!set\+Event\+Date@{set\+Event\+Date}}
+\index{set\+Event\+Date@{set\+Event\+Date}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{set\+Event\+Date(const Q\+String \&\+Event\+Date)}{setEventDate(const QString &EventDate)}}]{\setlength{\rightskip}{0pt plus 5cm}void Matty\+Note\+::set\+Event\+Date (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{Event\+Date}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matty_note_a70676b1ab215b873c9451a82cc417684}{}\label{class_matty_note_a70676b1ab215b873c9451a82cc417684}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_a70676b1ab215b873c9451a82cc417684_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!set\+Event\+Time@{set\+Event\+Time}}
+\index{set\+Event\+Time@{set\+Event\+Time}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{set\+Event\+Time(const Q\+String \&\+Event\+Time)}{setEventTime(const QString &EventTime)}}]{\setlength{\rightskip}{0pt plus 5cm}void Matty\+Note\+::set\+Event\+Time (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{Event\+Time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matty_note_aaeba8670420ab9ad0fb8be660845e0ba}{}\label{class_matty_note_aaeba8670420ab9ad0fb8be660845e0ba}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_aaeba8670420ab9ad0fb8be660845e0ba_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!set\+Text@{set\+Text}}
+\index{set\+Text@{set\+Text}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{set\+Text(const Q\+String \&\+Text)}{setText(const QString &Text)}}]{\setlength{\rightskip}{0pt plus 5cm}void Matty\+Note\+::set\+Text (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{Text}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matty_note_afa0c4ee32401e4a09e8d04fd0b01da0b}{}\label{class_matty_note_afa0c4ee32401e4a09e8d04fd0b01da0b}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_afa0c4ee32401e4a09e8d04fd0b01da0b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!set\+Title@{set\+Title}}
+\index{set\+Title@{set\+Title}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{set\+Title(const Q\+String \&\+Title)}{setTitle(const QString &Title)}}]{\setlength{\rightskip}{0pt plus 5cm}void Matty\+Note\+::set\+Title (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{Title}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matty_note_af7909f64608b020b501019cf29796eb0}{}\label{class_matty_note_af7909f64608b020b501019cf29796eb0}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_af7909f64608b020b501019cf29796eb0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!set\+Type@{set\+Type}}
+\index{set\+Type@{set\+Type}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{set\+Type(const Q\+String \&\+Type\+Name)}{setType(const QString &TypeName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Matty\+Note\+::set\+Type (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{Type\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matty_note_ac9171fd4faaf0c286c9315a0b4ef4560}{}\label{class_matty_note_ac9171fd4faaf0c286c9315a0b4ef4560}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_ac9171fd4faaf0c286c9315a0b4ef4560_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_ac9171fd4faaf0c286c9315a0b4ef4560_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Matty\+Note@{Matty\+Note}!set\+Type@{set\+Type}}
+\index{set\+Type@{set\+Type}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{set\+Type(int Type\+Id)}{setType(int TypeId)}}]{\setlength{\rightskip}{0pt plus 5cm}void Matty\+Note\+::set\+Type (
+\begin{DoxyParamCaption}
+\item[{int}]{Type\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matty_note_a8ae86d728b9cb64fa78042a09cb5aa70}{}\label{class_matty_note_a8ae86d728b9cb64fa78042a09cb5aa70}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matty_note_a8ae86d728b9cb64fa78042a09cb5aa70_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Matty\+Note@{Matty\+Note}!Cr\+Time\+And\+Date@{Cr\+Time\+And\+Date}}
+\index{Cr\+Time\+And\+Date@{Cr\+Time\+And\+Date}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Cr\+Time\+And\+Date}{CrTimeAndDate}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Date\+Time Matty\+Note\+::\+Cr\+Time\+And\+Date\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matty_note_a2997065dc8e32e25c98e2190b4a439b6}{}\label{class_matty_note_a2997065dc8e32e25c98e2190b4a439b6}
+\index{Matty\+Note@{Matty\+Note}!Event\+Time\+And\+Date@{Event\+Time\+And\+Date}}
+\index{Event\+Time\+And\+Date@{Event\+Time\+And\+Date}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Event\+Time\+And\+Date}{EventTimeAndDate}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Date\+Time Matty\+Note\+::\+Event\+Time\+And\+Date\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matty_note_a7fa3236dd5812ad1a139bad8d50d28b2}{}\label{class_matty_note_a7fa3236dd5812ad1a139bad8d50d28b2}
+\index{Matty\+Note@{Matty\+Note}!Note\+Cr\+Date@{Note\+Cr\+Date}}
+\index{Note\+Cr\+Date@{Note\+Cr\+Date}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Note\+Cr\+Date}{NoteCrDate}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::\+Note\+Cr\+Date\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matty_note_a3b94a4b062d2c2335f410f252210ed20}{}\label{class_matty_note_a3b94a4b062d2c2335f410f252210ed20}
+\index{Matty\+Note@{Matty\+Note}!Note\+Cr\+Day\+Of\+Week@{Note\+Cr\+Day\+Of\+Week}}
+\index{Note\+Cr\+Day\+Of\+Week@{Note\+Cr\+Day\+Of\+Week}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Note\+Cr\+Day\+Of\+Week}{NoteCrDayOfWeek}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::\+Note\+Cr\+Day\+Of\+Week\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matty_note_a3776d088e67ef0181116b1cc2db3fd94}{}\label{class_matty_note_a3776d088e67ef0181116b1cc2db3fd94}
+\index{Matty\+Note@{Matty\+Note}!Note\+Cr\+Time@{Note\+Cr\+Time}}
+\index{Note\+Cr\+Time@{Note\+Cr\+Time}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Note\+Cr\+Time}{NoteCrTime}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::\+Note\+Cr\+Time\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matty_note_a03208145949dfb98a99cfd9d95373418}{}\label{class_matty_note_a03208145949dfb98a99cfd9d95373418}
+\index{Matty\+Note@{Matty\+Note}!Note\+Ev\+Day\+Of\+Week@{Note\+Ev\+Day\+Of\+Week}}
+\index{Note\+Ev\+Day\+Of\+Week@{Note\+Ev\+Day\+Of\+Week}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Note\+Ev\+Day\+Of\+Week}{NoteEvDayOfWeek}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::\+Note\+Ev\+Day\+Of\+Week\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matty_note_a1182beac3edac3a7a7e4cdce72fc02ce}{}\label{class_matty_note_a1182beac3edac3a7a7e4cdce72fc02ce}
+\index{Matty\+Note@{Matty\+Note}!Note\+Event\+Date@{Note\+Event\+Date}}
+\index{Note\+Event\+Date@{Note\+Event\+Date}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Note\+Event\+Date}{NoteEventDate}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::\+Note\+Event\+Date\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matty_note_a9644cd6552e27c1875d83edce2469db3}{}\label{class_matty_note_a9644cd6552e27c1875d83edce2469db3}
+\index{Matty\+Note@{Matty\+Note}!Note\+Event\+Time@{Note\+Event\+Time}}
+\index{Note\+Event\+Time@{Note\+Event\+Time}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Note\+Event\+Time}{NoteEventTime}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::\+Note\+Event\+Time\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matty_note_a3e69ae7fb7c8c616594a9647c14a192e}{}\label{class_matty_note_a3e69ae7fb7c8c616594a9647c14a192e}
+\index{Matty\+Note@{Matty\+Note}!Note\+Id@{Note\+Id}}
+\index{Note\+Id@{Note\+Id}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Note\+Id}{NoteId}}]{\setlength{\rightskip}{0pt plus 5cm}int Matty\+Note\+::\+Note\+Id\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matty_note_a15a3c21ef00e8c629aeb58025121b0a9}{}\label{class_matty_note_a15a3c21ef00e8c629aeb58025121b0a9}
+\index{Matty\+Note@{Matty\+Note}!Note\+Text@{Note\+Text}}
+\index{Note\+Text@{Note\+Text}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Note\+Text}{NoteText}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::\+Note\+Text\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matty_note_ab54fa825ed3ce8081befdb0c391d682b}{}\label{class_matty_note_ab54fa825ed3ce8081befdb0c391d682b}
+\index{Matty\+Note@{Matty\+Note}!Note\+Title@{Note\+Title}}
+\index{Note\+Title@{Note\+Title}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Note\+Title}{NoteTitle}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::\+Note\+Title\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matty_note_a185f1f13eeb93acb237b9db7b4c94229}{}\label{class_matty_note_a185f1f13eeb93acb237b9db7b4c94229}
+\index{Matty\+Note@{Matty\+Note}!Note\+Type@{Note\+Type}}
+\index{Note\+Type@{Note\+Type}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Note\+Type}{NoteType}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Matty\+Note\+::\+Note\+Type\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matty_note_a0b45b382884fac5b651ab1ce155a2c13}{}\label{class_matty_note_a0b45b382884fac5b651ab1ce155a2c13}
+\index{Matty\+Note@{Matty\+Note}!Note\+Type\+Id@{Note\+Type\+Id}}
+\index{Note\+Type\+Id@{Note\+Type\+Id}!Matty\+Note@{Matty\+Note}}
+\subsubsection[{\texorpdfstring{Note\+Type\+Id}{NoteTypeId}}]{\setlength{\rightskip}{0pt plus 5cm}int Matty\+Note\+::\+Note\+Type\+Id\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matty_note_ad116cdf301951c8c93ee2a81a0df8647}{}\label{class_matty_note_ad116cdf301951c8c93ee2a81a0df8647}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/matty/Документы/\+Qt/qt-\/proj/\+Matty\+Notes/\hyperlink{mattynote_8h}{mattynote.\+h}\item 
+/home/matty/Документы/\+Qt/qt-\/proj/\+Matty\+Notes/\hyperlink{mattynote_8cpp}{mattynote.\+cpp}\end{DoxyCompactItemize}

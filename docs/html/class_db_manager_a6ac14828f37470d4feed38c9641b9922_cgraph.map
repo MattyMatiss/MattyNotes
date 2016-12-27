@@ -1,0 +1,8 @@
+<map id="DbManager::showNotes" name="DbManager::showNotes">
+<area shape="rect" id="node2" href="$class_db_manager.html#a42939729261d4c90644fd6a5fd0d70d3" title="DbManager::connected" alt="" coords="247,13,404,39"/>
+<area shape="rect" id="node4" href="$class_query_constructor.html#ad1b13fbc7d8c55e384c992852f755008" title="QueryConstructor::setTableName" alt="" coords="216,63,435,90"/>
+<area shape="rect" id="node5" href="$class_query_constructor.html#a096ed5c85c40851db92a7f45405df4cd" title="QueryConstructor::setOrder\lByClause" alt="" coords="234,115,417,156"/>
+<area shape="rect" id="node6" href="$class_query_constructor.html#ae832ca3bc59df18cb8ef08fc1d9fd75f" title="QueryConstructor::construct\lSelectQuery" alt="" coords="232,180,419,221"/>
+<area shape="rect" id="node3" href="$class_db_manager.html#adacc32b7691062fef95171aeab5e8903" title="DbManager::showIsNotOpened\lError" alt="" coords="483,5,688,47"/>
+<area shape="rect" id="node7" href="$class_query_constructor.html#a7c864e227c2e76cc40a887314d43a0fe" title="QueryConstructor::construct\lWhereEqualsClause" alt="" coords="492,180,679,221"/>
+</map>

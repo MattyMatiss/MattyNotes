@@ -1,0 +1,9 @@
+<map id="MattyNote::getCrDate" name="MattyNote::getCrDate">
+<area shape="rect" id="node2" href="$class_db_manager.html#a4f063b57678616ccef3515088a04ac51" title="DbManager::addNote" alt="" coords="216,5,363,32"/>
+<area shape="rect" id="node5" href="$class_db_manager.html#af27c0367d70db496305ec5cab6324fe9" title="DbManager::editNote" alt="" coords="216,56,363,83"/>
+<area shape="rect" id="node6" href="$class_matty_group_box.html#a982e84ed3ae5f61b542269e9b5e8ebba" title="MattyGroupBox::fillFrame" alt="" coords="204,107,375,133"/>
+<area shape="rect" id="node3" href="$classadd_note_dialog.html#a67b28dc05851888a45774eb240d6e43d" title="addNoteDialog::on_create\lNoteButton_clicked" alt="" coords="423,9,596,50"/>
+<area shape="rect" id="node4" href="$classadd_note_dialog.html#a304ad6104e976c766645b32f5e91b88c" title="addNoteDialog::addNoteDialog" alt="" coords="649,16,851,43"/>
+<area shape="rect" id="node7" href="$class_matty_group_box.html#a3445932bd0e2d39d640cc9457580c39e" title="MattyGroupBox::MattyGroupBox" alt="" coords="644,121,856,148"/>
+<area shape="rect" id="node8" href="$class_matty_group_box.html#a446df41d130f1d6a411f35d80d62b055" title="MattyGroupBox::editNote" alt="" coords="424,147,595,173"/>
+</map>

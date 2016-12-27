@@ -1,0 +1,8 @@
+<map id="MattyNote::setEventDate" name="MattyNote::setEventDate">
+<area shape="rect" id="node2" href="$classadd_note_dialog.html#a67b28dc05851888a45774eb240d6e43d" title="addNoteDialog::on_create\lNoteButton_clicked" alt="" coords="224,5,397,47"/>
+<area shape="rect" id="node4" href="$class_matty_note.html#afc1ae99b01e8a2be3bcbb79c970f8b92" title="MattyNote::MattyNote" alt="" coords="235,71,387,98"/>
+<area shape="rect" id="node5" href="$class_matty_note.html#a16fe7f1ba5e6b4426bdc2183ec0eaa93" title="MattyNote::constructNote" alt="" coords="224,122,397,149"/>
+<area shape="rect" id="node3" href="$classadd_note_dialog.html#a304ad6104e976c766645b32f5e91b88c" title="addNoteDialog::addNoteDialog" alt="" coords="445,42,648,69"/>
+<area shape="rect" id="node6" href="$class_matty_group_box.html#a446df41d130f1d6a411f35d80d62b055" title="MattyGroupBox::editNote" alt="" coords="461,122,632,149"/>
+<area shape="rect" id="node7" href="$class_matty_group_box.html#a3445932bd0e2d39d640cc9457580c39e" title="MattyGroupBox::MattyGroupBox" alt="" coords="696,122,908,149"/>
+</map>

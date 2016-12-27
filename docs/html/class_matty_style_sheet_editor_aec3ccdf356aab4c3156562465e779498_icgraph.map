@@ -1,0 +1,7 @@
+<map id="MattyStyleSheetEditor::setTheme" name="MattyStyleSheetEditor::setTheme">
+<area shape="rect" id="node2" href="$class_matty_style_sheet_editor.html#abe6c7273e15a62c5f170bec00f539823" title="MattyStyleSheetEditor\l::reloadCssFromQss" alt="" coords="207,35,360,76"/>
+<area shape="rect" id="node3" href="$class_matty_notes_main_window.html#a12025cd56092bb34c6451a92197b69a1" title="MattyNotesMainWindow\l::refreshMainWindow" alt="" coords="408,35,573,76"/>
+<area shape="rect" id="node4" href="$class_matty_notes_main_window.html#aa788ae37a712be6e1ea281c349342908" title="MattyNotesMainWindow\l::MattyNotesMainWindow" alt="" coords="836,5,1009,47"/>
+<area shape="rect" id="node5" href="$class_matty_notes_main_window.html#a1736856c4d60ba43f973d5bd627f0ec0" title="MattyNotesMainWindow\l::setConnects" alt="" coords="622,35,787,76"/>
+<area shape="rect" id="node6" href="$class_matty_notes_main_window.html#acb9472c3ba8430272c29864b5d046ea3" title="MattyNotesMainWindow\l::WindowActivatedEvent" alt="" coords="621,100,788,141"/>
+</map>

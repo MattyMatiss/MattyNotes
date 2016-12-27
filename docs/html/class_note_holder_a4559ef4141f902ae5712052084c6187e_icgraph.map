@@ -1,0 +1,8 @@
+<map id="NoteHolder::erasePublishedNotes" name="NoteHolder::erasePublishedNotes">
+<area shape="rect" id="node2" href="$class_note_holder.html#abb4a2d19ddace4d652cfda5becd03302" title="NoteHolder::publishNotes" alt="" coords="239,46,411,73"/>
+<area shape="rect" id="node3" href="$class_matty_notes_main_window.html#af77c5a79f0a941dbb980776df6a8b1eb" title="MattyNotesMainWindow\l::addNote" alt="" coords="459,5,624,47"/>
+<area shape="rect" id="node6" href="$class_matty_notes_main_window.html#a12025cd56092bb34c6451a92197b69a1" title="MattyNotesMainWindow\l::refreshMainWindow" alt="" coords="459,71,624,112"/>
+<area shape="rect" id="node4" href="$class_matty_notes_main_window.html#a1736856c4d60ba43f973d5bd627f0ec0" title="MattyNotesMainWindow\l::setConnects" alt="" coords="673,8,838,49"/>
+<area shape="rect" id="node5" href="$class_matty_notes_main_window.html#aa788ae37a712be6e1ea281c349342908" title="MattyNotesMainWindow\l::MattyNotesMainWindow" alt="" coords="887,37,1060,79"/>
+<area shape="rect" id="node7" href="$class_matty_notes_main_window.html#acb9472c3ba8430272c29864b5d046ea3" title="MattyNotesMainWindow\l::WindowActivatedEvent" alt="" coords="672,125,839,167"/>
+</map>

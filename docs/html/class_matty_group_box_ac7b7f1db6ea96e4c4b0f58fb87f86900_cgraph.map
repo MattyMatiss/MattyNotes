@@ -1,0 +1,12 @@
+<map id="MattyGroupBox::deleteNote" name="MattyGroupBox::deleteNote">
+<area shape="rect" id="node2" href="$class_matty_note.html#ac4dfe8978f721a55e34809a42c229cae" title="MattyNote::getTitle" alt="" coords="280,42,415,69"/>
+<area shape="rect" id="node3" href="$class_db_manager.html#a164849758fd05445c7af2cc04fc3569f" title="DbManager::deleteNote" alt="" coords="267,93,427,119"/>
+<area shape="rect" id="node10" href="$class_matty_note.html#a2b1efb653f4cf18ba2ed1dcbe0836fa9" title="MattyNote::getNoteId" alt="" coords="273,143,421,170"/>
+<area shape="rect" id="node11" href="$class_matty_group_box.html#acf5f5023cf210a83e9846a35b149dd70" title="MattyGroupBox::~MattyGroupBox" alt="" coords="237,194,457,221"/>
+<area shape="rect" id="node4" href="$class_db_manager.html#a42939729261d4c90644fd6a5fd0d70d3" title="DbManager::connected" alt="" coords="536,13,693,39"/>
+<area shape="rect" id="node6" href="$class_query_constructor.html#ad1b13fbc7d8c55e384c992852f755008" title="QueryConstructor::setTableName" alt="" coords="505,63,724,90"/>
+<area shape="rect" id="node7" href="$class_query_constructor.html#ad72f9e11656f92958cd6751eaaa70e0e" title="QueryConstructor::addWhere\lFieldValue" alt="" coords="519,115,711,156"/>
+<area shape="rect" id="node8" href="$class_query_constructor.html#a1585447293c477d7c5bebf4049cbbc07" title="QueryConstructor::construct\lDeleteQuery" alt="" coords="521,180,708,221"/>
+<area shape="rect" id="node5" href="$class_db_manager.html#adacc32b7691062fef95171aeab5e8903" title="DbManager::showIsNotOpened\lError" alt="" coords="772,5,977,47"/>
+<area shape="rect" id="node9" href="$class_query_constructor.html#a7c864e227c2e76cc40a887314d43a0fe" title="QueryConstructor::construct\lWhereEqualsClause" alt="" coords="781,180,968,221"/>
+</map>
