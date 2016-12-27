@@ -39,8 +39,7 @@ SOURCES += main.cpp\
     queryconstructor.cpp \
     utilityfunctions.cpp
 
-HEADERS  += \
-    dbmanager.h \
+HEADERS  += dbmanager.h \
     mattynotesmainwindow.h \
     addnotedialog.h \
     mattysettingsdialog.h \
