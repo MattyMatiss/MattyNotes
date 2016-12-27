@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type',['Type',['../mattymessagebox_8h.html#a1d1cfd8ffb84e947f82999c682b666a7',1,'mattymessagebox.h']]]
+  ['ordertype',['OrderType',['../queryconstructor_8h.html#a57124e387290311f33f3b54a54930418',1,'queryconstructor.h']]]
 ];

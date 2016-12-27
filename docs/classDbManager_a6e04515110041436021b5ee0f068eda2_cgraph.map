@@ -1,5 +1,0 @@
-<map id="DbManager::showNotes" name="DbManager::showNotes">
-<area shape="rect" id="node2" href="$classQueryConstructor.html#ad1b13fbc7d8c55e384c992852f755008" title="QueryConstructor::setTableName" alt="" coords="213,5,429,32"/>
-<area shape="rect" id="node3" href="$classQueryConstructor.html#a304819b8f851385fa6925cc273ccc94d" title="QueryConstructor::setWhere\lFieldValue" alt="" coords="228,57,415,98"/>
-<area shape="rect" id="node4" href="$classDbManager.html#a2d60ab2a556cf0276bf306c7545ed03d" title="DbManager::showIsNotOpen\lError" alt="" coords="227,122,415,163"/>
-</map>

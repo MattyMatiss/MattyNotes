@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ui',['ui',['../classMattyNotesMainWindow.html#a77eaa70bd33b9a31f6d3fe0aa5669190',1,'MattyNotesMainWindow']]]
+  ['queryconstructor_5f8h',['queryconstructor_8h',['../queryconstructor__8h_8js.html#acde07c60f660bb32d988d9f3c901f3b8',1,'queryconstructor_8h.js']]]
 ];

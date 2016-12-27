@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ordertype',['OrderType',['../queryconstructor_8h.html#a57124e387290311f33f3b54a54930418',1,'queryconstructor.h']]]
+  ['mattypathtodbtype',['MattyPathToDbType',['../constants_8h.html#a9558e0854b1cdaf803f7a80df80ab91b',1,'constants.h']]]
 ];

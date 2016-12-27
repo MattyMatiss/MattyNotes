@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['addnotedialog',['addNoteDialog',['../classUi_1_1addNoteDialog.html',1,'Ui']]],
-  ['addnotedialog',['addNoteDialog',['../classaddNoteDialog.html',1,'']]]
+  ['addnotedialog',['addNoteDialog',['../classadd_note_dialog.html',1,'']]]
 ];

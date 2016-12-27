@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['workabsolute',['WorkAbsolute',['../constants_8h.html#a9558e0854b1cdaf803f7a80df80ab91baef13eb429730a3a3bea647eb7324d6f3',1,'constants.h']]]
+  ['straight',['Straight',['../queryconstructor_8h.html#a57124e387290311f33f3b54a54930418ada4cdade2120d083fe09b30940e51c12',1,'queryconstructor.h']]]
 ];

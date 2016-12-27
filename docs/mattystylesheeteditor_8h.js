@@ -1,6 +1,6 @@
 var mattystylesheeteditor_8h =
 [
-    [ "MattyStyleSheetEditor", "classMattyStyleSheetEditor.html", "classMattyStyleSheetEditor" ],
+    [ "MattyStyleSheetEditor", "class_matty_style_sheet_editor.html", "class_matty_style_sheet_editor" ],
     [ "DefaultTheme", "mattystylesheeteditor_8h.html#ad58d92f62ffa3431951b8423c85d841d", [
       [ "MattySunShineStyleSheet", "mattystylesheeteditor_8h.html#ad58d92f62ffa3431951b8423c85d841dab6d1e2487ab9c11ef84904bde129f348", null ],
       [ "MattySnowStyleSheet", "mattystylesheeteditor_8h.html#ad58d92f62ffa3431951b8423c85d841dac796fbf9507272532017649484c6ae74", null ],

@@ -1,6 +1,0 @@
-<map id="MattyNote::getTypeId" name="MattyNote::getTypeId">
-<area shape="rect" id="node2" href="$classDbManager.html#a4f063b57678616ccef3515088a04ac51" title="DbManager::addNote" alt="" coords="201,5,345,32"/>
-<area shape="rect" id="node5" href="$classDbManager.html#af27c0367d70db496305ec5cab6324fe9" title="DbManager::editNote" alt="" coords="201,56,345,83"/>
-<area shape="rect" id="node3" href="$classaddNoteDialog.html#a67b28dc05851888a45774eb240d6e43d" title="addNoteDialog::on_create\lNoteButton_clicked" alt="" coords="393,23,564,65"/>
-<area shape="rect" id="node4" href="$classaddNoteDialog.html#a39bdf3974bd9d583959015b40205e3f5" title="addNoteDialog::addNoteDialog" alt="" coords="612,31,811,57"/>
-</map>

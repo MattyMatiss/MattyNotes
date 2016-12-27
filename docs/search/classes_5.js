@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queryconstructor',['QueryConstructor',['../classQueryConstructor.html',1,'']]]
+  ['queryconstructor',['QueryConstructor',['../class_query_constructor.html',1,'']]]
 ];

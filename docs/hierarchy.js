@@ -1,35 +1,28 @@
 var hierarchy =
 [
-    [ "Constants", "classConstants.html", null ],
-    [ "DbManager", "classDbManager.html", null ],
-    [ "MattyNote", "classMattyNote.html", null ],
-    [ "MattyStyleSheetEditor", "classMattyStyleSheetEditor.html", null ],
-    [ "NoteHolder", "classNoteHolder.html", null ],
+    [ "Constants", "class_constants.html", null ],
+    [ "DbManager", "class_db_manager.html", null ],
+    [ "MattyCssRow", "struct_matty_css_row.html", null ],
+    [ "MattyNote", "class_matty_note.html", null ],
+    [ "MattyNoteRow", "struct_matty_note_row.html", null ],
+    [ "MattyStyleSheetEditor", "class_matty_style_sheet_editor.html", null ],
+    [ "NoteHolder", "class_note_holder.html", null ],
     [ "QDialog", null, [
-      [ "addNoteDialog", "classaddNoteDialog.html", null ],
-      [ "MattySettingsDialog", "classMattySettingsDialog.html", null ]
+      [ "addNoteDialog", "classadd_note_dialog.html", null ],
+      [ "MattySettingsDialog", "class_matty_settings_dialog.html", null ]
     ] ],
     [ "QGroupBox", null, [
-      [ "MattyGroupBox", "classMattyGroupBox.html", null ]
+      [ "MattyGroupBox", "class_matty_group_box.html", null ]
     ] ],
     [ "QLCDNumber", null, [
-      [ "MattyClocks", "classMattyClocks.html", null ]
+      [ "MattyClocks", "class_matty_clocks.html", null ]
     ] ],
     [ "QMainWindow", null, [
-      [ "MattyNotesMainWindow", "classMattyNotesMainWindow.html", null ]
+      [ "MattyNotesMainWindow", "class_matty_notes_main_window.html", null ]
     ] ],
     [ "QMessageBox", null, [
-      [ "MattyMessageBox", "classMattyMessageBox.html", null ]
+      [ "MattyMessageBox", "class_matty_message_box.html", null ]
     ] ],
-    [ "QueryConstructor", "classQueryConstructor.html", null ],
-    [ "Ui_addNoteDialog", "classUi__addNoteDialog.html", [
-      [ "Ui::addNoteDialog", "classUi_1_1addNoteDialog.html", null ]
-    ] ],
-    [ "Ui_MattyNotesMainWindowClass", "classUi__MattyNotesMainWindowClass.html", [
-      [ "Ui::MattyNotesMainWindowClass", "classUi_1_1MattyNotesMainWindowClass.html", null ]
-    ] ],
-    [ "Ui_MattySettingsDialog", "classUi__MattySettingsDialog.html", [
-      [ "Ui::MattySettingsDialog", "classUi_1_1MattySettingsDialog.html", null ]
-    ] ],
-    [ "UtilityFunctions", "classUtilityFunctions.html", null ]
+    [ "QueryConstructor", "class_query_constructor.html", null ],
+    [ "UtilityFunctions", "class_utility_functions.html", null ]
 ];

@@ -1,9 +1,7 @@
 var NAVTREE =
 [
   [ "MattyNotes", "index.html", [
-    [ "Namespaces", null, [
-      [ "Namespace List", "namespaces.html", "namespaces" ]
-    ] ],
+    [ "MattyNotes", "md__home_matty_Документы_Qt_qt-proj_MattyNotes_README.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -17,8 +15,9 @@ var NAVTREE =
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ]
       ] ]
@@ -29,7 +28,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "addnotedialog_8cpp.html",
-"classUi__MattyNotesMainWindowClass.html#abae561e16be81d038b0fb3f8216a3444"
+"class_matty_settings_dialog.html#a5f12126027ce73f0e7e554322d8a46c9",
+"functions__f_8js.html#ad01a7523f103d6242ef9b0451861231e",
+"variables__a_8js.html#ad01a7523f103d6242ef9b0451861231e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['descending',['Descending',['../queryconstructor_8h.html#a57124e387290311f33f3b54a54930418a9fd6a1530493a7788e632bd058903060',1,'queryconstructor.h']]]
+  ['customcss',['CustomCss',['../dbmanager_8h.html#a8969846cff40a39ae1092c609d3d94f7a67023fd770421888bd65e05f5426e2fd',1,'dbmanager.h']]]
 ];

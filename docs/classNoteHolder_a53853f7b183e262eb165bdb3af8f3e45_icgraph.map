@@ -1,8 +1,0 @@
-<map id="NoteHolder::getAllNotes" name="NoteHolder::getAllNotes">
-<area shape="rect" id="node2" href="$classNoteHolder.html#abb4a2d19ddace4d652cfda5becd03302" title="NoteHolder::publishNotes" alt="" coords="215,46,384,73"/>
-<area shape="rect" id="node3" href="$classMattyNotesMainWindow.html#af77c5a79f0a941dbb980776df6a8b1eb" title="MattyNotesMainWindow\l::addNote" alt="" coords="432,5,595,47"/>
-<area shape="rect" id="node6" href="$classMattyNotesMainWindow.html#a12025cd56092bb34c6451a92197b69a1" title="MattyNotesMainWindow\l::refreshMainWindow" alt="" coords="432,71,595,112"/>
-<area shape="rect" id="node4" href="$classMattyNotesMainWindow.html#a1736856c4d60ba43f973d5bd627f0ec0" title="MattyNotesMainWindow\l::setConnects" alt="" coords="643,8,806,49"/>
-<area shape="rect" id="node5" href="$classMattyNotesMainWindow.html#aa788ae37a712be6e1ea281c349342908" title="MattyNotesMainWindow\l::MattyNotesMainWindow" alt="" coords="855,37,1025,79"/>
-<area shape="rect" id="node7" href="$classMattyNotesMainWindow.html#acb9472c3ba8430272c29864b5d046ea3" title="MattyNotesMainWindow\l::WindowActivatedEvent" alt="" coords="643,125,807,167"/>
-</map>

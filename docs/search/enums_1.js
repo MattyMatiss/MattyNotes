@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['defaulttheme',['DefaultTheme',['../mattystylesheeteditor_8h.html#ad58d92f62ffa3431951b8423c85d841d',1,'mattystylesheeteditor.h']]]
+  ['csstables',['CssTables',['../dbmanager_8h.html#a8969846cff40a39ae1092c609d3d94f7',1,'dbmanager.h']]]
 ];

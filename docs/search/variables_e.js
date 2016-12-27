@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['tablename',['TableName',['../classQueryConstructor.html#a228bdb4e6c32a592d96fe0a2562d7220',1,'QueryConstructor']]],
-  ['themeradiobuttonverticallayout',['ThemeRadioButtonVerticalLayout',['../classMattySettingsDialog.html#a2b7a07510ef76c1161d247437e0a39c0',1,'MattySettingsDialog']]],
-  ['thisdialognote',['ThisDialogNote',['../classaddNoteDialog.html#a3bd8efdf8721f0840894f3f5856c6a2b',1,'addNoteDialog']]],
-  ['thisgroupboxnote',['ThisGroupBoxNote',['../classMattyGroupBox.html#a00ca2ef39a0b5aca9e83373777bed395',1,'MattyGroupBox']]],
-  ['timeqstringlength',['TimeQStringLength',['../classConstants.html#a577e140cbb46e0fe143af8c18c29cee1',1,'Constants']]],
-  ['timeseparator',['TimeSeparator',['../classConstants.html#aa6a4e4e111634badc8b8aeba9df024ce',1,'Constants']]],
-  ['totalnotecount',['TotalNoteCount',['../classNoteHolder.html#aeb685924427caabb7087ef7cf743c913',1,'NoteHolder']]]
+  ['pathtodb',['PathToDb',['../class_constants.html#a2a8fc008322275c6dfbc1f18a781c405',1,'Constants::PathToDb()'],['../class_db_manager.html#aa3f62582e546ee853cebd75386e26736',1,'DbManager::PathToDb()']]],
+  ['positionoffirstdateseparator',['PositionOfFirstDateSeparator',['../class_constants.html#aeade44a42999a2037171cc8b04031edb',1,'Constants']]],
+  ['positionofseconddateseparator',['PositionOfSecondDateSeparator',['../class_constants.html#a6d9e83adc428b25381bc25b2e38843ea',1,'Constants']]],
+  ['propertycustomvalue',['PropertyCustomValue',['../struct_matty_css_row.html#a3d902749e1621ccbbc7fd1857ec08d88',1,'MattyCssRow']]],
+  ['propertydefaultvalue',['PropertyDefaultValue',['../struct_matty_css_row.html#ab411d09040e1174d9c52548e70b477fc',1,'MattyCssRow']]],
+  ['propertyname',['PropertyName',['../struct_matty_css_row.html#ad2039ab001752cafade09b6039df2b0a',1,'MattyCssRow']]],
+  ['propetycustomvalueused',['PropetyCustomValueUsed',['../struct_matty_css_row.html#a72f2d0b934455456cc3dc37ac908e19a',1,'MattyCssRow']]]
 ];

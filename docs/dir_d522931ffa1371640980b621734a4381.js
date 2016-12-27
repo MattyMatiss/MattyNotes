@@ -1,4 +1,0 @@
-var dir_d522931ffa1371640980b621734a4381 =
-[
-    [ "Ogrigorieva", "dir_e98a83fb693a7f8591a83f9676998448.html", "dir_e98a83fb693a7f8591a83f9676998448" ]
-];
