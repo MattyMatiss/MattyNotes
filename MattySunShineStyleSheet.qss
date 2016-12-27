@@ -1,0 +1,127 @@
+/*SELECTION BORDER*/
+QComboBox QAbstractItemView { outline: 0px; }
+
+/*TRANSPARENT BACKGROUND*/
+QSplitter::handle, #centralWidget, QScrollArea, QScrollArea > QWidget > QWidget, QPushButton { background-color: transparent; }
+
+/*TRANSPARENT TEXT*/
+/*QPushButton { color: transparent; }*/
+
+/*TRANSPARENT BORDER*/
+#MattyGroupBox { border-color: transparent; }
+
+/*MAIN BORDER STYLE*/
+#MattyMessageBox, #NoteOptionsWidget, QMenu, QComboBox, QAbstractItemView, QDateEdit, QDateTime, QDateTimeEdit, QSpinBox { border-style: ridge; }
+
+/*SOLID BORDER STYLE*/
+QTextEdit, QPlainTextEdit { border-style: solid; }
+
+/*NO BORDER*/
+QScrollArea, QScrollArea > QWidget > QWidget { border: 0px none transparent; }
+
+/*BORDER 1 PX*/
+QMenu, QComboBox, QAbstractItemView, QAbstractItemView, QDateEdit, QDateTime, QDateTimeEdit, QSpinBox, QTextEdit, QPlainTextEdit { border-width: 1px; }
+
+/*BORDER 3 PX*/
+#MattyGroupBox, #NoteOptionsWidget { border-width: 3px; }
+
+/*BORDER 4 PX*/
+#MattyMessageBox, MattySettingsDialog, #addNoteDialog { border-width: 4px; }
+
+/*MAIN BORDER IMAGE*/
+#MattyMessageBox, MattySettingsDialog, #addNoteDialog { border-image: url(:/All/resources/BorderImage.png) 10 repeat; border-color: transparent; }
+
+/*BORDER RADIUS 3*/
+/*QScrollBar { border-radius: 3px; }*/
+
+/*BORDER RADIUS 15*/
+#MattyGroupBox, QTextEdit, QPlainTextEdit, #NoteOptionsWidget { border-radius: 15px; }
+
+/*BOLD*/
+#MotivatorLabel, #MainToolBar #WindowHeaderLabel, QPushButton, #NoteEventTimeAndDateLabel, #NoteTypeLabel, #noteTitleText, #MattyGroupBox { font-weight: bold; }
+
+/*ITALIC*/
+#MotivatorLabel, #MainToolBar #WindowHeaderLabel, #addNoteDialog QTextEdit, #MattyGroupBox { font-style: italic; }
+
+/*UNDERLINED*/
+#MattyGroupBox { text-decoration: underline; }
+
+/*TEXT ALIGN LEFT*/
+#ApplySettingsButton, #createNoteButton { text-align: left; }
+
+/*ALL PADDINGS 25*/
+#MattyGroupBox { padding: 25px; }
+
+/*MARGIN*/
+/*#MattyGroupBox { margin-top: 10px; }*/
+#MattyGroupBox { margin-bottom: 15px; }
+QScrollBar:vertical { margin: 10px 0px 10px 0px; }
+#MattyGroupBox { margin-left: 0px; margin-right: 20px; }
+
+/*SIZES*/
+#yesButton, #noButton { height: 53px; width: 53px; }
+#cancelAddingNoteButton, #CancelSettingsButton { height: 60px; width: 60px; }
+#createNoteButton, #ApplySettingsButton { height: 70px; width: 70px; }
+QScrollBar:vertical { max-width: 10px; }
+QScrollBar:horizontal { max-height: 10px; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0px; max-height: 0px; }
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal { width: 0px; max-width: 0px; }
+
+/*MINIMUM WIDTH 300*/
+MattyGroupBox { min-width: 300px; }
+
+/*HEIGHT 100*/
+#NoteOptionsWidget { height: 75px; min-height: 75px; }
+
+/*BACKGROUND POSITION CENTER*/
+QPushButton { background-position: center; }
+
+/*BACKGROUND POSITION TOP*/
+#MaximizeWindowButton { background-position: top !important; }
+
+/*BACKGROUND POSITION BOTTOM RIGHT*/
+#ApplySettingsButton, #createNoteButton, #MattyGroupBox { background-position: bottom right !important; }
+
+/*NO BACKGROUND REPEAT*/
+QPushButton, #MattyGroupBox { background-repeat: no-repeat; }
+
+/*SPECIFIC IMAGES*/
+QSplitter::handle { background-image: url(:/All/resources/VerticalLine.png); }
+
+#horizontalLineWidget { background-image: url(:/All/resources/HorizontalLine.png); }
+
+#CloseWindowButton { background-image: url(:/All/resources/CloseWindow.png); }
+#CloseWindowButton:hover { background-image: url(:/All/resources/CloseWindowHover.png); }
+
+#MinimizeWindowButton { background-image: url(:/All/resources/MinimizeWindow.png); }
+#MinimizeWindowButton:hover { background-image: url(:/All/resources/MinimizeWindowHover.png); }
+
+#MaximizeWindowButton { background-image: url(:/All/resources/MaximizeWindow.png); }
+#MaximizeWindowButton:hover { background-image: url(:/All/resources/MaximizeWindowHover.png);background-position: top; }
+
+#RefreshNoteListButton { background-image: url(:/All/resources/RefreshNoteList.png); }
+#RefreshNoteListButton:hover { background-image: url(:/All/resources/RefreshNoteListHover.png); }
+
+#AddNoteButton { background-image: url(:/All/resources/AddNote.png); }
+#AddNoteButton:hover { background-image: url(:/All/resources/AddNoteHoverWithPen.png); }
+
+#SettingsButton { background-image: url(:/All/resources/Settings.png); }
+#SettingsButton:hover { background-image: url(:/All/resources/SettingsHover.png); }
+
+#createNoteButton { background-image: url(:/All/resources/ApplyAdding.png); }
+#createNoteButton:hover { background-image: url(:/All/resources/ApplyAddingHover.png);}
+
+#cancelAddingNoteButton { background-image: url(:/All/resources/CancelAdding.png); }
+#cancelAddingNoteButton:hover { background-image: url(:/All/resources/CancelAddingHover.png); }
+
+#editNoteButton { background-image: url(:/All/resources/EditNoteFat.png); }
+#editNoteButton:hover { background-image: url(:/All/resources/EditNoteFatHover.png); }
+
+#deleteNoteButton { background-image: url(:/All/resources/DeleteNote.png); }
+#deleteNoteButton:hover { background-image: url(:/All/resources/DeleteNoteHover.png); }
+
+#ApplySettingsButton { background-image: url(:/All/resources/ApplyAdding.png); }
+#ApplySettingsButton:hover { background-image: url(:/All/resources/ApplyAddingHover.png); }
+
+#CancelSettingsButton { background-image: url(:/All/resources/CancelAdding.png); }
+#CancelSettingsButton:hover { background-image: url(:/All/resources/CancelAddingHover.png); }

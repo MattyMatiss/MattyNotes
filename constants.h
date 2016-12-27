@@ -7,8 +7,7 @@
 
 #include <QString>
 
-enum MattyPathToDbType { HomeAbsolute, WorkAbsolute, RelativeDEXE,
-                       RelativeREXE, RelativeD, RelativeR };
+enum MattyPathToDbType { HomeAbsolute, WorkAbsolute, Relative };
 
 class Constants
 {

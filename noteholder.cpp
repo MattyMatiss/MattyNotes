@@ -48,7 +48,7 @@ void NoteHolder::getAllNotes()
     if (!ListOfAllNotes.isEmpty())
         ListOfAllNotes.clear();
 
-    QVector<QStringList> ListOfRows = DbManager::showNotes();
+    QVector<struct MattyNoteRow> ListOfRows = DbManager::showNotes();
 
     for (int i = 0; i < ListOfRows.length();i++)
     {
@@ -64,7 +64,7 @@ void NoteHolder::getSelectedNotes() // пока не отичается от get
 
     QMap<QString, QString> Filter; // это потом заменить на метод, обрабатывающий запросы пользователя на сортировку
 
-    QVector<QStringList> ListOfRows = DbManager::showNotes(Filter);
+    QVector<MattyNoteRow> ListOfRows = DbManager::showNotes(Filter);
 
     if (!ListOfAllNotes.isEmpty())
         ListOfAllNotes.clear();

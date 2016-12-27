@@ -28,23 +28,13 @@ void Constants::setPathToDb(MattyPathToDbType PathType)
     switch (PathType)
     {
     case HomeAbsolute:
-        PathToDb = "C:\\Users\\Matty\\Documents\\Visual Studio 2015\\Projects\\Personal\\MattyNotes\\MattyNotes\\MattyNotes.sqlite";
+        PathToDb = "/home/matty/Документы/Qt/qt-proj/MattyNotes/MattyNotes.sqlite";
         break;
     case WorkAbsolute:
-        PathToDb = "C:/Users/Ogrigorieva/"
-                   "QtCreator/Build/debug/MattyNotes.sqlite";
+        PathToDb = "C:/Users/Ogrigorieva/QtCreator/qt-proj/MattyNotes/MattyNotes.sqlite";
         break;
-    case RelativeDEXE:
+    case Relative:
         PathToDb = "MattyNotes.sqlite";
-        break;
-    case RelativeREXE:
-        PathToDb = "MattyNotes.sqlite";
-        break;
-    case RelativeD:
-        PathToDb = "debug/MattyNotes.sqlite";
-        break;
-    case RelativeR:
-        PathToDb = "release/MattyNotes.sqlite";
         break;
     default:
         PathToDb = "MattyNotes.sqlite";
