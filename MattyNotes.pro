@@ -36,8 +36,7 @@ SOURCES += main.cpp\
     mattynote.cpp \
     mattystylesheeteditor.cpp \
     noteholder.cpp \
-    queryconstructor.cpp \
-    utilityfunctions.cpp
+    queryconstructor.cpp
 
 HEADERS  += dbmanager.h \
     mattynotesmainwindow.h \
@@ -51,7 +50,6 @@ HEADERS  += dbmanager.h \
     mattystylesheeteditor.h \
     noteholder.h \
     queryconstructor.h \
-    utilityfunctions.h \
 
 RESOURCES += \
     mattynotesmainwindow.qrc
