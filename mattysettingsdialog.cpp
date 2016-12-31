@@ -1,3 +1,10 @@
+/*
+Пока вообще ничего не делает.
+Только открывается :)
+Оставлено на потом.
+*/
+
+
 #include "mattysettingsdialog.h"
 
 MattySettingsDialog::MattySettingsDialog(QWidget * parent) : QDialog(parent)
@@ -19,6 +26,7 @@ void MattySettingsDialog::on_ApplySettingsButton_clicked()
 
 void MattySettingsDialog::on_CancelSettingsButton_clicked()
 {
+    // вопрос при изменениях
     this->close();
 }
 

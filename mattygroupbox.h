@@ -49,7 +49,6 @@ private:
 
     class MattyNote ThisGroupBoxNote;
     void mouseDoubleClickEvent(QMouseEvent * e);
-    //void mousePressEvent(QMouseEvent * e);
 
     private slots:
     void deleteNote();

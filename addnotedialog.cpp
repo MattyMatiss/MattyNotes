@@ -1,7 +1,6 @@
 #include "addnotedialog.h"
 #include "dbmanager.h"
 #include "mattynote.h"
-#include "utilityfunctions.h"
 #include "mattynotesmainwindow.h"
 #include "noteholder.h"
 #include "constants.h"

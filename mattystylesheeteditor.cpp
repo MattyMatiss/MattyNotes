@@ -1,3 +1,12 @@
+/*
+Все очень запутанно и далеко от идеала.
+В планах сделать несколько готовых тем оформления
+в отдельных .qss файлах, чьи названия совпадают с названиями тем.
+Плюс возможность менять детали через всякие радио и комбо.
+Возможно с помощью некого "конструктора", который будет брать
+составные части css из базы, склеивать и создавать .qss из этого.
+*/
+
 #include "mattystylesheeteditor.h"
 #include "dbmanager.h"
 
@@ -43,23 +52,13 @@ bool MattyStyleSheetEditor::setTheme(DefaultTheme ThemeName)
         break;
     }
 
-        QFile styleFile(":/All/resources/MattySunShineStyleSheet.qss");
+        QFile styleFile(":/All/resources/MattySunShineStyleSheet.qss"); // некрасиво
 
         if ((ThemeFileOpened = styleFile.open(QIODevice::ReadOnly | QIODevice::Text)))
         {
             qApp->setStyleSheet(styleFile.readAll());
             styleFile.close();
         }
-
-
-        QFile outFile("log.txt");
-            outFile.open(QIODevice::WriteOnly | QIODevice::Append);
-            QString ThemeFileName = ":/All/resources/MattySunShineStyleSheet.qss";
-            QByteArray ba = ThemeFileName.toLatin1();
-             const char *c_str2 = ba.data();
-            outFile.write(c_str2);
-            outFile.close();
-
 
     return ThemeFileOpened;
 }

@@ -260,43 +260,6 @@ int DbManager::getNoteCount()
     }
 }
 
-/*QVector<QStringList> DbManager::showNotes()
-{
-    if (connected())
-    {
-        QVector<QStringList> VectorOfNotes;
-
-        QueryConstructor SelectAll;
-        SelectAll.setTableName(QStringLiteral("Notes"));
-        SelectAll.setOrderByClause("NoteId", Descending);
-
-        QSqlQuery getNotesQuery(MattyNotesDb);
-
-        if( getNotesQuery.exec(SelectAll.constructSelectQuery()))
-        {
-            while (getNotesQuery.next())
-            {
-                QStringList Fields;
-                for (int i = 0;i < 9;i++)
-                {
-                    Fields.push_back(getNotesQuery.value(i).toString());
-                }
-                VectorOfNotes.push_back(Fields);
-            }
-        }
-        else
-        {
-            QMessageBox::critical(NULL, QObject::tr("Error"), getNotesQuery.lastError().text());
-        }
-
-        return VectorOfNotes;
-    }
-    else
-    {
-        return QVector<QStringList>();
-    }
-}*/
-
 QVector<MattyNoteRow> DbManager::showNotes()
 {
     if (connected())

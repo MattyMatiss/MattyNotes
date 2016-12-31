@@ -8,7 +8,6 @@
 #include <QMap>
 #include <QString>
 
-//enum OrderNotesBy { NoOrder, Type, TypeDesc, TypeId, CrDate, CrDateDesc, EvDate, EvDateDesc };
 enum OrderType { Straight, Descending };
 
 class QueryConstructor

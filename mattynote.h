@@ -22,18 +22,15 @@ public:
     void setType(const QString & TypeName);
     void setType(int TypeId);
     void setText(const QString & Text);
-    void setEventTime(const QString & EventTime); // Warning! Input format must be:
-    void setEventDate(const QString & EventDate); // Warning! Input format must be:
-
+    void setEventTime(const QString & EventTime);
+    void setEventDate(const QString & EventDate);
     QString getTitle() const;
     QString getType() const;
     QString getText() const;
-    QString getEventTime() const; // Format:
-    QString getEventDate() const; // Format:
-    //QString getEvDayofWeek();
-    QString getCrTime() const; // Format:
-    QString getCrDate() const; // Format:
-    //QString getCrDayOfWeek();
+    QString getEventTime() const;
+    QString getEventDate() const;
+    QString getCrTime() const;
+    QString getCrDate() const;
     int getTypeId() const;
     int getNoteId() const;
     QDateTime getEventTimeAndDate() const;
@@ -44,14 +41,14 @@ private:
     QString NoteTitle;
     QString NoteType;
     QString NoteText;
-    QString NoteEventTime; // Format:
-    QString NoteEventDate; // Format:
+    QString NoteEventTime;
+    QString NoteEventDate;
     QString NoteEvDayOfWeek;
     QString NoteCrTime;
     QString NoteCrDate;
     QString NoteCrDayOfWeek;
     QDateTime EventTimeAndDate;
-    QDateTime CrTimeAndDate;  // Automaticly set in constructor of MattyNote
+    QDateTime CrTimeAndDate;  // Autoset in the constructor of MattyNote
 };
 
 #endif // MATTYNOTE_H

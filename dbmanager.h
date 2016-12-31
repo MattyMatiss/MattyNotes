@@ -89,7 +89,6 @@ public:
     static bool editNote(MattyNote & Note, int NoteId);
     static bool deleteNote(int NoteId);
     static MattyNoteRow showNote(int NoteId);
-  //  static QVector<QStringList> showNotes();
     static QVector<MattyNoteRow> showNotes();
     static QVector<MattyNoteRow> showNotes(QMap<QString, QString> & Filter);
     static QSqlTableModel* getModel(const QString& path); // needtodelete wherever it's called
@@ -97,8 +96,6 @@ public:
     static QString getTypeName(int TypeId);
     static int getTypeId(const QString & TypeName);
     static int getNoteCount();
-   // static QVector<MattyCssRow> getCss(CssTables TableName);
-    //static QVector<QStringList> getAllNotesOrderByCrDate();
     static void showIsNotOpenedError();
 private:
     static QSqlDatabase MattyNotesDb;

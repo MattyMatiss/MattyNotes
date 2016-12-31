@@ -32,9 +32,6 @@ public:
     addNoteDialog(Action DialogTypeIncm, int EditingNoteIdIncm = -1,
                   QWidget *parent = 0);
 
-    //QPushButton createNoteButton;
-   // QPushButton cancelAddingNoteButton;
-
     ~addNoteDialog();
 
 private:
@@ -70,7 +67,6 @@ private:
     private slots:
     void on_createNoteButton_clicked();
     void on_cancelAddingNoteButton_clicked();
-    //void closeEvent(QCloseEvent *event);
 };
 
 #endif // ADDNOTEDIALOG_H

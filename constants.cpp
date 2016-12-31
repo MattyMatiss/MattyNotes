@@ -3,10 +3,6 @@
 #include <QFileInfo>
 
 QString Constants::PathToDb = "";
-// work path
- // QString Constants::PathToDb = "C:\\Users\\Ogrigorieva\\Visual Studio 2015\\Projects\\Personal\\MattyNotes\\MattyNotes.sqlite";
- //home path
-//QString Constants::PathToDb = "C:\\Users\\Matty\\Documents\\Visual Studio 2015\\Projects\\Personal\\MattyNotes\\MattyNotes\\MattyNotes.sqlite";
 
 const QString Constants::TimeSeparator = ":";
 const QString Constants::DateSeparator = ".";

@@ -88,7 +88,7 @@ private:
     void minimizeWindow();
     void refreshMainWindow();
     void openSettings();
-    void resizeMattyToolbarButtons(); // IsNotUsed
+    void resizeMattyToolbarButtons(); // не используется
     bool WindowActivatedEvent(QEvent *e);
 };
 

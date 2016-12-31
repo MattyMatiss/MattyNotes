@@ -1,3 +1,9 @@
+/*
+Скорей всего, много лишнего.
+Надо будет проверить.
+*/
+
+
 #ifndef MATTYSETTINGSDIALOG_H
 #define MATTYSETTINGSDIALOG_H
 

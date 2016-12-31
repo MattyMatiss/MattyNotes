@@ -207,11 +207,3 @@ void MattyGroupBox::mouseDoubleClickEvent(QMouseEvent * e)
         newAddNoteDialog.exec();
     }
 }
-
-/*void MattyGroupBox::mousePressEvent(QMouseEvent * e)
-{
-    if (e->button() == Qt::LeftButton)
-    {
-        changeExpandHideMode();
-    }
-}*/
